@@ -1,4 +1,7 @@
 # Fantasy Football Centre
+![Title](Readme/home.png)
+
+Fantasy Football Centre (FFC) is a Django-based web application that will allow users to browse, read, and comment on Fantasy Football Content. 
 # UX Planes
 ## Strategy
 ## Scope
