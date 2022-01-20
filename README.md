@@ -1,3 +1,30 @@
+# Fantasy Football Centre
+# UX Planes
+## Strategy
+## Scope
+## Structure
+## Skeleton
+## Surface
+# Features
+## Existing Features
+## Future Features 
+# Testing
+# Bugs
+## Resolved Bugs
+## Unresolved Bugs
+# Technologies Used
+# APIs & Configuration
+# Deployment
+## Github Deployment
+## Heroku Deployment
+## Local Deployment
+# Credits
+## Content
+## Code
+## Media
+
+
+
 Entity Relationship Diagrams:
 
 Articles:
