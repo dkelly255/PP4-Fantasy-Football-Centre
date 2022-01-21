@@ -3,7 +3,9 @@
 
 Fantasy Football Centre (FFC) is a Django-based web application that will allow users to browse, read, and comment on Fantasy Football Content. 
 # UX Planes
+I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
 ## Strategy
+The strategy for the site is to offer a one-stop shop to users interested in Fantasy Football where they can obtain content in the form of Articles, and can have the ability to post their own comments on the subject matter to engage in discussion within a braoder community of Fantasy Football enthusiasts
 ## Scope
 ## Structure
 ## Skeleton
