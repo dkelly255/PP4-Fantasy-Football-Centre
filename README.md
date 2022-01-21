@@ -74,25 +74,26 @@ An extended list of detailed steps & instructions for deployment is covered in t
 Note - please ensure you have created a GitHub repository prior to proceeding to the "Heroku" deployment section below to ensure no rework or deployment issues
 ## - Heroku Deployment
 The Steps for deployment to Heroku are as follows - Please note these steps are correct and current as at the time of application release)November 2021) but may be subject to change in future:
+
 - Navigate to [Heroku](https://id.heroku.com/login) and create an account
 
-![Welcome Screen](readme/deployment/heroku-intro.png)
+![Welcome Screen](readme/heroku-intro.png)
 
 - From the Heroku dashboard select the “Create new app” button.
 
-![Welcome Screen](readme/deployment/heroku-newapp.png)
+![Welcome Screen](readme/heroku-newapp.png)
 
-- Choose a name for the application - I have chosen Python-Hangman but please note that the name must be unique.
+- Choose a name for the application - I have chosen Fantasy Football Centre but please note that the name must be unique.
 
-![Welcome Screen](readme/deployment/heroku-name.png)
+![Welcome Screen](readme/heroku-name.png)
 
 - Select your region 
 
-![Welcome Screen](readme/deployment/heroku-region.png)
+![Welcome Screen](readme/heroku-region.png)
 
 - Then click “Create app” - this will trigger a page with all the information for setting up the app.
 
-![Welcome Screen](readme/deployment/heroku-create.png)
+![Welcome Screen](readme/heroku-create.png)
 
 Settings Tab:
 
