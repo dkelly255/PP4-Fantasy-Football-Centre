@@ -67,9 +67,73 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 # Technologies Used
 # APIs & Configuration
 # Deployment
+The application was deployed via Heroku, and a link to the live deployment can be found by clicking [here](https://fantasyfootballcentre.herokuapp.com/)
+
+An extended list of detailed steps & instructions for deployment is covered in the section below:
 ## Github Deployment
-## Heroku Deployment
+Note - please ensure you have created a GitHub repository prior to proceeding to the "Heroku" deployment section below to ensure no rework or deployment issues
+## - Heroku Deployment
+The Steps for deployment to Heroku are as follows - Please note these steps are correct and current as at the time of application release)November 2021) but may be subject to change in future:
+- Navigate to [Heroku](https://id.heroku.com/login) and create an account
+
+![Welcome Screen](readme/deployment/heroku-intro.png)
+
+- From the Heroku dashboard select the “Create new app” button.
+
+![Welcome Screen](readme/deployment/heroku-newapp.png)
+
+- Choose a name for the application - I have chosen Python-Hangman but please note that the name must be unique.
+
+![Welcome Screen](readme/deployment/heroku-name.png)
+
+- Select your region 
+
+![Welcome Screen](readme/deployment/heroku-region.png)
+
+- Then click “Create app” - this will trigger a page with all the information for setting up the app.
+
+![Welcome Screen](readme/deployment/heroku-create.png)
+
+Settings Tab:
+
+- Config Vars - It is important to get your settings section done before you deploy  your code, the first section being the "config vars" - also known as "environment variables", are where sensitive data that needs to be kept private is stored. You must then create a Config Var called `PORT` which must be set to `8000`
+
+![Welcome Screen](readme/deployment/heroku-configvars.png)
+
+- Buildpacks - The next step is to add buildpacks - These install further dependencies that we need. Click “Add buildpack”, add the Python buildpack first and then click “Save changes”. Then add the node.js Buildpack, to handle the mock terminal, again clicking “Save”. 
+Note - please make sure the buildpacks are in this  order, with Python on top, and node.js underneath. If they're the other way around you  can click and drag them to change the order.
+
+![Welcome Screen](readme/deployment/heroku-buildpacks.png)
+
+Deployment Tab: 
+
+- Select Github here, and then we  can confirm that we want to connect to Github & search for the equivalent Github repository name, followed by “Search”. 
+
+![Welcome Screen](readme/deployment/heroku-deploy.png)
+
+- Next, click “connect” to link up the Heroku app to our Github repository code, and scroll down to see two options - for manual or automatic deployment
+- If you choose to enable automatic deployment then Heroku will rebuild the app every time you push a new change to your code in Github. 
+- Alternatively you can choose to  manually deploy using the "deploy branch" option
+- Finally, you will see the “App was successfully deployed” message  
+and a button for the deployed link. 
+
 ## Local Deployment
+Additionally - if you would like to make a local copy of the Github repository, you can clone it by typing the following command in your IDE terminal:
+
+- `git clone https://github.com/dkelly255/python-games-package.git`
+
+Alternatively, if you use Gitpod, you can click the button below to generate a new workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dkelly255/python-games-package)
+# Credits
+## Content:
+As part of the generic research & development process to enable building the application, I benchmarked several different sources providing fully functional Hangman Python Terminal applications - these are listed below:
+
+1. [How to build python Hangman in 10 minutes](https://www.youtube.com/watch?v=m4nEnsavl6w) - this tutorial from Youtube account "Kite" was a quick & comprehensive tutorial from which I gained several insights into the mechanics of a typical Python Terminal based game of Hangman
+
+2. [How to Code a Game of Hangman (Beginner Python Tutorial)](https://www.youtube.com/watch?v=cJJTnI22IF8) - this is a similar tutorial from Youtube account "Kylie Ying", detailing how to successfully program a simple game of Hangman using Python
+
+3. [Terminal Hangman in Python](https://github.com/Pran54/Hangman) - This repository from Github was returned from a search engine research exercise and contained similar insights into the detailed mechanics of how to program a simple game of Hangman using the Python Terminal
 # Credits
 ## Content
 ## Code
