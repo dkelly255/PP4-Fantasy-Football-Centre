@@ -25,16 +25,38 @@ As both a site user and administrator I can:
 - View a count of likes on each article so that I can guage general user sentiment on the site content
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 
-An Agile approach to Software DEvelopment has been pursued for the project implementation, with the user stories above being managed via Github's Kanban board functionality.
 
-A view of the near-final Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
+## Scope
+
+To deliver the scope of the project, an Agile approach to Software Development has been pursued for the project implementation, with the user stories above being managed via Github's Kanban board functionality.
+
+A view of the Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
 
 ![Title](Readme/kanban.png)
 
-## Scope
 ## Structure
+
+The website is structured using the Django Framework functionality, with a home page, a login option, and a signup page. The home page contains the main content of the site, housing the Fantasy Football Articles, together with the comments that have been posted by other users/viewers
+
 ## Skeleton
+
+The wireframes below illustrate the skeleton of the site, including the home page, login page, signup page, together with the various nav bars and footers that underpin the site structure:
+
+- Wireframe 1 - Home Page
+- Wireframe 2 - Article page
+- Wireframe 3 - Comment detail
+- Wireframe 4 - Signup Page
+- Wireframe 5 - Login page
+- Wireframe 6 - Administration page
+
 ## Surface
+
+The Bootstrap framework has been used to construct the Surface of the website, with the following design choices helping to deliver the optimum user experience:
+
+- Typography
+- Imagery
+- Color Palette
+
 # Features
 ## Existing Features
 ## Future Features 
