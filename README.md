@@ -77,40 +77,40 @@ The Steps for deployment to Heroku are as follows - Please note these steps are 
 
 - Navigate to [Heroku](https://id.heroku.com/login) and create an account
 
-![Welcome Screen](readme/heroku-intro.png)
+![Heroku Account Creation](readme/heroku-intro.png)
 
 - From the Heroku dashboard select the “Create new app” button.
 
-![Welcome Screen](readme/heroku-newapp.png)
+![New App creation](readme/heroku-newapp.png)
 
 - Choose a name for the application - I have chosen Fantasy Football Centre but please note that the name must be unique.
 
-![Welcome Screen](readme/heroku-name.png)
+![App name selection](readme/heroku-name.png)
 
 - Select your region 
 
-![Welcome Screen](readme/heroku-region.png)
+![Region confirmation](readme/heroku-region.png)
 
 - Then click “Create app” - this will trigger a page with all the information for setting up the app.
 
-![Welcome Screen](readme/heroku-create.png)
+![App creation confirmation](readme/heroku-create.png)
 
 Settings Tab:
 
 - Config Vars - It is important to get your settings section done before you deploy  your code, the first section being the "config vars" - also known as "environment variables", are where sensitive data that needs to be kept private is stored. You must then create a Config Var called `PORT` which must be set to `8000`
 
-![Welcome Screen](readme/deployment/heroku-configvars.png)
+![Settings Tab](readme/deployment/heroku-configvars.png)
 
 - Buildpacks - The next step is to add buildpacks - These install further dependencies that we need. Click “Add buildpack”, add the Python buildpack first and then click “Save changes”. Then add the node.js Buildpack, to handle the mock terminal, again clicking “Save”. 
 Note - please make sure the buildpacks are in this  order, with Python on top, and node.js underneath. If they're the other way around you  can click and drag them to change the order.
 
-![Welcome Screen](readme/deployment/heroku-buildpacks.png)
+![Buildpacks](readme/deployment/heroku-buildpacks.png)
 
 Deployment Tab: 
 
 - Select Github here, and then we  can confirm that we want to connect to Github & search for the equivalent Github repository name, followed by “Search”. 
 
-![Welcome Screen](readme/deployment/heroku-deploy.png)
+![Github Deployment](readme/deployment/heroku-deploy.png)
 
 - Next, click “connect” to link up the Heroku app to our Github repository code, and scroll down to see two options - for manual or automatic deployment
 - If you choose to enable automatic deployment then Heroku will rebuild the app every time you push a new change to your code in Github. 
