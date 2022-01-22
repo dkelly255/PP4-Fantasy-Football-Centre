@@ -1,5 +1,5 @@
 # Fantasy Football Centre
-![Title](Readme/home.png)
+![Title](readme/home.png)
 
 Fantasy Football Centre (FFC) is a Django-based web application that will allow users to browse, read, and comment on Fantasy Football Content. 
 # UX Planes
@@ -32,11 +32,41 @@ To deliver the scope of the project, an Agile approach to Software Development h
 
 A view of the Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
 
-![Title](Readme/kanban.png)
+![Title](readme/kanban.png)
 
 ## Structure
 
 The website is structured using the Django Framework functionality, with a home page, a login option, and a signup page. The home page contains the main content of the site, housing the Fantasy Football Articles, together with the comments that have been posted by other users/viewers
+
+## Code Structure
+
+## Database Structure
+
+Entity Relationship Diagrams:
+
+Articles:
+Fields: Key, Name, Type
+Title (Unique) - Char[200]
+(1TM - Foreign Key) Author - Take from User Model
+Creation Date - DateTime
+Updated Date - DateTime
+Content - TextField
+Featured Image - Cloudinary Image
+Excerpt - TextField
+(MTM) Likes - User Model
+Slug (unique) - SlugField
+Status - Integer
+
+Comments:
+Key, Name, Type, Extra Info
+Foreign Key - post, Post Model, Cascade on delete
+name, CharField, Max length 80
+email, EmailField
+body, TextField
+created_on, DateTimeField, auto_now_add True
+approved, BooleanField, default False
+
+Users:
 
 ## Skeleton
 
@@ -48,6 +78,8 @@ The wireframes below illustrate the skeleton of the site, including the home pag
 - Wireframe 4 - Signup Page
 - Wireframe 5 - Login page
 - Wireframe 6 - Administration page
+
+
 
 ## Surface
 
@@ -100,20 +132,19 @@ The Steps for deployment to Heroku are as follows - Please note these steps are 
 
 Settings Tab:
 
-- Config Vars - It is important to get your settings section done before you deploy  your code, the first section being the "config vars" - also known as "environment variables", are where sensitive data that needs to be kept private is stored. You must then create a Config Var called `PORT` which must be set to `8000`
+- Config Vars - It is important to get your settings section done before you deploy  your code, the first section being the "config vars" - also known as "environment variables", are where sensitive data that needs to be kept private is stored. In the case of this website & app the  required "CLOUDINARY_URL", "DATABASE_URL", and "SECRET_KEY" config vars are shown below:
 
-![Settings Tab](readme/deployment/heroku-configvars.png)
+![Settings Tab](readme/heroku-configvars.png)
 
-- Buildpacks - The next step is to add buildpacks - These install further dependencies that we need. Click “Add buildpack”, add the Python buildpack first and then click “Save changes”. Then add the node.js Buildpack, to handle the mock terminal, again clicking “Save”. 
-Note - please make sure the buildpacks are in this  order, with Python on top, and node.js underneath. If they're the other way around you  can click and drag them to change the order.
+- Buildpacks - The next step is to add buildpacks - These install further dependencies that we need. Click “Add buildpack”, add the Python buildpack first and then click “Save changes”. 
 
-![Buildpacks](readme/deployment/heroku-buildpacks.png)
+![Buildpacks](readme/heroku-buildpacks.png)
 
 Deployment Tab: 
 
 - Select Github here, and then we  can confirm that we want to connect to Github & search for the equivalent Github repository name, followed by “Search”. 
 
-![Github Deployment](readme/deployment/heroku-deploy.png)
+![Github Deployment](readme/heroku-deploy.png)
 
 - Next, click “connect” to link up the Heroku app to our Github repository code, and scroll down to see two options - for manual or automatic deployment
 - If you choose to enable automatic deployment then Heroku will rebuild the app every time you push a new change to your code in Github. 
@@ -124,20 +155,12 @@ and a button for the deployed link.
 ## Local Deployment
 Additionally - if you would like to make a local copy of the Github repository, you can clone it by typing the following command in your IDE terminal:
 
-- `git clone https://github.com/dkelly255/python-games-package.git`
+- `git clone https://github.com/dkelly255/fantasy-football-centre.git`
 
 Alternatively, if you use Gitpod, you can click the button below to generate a new workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dkelly255/python-games-package)
-# Credits
-## Content:
-As part of the generic research & development process to enable building the application, I benchmarked several different sources providing fully functional Hangman Python Terminal applications - these are listed below:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dkelly255/fantasy-football-centre)
 
-1. [How to build python Hangman in 10 minutes](https://www.youtube.com/watch?v=m4nEnsavl6w) - this tutorial from Youtube account "Kite" was a quick & comprehensive tutorial from which I gained several insights into the mechanics of a typical Python Terminal based game of Hangman
-
-2. [How to Code a Game of Hangman (Beginner Python Tutorial)](https://www.youtube.com/watch?v=cJJTnI22IF8) - this is a similar tutorial from Youtube account "Kylie Ying", detailing how to successfully program a simple game of Hangman using Python
-
-3. [Terminal Hangman in Python](https://github.com/Pran54/Hangman) - This repository from Github was returned from a search engine research exercise and contained similar insights into the detailed mechanics of how to program a simple game of Hangman using the Python Terminal
 # Credits
 ## Content
 ## Code
@@ -145,26 +168,3 @@ As part of the generic research & development process to enable building the app
 
 
 
-Entity Relationship Diagrams:
-
-Articles:
-Fields: Key, Name, Type
-Title (Unique) - Char[200]
-(1TM - Foreign Key) Author - Take from User Model
-Creation Date - DateTime
-Updated Date - DateTime
-Content - TextField
-Featured Image - Cloudinary Image
-Excerpt - TextField
-(MTM) Likes - User Model
-Slug (unique) - SlugField
-Status - Integer
-
-Comments:
-Key, Name, Type, Extra Info
-Foreign Key - post, Post Model, Cascade on delete
-name, CharField, Max length 80
-email, EmailField
-body, TextField
-created_on, DateTimeField, auto_now_add True
-approved, BooleanField, default False
