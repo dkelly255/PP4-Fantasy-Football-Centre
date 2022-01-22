@@ -66,14 +66,17 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 ## Unresolved Bugs
 # Technologies Used
 # APIs & Configuration
+
 # Deployment
 The application was deployed via Heroku, and a link to the live deployment can be found by clicking [here](https://fantasyfootballcentre.herokuapp.com/)
 
 An extended list of detailed steps & instructions for deployment is covered in the section below:
+
 ## Github Deployment
 Note - please ensure you have created a GitHub repository prior to proceeding to the "Heroku" deployment section below to ensure no rework or deployment issues
-## - Heroku Deployment
-The Steps for deployment to Heroku are as follows - Please note these steps are correct and current as at the time of application release)November 2021) but may be subject to change in future:
+
+## Heroku Deployment
+The Steps for deployment to Heroku are as follows - Please note these steps are correct and current as at the time of application release (March 2022) but may be subject to change in future:
 
 - Navigate to [Heroku](https://id.heroku.com/login) and create an account
 
