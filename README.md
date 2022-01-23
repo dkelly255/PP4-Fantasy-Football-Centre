@@ -9,19 +9,20 @@ The strategy for the site is to offer a one-stop shop to users interested in Fan
 
 The strategic aim of the site is to address the following user stories:
 
-As a site user I can:
+### As a site user I can:
 - Create and register for an account so that I can add my own comments and likes to the articles and content
 - View a list of the site's articles so that I can select one to read
 - View an organised list of artciles so that I can select which article I wish to view
 - Open an article so that I can read the full content
 - Add my own comments to articles so that I can join in the discussion on current fantasy football hot topics and issues
 
-As a site administrator I can:
+### As a site administrator I can:
 - Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the website
 - Create draft articles so that I can complete the articles at a later time
 - Approve or reject comments so that I can ensure no unacceptable comments are posted on the site
 
-As both a site user and administrator I can:
+### As both a site user and administrator I can:
+
 - View a count of likes on each article so that I can guage general user sentiment on the site content
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 
@@ -39,9 +40,6 @@ A view of the Kanban board with the user stories having been brought through "To
 The website is structured using the Django Framework functionality, with a home page, a login option, and a signup page. The home page contains the main content of the site, housing the Fantasy Football Articles, together with the comments that have been posted by other users/viewers
 
 ## Code Structure
-
-### - Cloudinary
-### - Crispy Forms
 
 ## Database Structure
 
@@ -78,7 +76,13 @@ Users:
 The wireframes below illustrate the skeleton of the site, including the home page, login page, signup page, together with the various nav bars and footers that underpin the site structure:
 
 - Wireframe 1 - Home Page
+
+![Home page](readme/wireframe-home.png)
+
 - Wireframe 2 - Article page
+
+![Article page](readme/wireframe-article.png)
+
 - Wireframe 3 - Comment detail
 - Wireframe 4 - Signup Page
 - Wireframe 5 - Login page
@@ -152,8 +156,12 @@ The addition of the ability to sign-in via a user's existing social media accoun
 # Bugs
 ## Resolved Bugs
 ## Unresolved Bugs
+
 # Technologies Used
-# APIs & Configuration
+
+## - Cloudinary
+## - Crispy Forms
+## - APIs & Configuration
 
 # Deployment
 The application was deployed via Heroku, and a link to the live deployment can be found by clicking [here](https://fantasyfootballcentre.herokuapp.com/)
