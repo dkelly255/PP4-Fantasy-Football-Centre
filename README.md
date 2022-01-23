@@ -128,6 +128,10 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 ## Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
 
+### - Notifications
+
+A future feature for site implementation would be the addition of a notifications choice for users. This would allow users who wish to avail of the option to receice notifications when a new article is posted to the site, and/or when their comments have had replies in the discussion areas. This feature is currently out of scope due to project deadlines, but will hopefully be added at a future time to improve the User Experience and broaden the suite of features offered by the site.
+
 ### -  Membership Tiers Addition
 
 This would involve adding functionality to the site whereby existing users have the choice to upgrade their account to a "Premium Member" - which would in turn give them access to additional premium features not accessible to a default user. 
