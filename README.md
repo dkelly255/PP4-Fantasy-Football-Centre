@@ -40,9 +40,14 @@ The website is structured using the Django Framework functionality, with a home 
 
 ## Code Structure
 
+### - Cloudinary
+### - Crispy Forms
+
 ## Database Structure
 
-Entity Relationship Diagrams:
+### - PostgreSQL:
+
+### - Entity Relationship Diagrams:
 
 Articles:
 Fields: Key, Name, Type
@@ -91,7 +96,54 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 
 # Features
 ## Existing Features
+
+### - Home Page
+
+### - Nav Bar
+
+### - Footer
+
+### - Signup Form
+
+### - Login Form
+
+### - Logout Form
+
+### - Article Display
+
+### - Add a comment
+
+### - Add a Like/Unlike
+
+### - Administration Area
+
+### - Add an article
+
+### - Edit an article
+
+### - Delete an article
+
+### - Approve a comment
+
 ## Future Features 
+In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
+
+### -  Membership Tiers Addition
+
+This would involve adding functionality to the site whereby existing users have the choice to upgrade their account to a "Premium Member" - which would in turn give them access to additional premium features not accessible to a default user. 
+
+### - Premium articles & Analysis
+
+Following on from the Mmeber's area would be additional members-only articles, and access to player data & analysis to help premium members gain an edge with their fantasy football management. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
+
+### - Forgotten Password Functionality
+
+This would give users the ability to reset their password should they wish to do so in the event of forgetting their existing login credentials, thereby improving the User Experience and adding a further dimension to the functionality of the site
+
+### - Social Media Sign-ins
+
+The addition of the ability to sign-in via a user's existing social media account/s (Google, Facebook, Instagram etc) would add further functionality to the site and broaden the User Experience, however in the interests of project timelines this set of features is currently out of project scope for the current release.
+
 # Testing
 # Bugs
 ## Resolved Bugs
