@@ -153,6 +153,12 @@ This would give users the ability to reset their password should they wish to do
 The addition of the ability to sign-in via a user's existing social media account/s (Google, Facebook, Instagram etc) would add further functionality to the site and broaden the User Experience, however in the interests of project timelines this set of features is currently out of project scope for the current release.
 
 # Testing
+
+Test Case | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | -------------
+ Comment pending approval notification | When comment text field is populated, and submit button is clicked, user should receive a notification message that their comment is awaiting approval | To be tested | TBD
+ 
+
 # Bugs
 ## Resolved Bugs
 ## Unresolved Bugs
