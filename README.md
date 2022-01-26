@@ -160,8 +160,18 @@ Test Case | Expected Result | Actual Result | Pass/Fail
  
 
 # Bugs
+
 ## Resolved Bugs
+
 ## Unresolved Bugs
+
+### Connection Refused - Error code 111
+
+This bug was initially present when trying to sign-up for an account after providing a user's email & password details. The solution is currently being worked & will involve an email backend addition.
+
+![Article page](readme/bug1.png)
+
+
 
 # Technologies Used
 
