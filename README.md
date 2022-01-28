@@ -1,7 +1,9 @@
 # Fantasy Football Centre
+Fantasy Football Centre (FFC) is a Django-based web application that will allow users to browse, read, and comment on Fantasy Football Content:
+
 ![Title](readme/home.png)
 
-Fantasy Football Centre (FFC) is a Django-based web application that will allow users to browse, read, and comment on Fantasy Football Content. 
+
 # UX Planes
 I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
 ## Strategy
@@ -45,22 +47,12 @@ The core website data  will be stored in Heroku's PostgreSQL add-on, and website
 
 ## Database Structure
 
-### - PostgreSQL:
 
-### - Entity Relationship Diagrams:
+The Entity Relationship Diagram for the Articles Table is shown below, with the field names, types, and key status. 
 
-Articles:
-Fields: Key, Name, Type
-Title (Unique) - Char[200]
-(1TM - Foreign Key) Author - Take from User Model
-Creation Date - DateTime
-Updated Date - DateTime
-Content - TextField
-Featured Image - Cloudinary Image
-Excerpt - TextField
-(MTM) Likes - User Model
-Slug (unique) - SlugField
-Status - Integer
+Note the Foreign Key will be the "Author" field, and that the "Likes" field will also need to have a many to many relationship:
+
+![Articles table ERD](readme/erd_articles.png)
 
 Comments:
 Key, Name, Type, Extra Info
@@ -72,6 +64,8 @@ created_on, DateTimeField, auto_now_add True
 approved, BooleanField, default False
 
 Users:
+
+### - PostgreSQL:
 
 ## Skeleton
 
