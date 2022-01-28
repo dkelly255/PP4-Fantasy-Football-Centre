@@ -186,13 +186,22 @@ Test Case | Expected Result | Actual Result | Pass/Fail
 
 ## Resolved Bugs
 
-## Unresolved Bugs
-
 ### Connection Refused - Error code 111
 
-This bug was initially present when trying to sign-up for an account after providing a user's email & password details. The solution is currently being worked & will involve an email backend addition.
+This bug was initially present when trying to sign-up a new user for an account after providing the user's email & password details. 
 
-![Article page](readme/bug1.png)
+![Error Snapshot](readme/bug1.png)
+
+The error is caused when an email Backend is missing from the Settings.py file, and has been solved by adding the email backend and the default "from" email using the following code:
+
+- `EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'`
+- `DEFAULT_FROM_EMAIL = 'dkelly25@hotmail.co.uk'`
+
+In keeping with the Agile methodology I am using to manage this project, the issue has now been moved to "closed" in Github's issues tracker:
+
+![Error resolution](readme/bug1_closed.png)
+
+## Unresolved Bugs
 
 
 

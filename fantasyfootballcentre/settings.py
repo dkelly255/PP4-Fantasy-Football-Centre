@@ -166,5 +166,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Adding email backend and default "from" email variables
+# Resolution to bug error number 111 - see readme - bugs section
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'dkelly25@hotmail.co.uk'
