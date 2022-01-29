@@ -104,18 +104,25 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 ## Existing Features
 
 ### - Home Page
+![Home page](readme/features-home.png)
 
 ### - Nav Bar
+![Nav](readme/features-nav.png)
 
 ### - Footer
+![Footer](readme/features-footer.png)
 
 ### - Signup Form
+![Signup](readme/features-signup.png)
 
 ### - Login Form
+![Login](readme/features-login.png)
 
 ### - Logout Form
+![Logout](readme/features-logout.png)
 
 ### - Article Display
+![Article](readme/features-article.png)
 
 ### - Add a comment
 
