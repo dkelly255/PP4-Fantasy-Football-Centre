@@ -75,15 +75,21 @@ The wireframes below illustrate the skeleton of the site, including the home pag
 
 ![Home page](readme/wireframe-home.png)
 
-- Wireframe 2 - Article page
+- Wireframe 2 - Article detail & comments 
 
 ![Article page](readme/wireframe-article.png)
 
-- Wireframe 3 - Comment detail
-- Wireframe 4 - Signup Page
-- Wireframe 5 - Login page
-- Wireframe 6 - Administration page
+- Wireframe 3 - Signup Page
 
+![Article page](readme/wireframe-signup.png)
+
+- Wireframe 4 - Login page
+
+![Article page](readme/wireframe-login.png)
+
+- Wireframe 5 - Administration page
+
+![Article page](readme/wireframe-admin.png)
 
 
 ## Surface
