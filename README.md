@@ -125,10 +125,16 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 ![Article](readme/features-article.png)
 
 ### - Add a comment
+![Comment](readme/features-comment.png)
 
 ### - Add a Like/Unlike
+![Like](readme/features-likeunlike.png)
+
+### - Comment Counter
+![Counter](readme/features-commentcounter.png)
 
 ### - Administration Area
+![Admin](readme/features-admin.png)
 
 ### - Add an article
 
