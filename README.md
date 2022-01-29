@@ -216,6 +216,15 @@ In keeping with the Agile methodology I am using to manage this project, the iss
 
 ## Unresolved Bugs
 
+An additional bug is currently present where the CSS styles are not being properly applied in the live deployed (Heroku) site. 
+
+![Bug2](readme/bug2-deployedcssstyles.png)
+
+The styles are correct in the Development Environment (Gitpod) site:
+
+![Bug2](readme/bug2-deployedcssstylesgit.png)
+
+This bug is currently under investigation for resolution
 
 
 # Technologies Used
