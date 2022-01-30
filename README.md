@@ -45,6 +45,10 @@ The core website data  will be stored in Heroku's PostgreSQL add-on, and website
 
 ## Code Structure
 
+### Model, View, Template
+### Requirements.txt 
+### Procfile
+
 ## Database Structure
 
 The site's content will utilise a simple database structure, consisting of two main models - one for the Fantasy Football Articles, and one for the comments that users can add to those articles
@@ -102,6 +106,9 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 ## Existing Features
 
 ### - Home Page
+
+The Home page is constructed primarily using cusotmised Bootstrap, and is where the site users will intially land upon visiting the site. The Home page is designed to enable users to seamlessly access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. A snapshot of the home page feature is shown below:
+
 ![Home page](readme/features-home.png)
 
 ### - Nav Bar
