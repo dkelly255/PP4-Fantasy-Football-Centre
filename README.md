@@ -137,12 +137,19 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 ![Admin](readme/features-admin.png)
 
 ### - Add an article
+![Add Article](readme/features-addarticle.png)
 
 ### - Edit an article
+![Edit Article](readme/features-editarticle.png)
 
 ### - Delete an article
+![Delete Article](readme/features-deletearticle.png)
 
 ### - Approve a comment
+![Approve Comment](readme/features-approvecomment.png)
+
+### - Delete a comment
+![Delete Comment](readme/features-deletecomment.png)
 
 ## Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
