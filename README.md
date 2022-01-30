@@ -122,12 +122,15 @@ The site footer contains "Constructed By" label crediting the site to (fictional
 ![Footer](readme/features-footer.png)
 
 ### - Signup Form
-The sign Up form is built using Crispy Forms, and consists of a brief, but concise invitation & instruction set to the user to direct them on how to create an account with the site. There is an additional prompt on the form reminding the user that they should "Sign In" rather than "Sign Up" if they already have an account, and following that, there are four fields the user can fill in to supply the required details for creation of a new account - Username, Email, Password, and a confirmation of the password.
+The Sign Up form is built using Crispy Forms, and consists of a brief, but concise invitation & instruction set to the user to direct them on how to create an account with the site. There is an additional prompt on the form reminding the user that they should "Sign In" rather than "Sign Up" if they already have an account, and following that, there are four fields the user can fill in to supply the required details for creation of a new account - Username, Email, Password, and a confirmation of the password.
 
 
 ![Signup](readme/features-signup.png)
 
 ### - Login Form
+
+The Login form is also built using Crispy Forms, and gives two fields for completion to authenticate the user for access to the site features such as leaving comments or liking articles. There is an additional notification to the user on the Login form that they must be logged in to like an article or leave a comment, and that if they have not yet created an account that they must Sign Up first.
+
 ![Login](readme/features-login.png)
 
 ### - Logout Form
