@@ -47,6 +47,7 @@ The core website data  will be stored in Heroku's PostgreSQL add-on, and website
 
 ## Database Structure
 
+The site's content will utilise a simple database structure, consisting of two main models - one for the Fantasy Football Articles, and one for the comments that users can add to those articles
 
 The Entity Relationship Diagram for the Articles Table is shown below, with the field names, types, and key status. 
 
@@ -60,8 +61,6 @@ Note the Foreign Key will be the "Post" field, and that this will need to cascad
 
 ![Comments table ERD](readme/erd_comments.png)
 
-
-Users:
 
 ### - PostgreSQL:
 
@@ -97,6 +96,7 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 - Typography
 - Imagery
 - Color Palette
+- Summernote - WYSIWYG editor for admin panel
 
 # Features
 ## Existing Features
