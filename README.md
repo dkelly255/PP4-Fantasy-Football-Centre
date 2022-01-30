@@ -107,11 +107,13 @@ The Bootstrap framework has been used to construct the Surface of the website, w
 
 ### - Home Page
 
-The Home page is constructed primarily using cusotmised Bootstrap, and is where the site users will intially land upon visiting the site. The Home page is designed to enable users to seamlessly access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. A snapshot of the home page feature is shown below:
+The Home page is constructed primarily using customised Bootstrap, and is where the site users will intially land upon visiting the site. The Home page is designed to enable users to seamlessly access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. The page is also fully responsive, utilising bootstrap responsiveness/scaling features to ensure a positive UX on devices of all screen-sizes. A snapshot of the home page feature is shown below:
 
 ![Home page](readme/features-home.png)
 
 ### - Nav Bar
+The Nav bar contains links to the main functionality sections of the site, and contains a highlight to both show the user which page they are currently on, as well as highlighting when the user scrolls over a clickable link. The Nav bar is also fully responsive from ultra-wide down to mobile device screen sizes below 300 pixels in width, and contains the site tag line "The Centre of the action" to the right hand side to help promote a positive UX for site visitors:
+
 ![Nav](readme/features-nav.png)
 
 ### - Footer
