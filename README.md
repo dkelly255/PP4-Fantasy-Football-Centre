@@ -54,14 +54,12 @@ Note the Foreign Key will be the "Author" field, and that the "Likes" field will
 
 ![Articles table ERD](readme/erd_articles.png)
 
-Comments:
-Key, Name, Type, Extra Info
-Foreign Key - post, Post Model, Cascade on delete
-name, CharField, Max length 80
-email, EmailField
-body, TextField
-created_on, DateTimeField, auto_now_add True
-approved, BooleanField, default False
+The Entity Relationship Diagram for the Comments Table is shown below, with the field names, types, key status, and additional information. 
+
+Note the Foreign Key will be the "Post" field, and that this will need to cascade on delete, so that when a post is removed, the comments on that post are also removed, that is, the deletion is cascaded through the models.
+
+![Comments table ERD](readme/erd_comments.png)
+
 
 Users:
 
