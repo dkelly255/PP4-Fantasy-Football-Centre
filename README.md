@@ -176,6 +176,8 @@ A key feature within the administration area is the ability to add articles. The
 ![Add Article](readme/features-addarticle.png)
 
 ### - Edit an article
+Additionally, the "Change Post" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
+
 ![Edit Article](readme/features-editarticle.png)
 
 ### - Delete an article
