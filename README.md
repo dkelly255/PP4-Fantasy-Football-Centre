@@ -170,6 +170,9 @@ The administration area is a key feature of the Fantasy Football Centre web appl
 ![Admin](readme/features-admin.png)
 
 ### - Add an article
+
+A key feature within the administration area is the ability to add articles. The articles form the majority of the site content, and this option allows a superuser or administrator to add new articles when required to keep the site current and up to date with recent events of interest to the site's target audience. As you can see from the screenshot below, there are fields allowing the Article attributes to be built out, including - title, slug, author, a hero image, an excerpt and the actual article body/content. Changing the article status from "draft" to "published" will trigger the article's publication on the live site.
+
 ![Add Article](readme/features-addarticle.png)
 
 ### - Edit an article
