@@ -202,7 +202,7 @@ This would involve adding functionality to the site whereby existing users have 
 
 ### - Premium articles & Analysis
 
-Following on from the Mmeber's area would be additional members-only articles, and access to player data & analysis to help premium members gain an edge with their fantasy football management. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
+Following on from the Member's area would be additional members-only articles, and access to player data & analysis to help premium members gain an edge with their fantasy football management. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
 
 ### - Forgotten Password Functionality
 
