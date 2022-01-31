@@ -152,12 +152,21 @@ This additional functionality allows a user to add comments to the site articles
 ![Comment](readme/features-comment.png)
 
 ### - Add a Like/Unlike
+
+This feature allows a user who is signed in to like (or unlike) an article by clicking on the like/heart icon under each article. When a user clicks the button it will increment the like count by one, and when a user clicks the icon a second time, it will decrement the like counter by one to "unlike" the previous like. When the article has been liked, the heart icon will turn solid red, and if it is unliked, the icon will return to its hollow red outline format:
+
 ![Like](readme/features-likeunlike.png)
 
 ### - Comment Counter
+
+The comment counter is present under all articles created on the site, and performs the role of allowing site visitors to see at a glance how many comments have been lodged under each article, giving a sense of how much discussion and debate an article may have generated. Each time a comment has been approved by the administrator/superuser, the comments counter will increment by one:
+
 ![Counter](readme/features-commentcounter.png)
 
 ### - Administration Area
+
+The administration area is a key feature of the Fantasy Football Centre web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. The administration area has been craeted using Django's administration functionality, and contains many key functions, illlustrated in the snapshot below, and reviweed in detail in the remainder of the feature walkthrough section of this readme document:
+
 ![Admin](readme/features-admin.png)
 
 ### - Add an article
