@@ -186,6 +186,8 @@ The "Delete an article feature" grants a user with the correct permissions the a
 ![Delete Article](readme/features-deletearticle.png)
 
 ### - Approve a comment
+The application also contains features which help with the management of the comments posted on articles in the site. Before any comment can be publicly displayed, it must be approved by an administrator, to minimize the risk of offensive or illegal comments being posted. When an administrator or superuser wants to approve a comment, he or she can simply select the comment from the menu, check the appropriate selection box, and then select "approve comments" from the dropdown menu:
+
 ![Approve Comment](readme/features-approvecomment.png)
 
 ### - Delete a comment
