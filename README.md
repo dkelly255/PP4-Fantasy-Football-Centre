@@ -191,6 +191,8 @@ The application also contains features which help with the management of the com
 ![Approve Comment](readme/features-approvecomment.png)
 
 ### - Delete a comment
+The functionality to delete a previously approved (or unapproved) comment is also present in the Fantasy Football Centre web application - via this option a super user or administrator can select the comment they wish to delete by checking the appropriate selection box, and simply select "delete selected comments" from the dropdown menu:
+
 ![Delete Comment](readme/features-deletecomment.png)
 
 ## Future Features 
