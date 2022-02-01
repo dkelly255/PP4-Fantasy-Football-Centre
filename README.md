@@ -181,6 +181,8 @@ Additionally, the "Change Post" option will allow a Superuser or Administrator t
 ![Edit Article](readme/features-editarticle.png)
 
 ### - Delete an article
+The "Delete an article feature" grants a user with the correct permissions the ability to remove previously published articles from the site's content. This feature ensures that the site content can be maintained & kept current, and would allow reacting to any unexpected or accidental misinformation or errors that may require an article to be deleted from the site. The superuser/admin must check the box to the left of the article they wish to delete, and then select the delete option from the drop-down menu & confirm.
+
 ![Delete Article](readme/features-deletearticle.png)
 
 ### - Approve a comment
