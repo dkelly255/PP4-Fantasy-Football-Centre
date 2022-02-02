@@ -11,6 +11,6 @@ Readme Sections:  | Core Content:
 [**User Experience (UX)**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/USER%20EXPERIENCE.md) | Review of the five planes of UX as they relate to the Fantasy Football Centre Django Application
  [**Features**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/FEATURES.md) | Overview of the core features of the website, as well as potential future features
  [**Testing**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/TESTING.md) | Detail behind the testing exercises undertaken on key aspects of website functionality
-[**Bugs**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/BUGS.m) | Review of the bugs encountered during and after development, both resolved and unresolved
-[**Deployment**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/DEPLOYMENT.m) | Walkthrough on deployment steps required for deployment on Heroku, Github, and Locally
-[**Credits**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/CREDITS.m) | Overview of the key credits & sources attributed used during design & development 
+[**Bugs**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/BUGS.md) | Review of the bugs encountered during and after development, both resolved and unresolved
+[**Deployment**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/DEPLOYMENT.md) | Walkthrough on deployment steps required for deployment on Heroku, Github, and Locally
+[**Credits**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/CREDITS.md) | Overview of the key credits & sources attributed used during design & development 
