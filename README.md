@@ -4,9 +4,11 @@ Fantasy Football Centre (FFC) is a Django-based web application that will allow 
 ![Title](readme/home.png)
 
 
-Below are the list of key sections of the Readme document to help users familiarize themselves with how the application was designed & developed, and how it operates:
+Below are the list of key sections of the Readme document to help users familiarize themselves with how the application was designed & developed, and how it operates. 
 
-Section: | Readme Sections:  | Core Content:
+Please select a section to review by clicking on the hyperlinks below:
+
+Section: | Title:  | Content:
 ------------- | ------------- | ------------ 
 1 | [**User Experience (UX)**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/USER%20EXPERIENCE.md) | Review of the five planes of UX as they relate to the Fantasy Football Centre Django Application
 2 | [**Features**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/FEATURES.md) | Overview of the core features of the website, as well as potential future features
