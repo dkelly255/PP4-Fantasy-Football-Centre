@@ -3,7 +3,7 @@
 ## User Workflow Testing:
 Test Case | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-  Register an account | Expected result | To be tested | TBD
+  Register an account | When clicking the "Sign Up" option, a user should be presented with the sign up form. Upon population of the required fields within the form, the user should receive a confirmation email if they have specified an email address during sign-up, and should have a newly created account. | User account created as expected | Pass
   Sign in | Expected result | To be tested | TBD
   Open an article | Expected result | To be tested | TBD
   Post a comment | Expected result | To be tested | TBD
