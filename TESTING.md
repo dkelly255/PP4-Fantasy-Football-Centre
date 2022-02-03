@@ -1,6 +1,9 @@
 # Testing
 
 ## Manual Testing - User Workflows:
+
+The key tests below are part of the manual testing procedures I have followed to prove out the functionality of the primary User-based workflows available within the application:
+
 Test Case | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
   Register an account | When clicking the "Sign Up" option, a user should be presented with the sign up form. Upon population of the required fields within the form, the user should receive a confirmation email if they have specified an email address during sign-up, and should have a newly created account. | User account created as expected | Pass
@@ -13,9 +16,12 @@ Test Case | Expected Result | Actual Result | Pass/Fail
   Navigation Bar & Signin Status | The Navigation bar should have two statuses - firstly, signed in, where the menu options should consist of "Home" and "Logout"... and secondly, signed out, where the menu options should consist of "Home", "Signup", and "Login" | Fucntionality operates as expected | Pass
 
 ## Manual Testing - Administrative Workflows:
+
+The tests below are part of the manual testing procedures I have followed to prove out the functionality of the primary Administrator-based workflows available within the application:
+
 Test Case | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-  Create an article | Expected result | To be tested | TBD
+  Create an article | Upon clicking on the "Add Post +" button, an administrator should be able to populate the following form with all of the details required to create and publish a new article. The key fields should include - Title, Slug (which should autopopulate based on the title), Author, Image, Excerpt, the actual article content, and a status - draft or published | The Article creation feature works as expected | Pass
   Delete an article | Expected result | To be tested | TBD
   Approve a comment | Expected result | To be tested | TBD
   Reject a comment | Expected result | To be tested | TBD
