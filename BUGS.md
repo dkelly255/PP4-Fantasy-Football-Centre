@@ -38,3 +38,11 @@ Upon creation of a new account, a user will receive a notification that a confir
 ![Bug3](readme/bug3-emailnotification.png)
 
 This bug is also currently under investigation for resolution
+
+### 4. Add email address - username display error 
+
+If an administrator tries to add an email address for a previously registered user (who did not include an email address), the system will not recognise the username, but will only recognise the user "number" - for example, username "brian" has usernumber "3". The username is not recognised by the system, but the usernumber "3" will be recognised:
+
+![Bug4](readme/bug4-usernamedisplay.png)
+
+This bug is also currently under investigation for resolution
