@@ -22,8 +22,8 @@ The tests below are part of the manual testing procedures I have followed to pro
 Test Case | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
   Create an article | Upon clicking on the "Add Post +" button, an administrator should be able to populate the following form with all of the details required to create and publish a new article. The key fields should include - Title, Slug (which should autopopulate based on the title), Author, Image, Excerpt, the actual article content, and a status - draft or published | The Article creation feature works as expected | Pass
-  Delete an article | When an administrator selects a post, and clicks on the dropdown menu to choose the "Delete selected posts" option, the article and all associated comments & likes should be removed from the site | Delete article functionality operates as expected | Pass
-  Approve a comment | Expected result | To be tested | TBD
+  Delete an article | When an administrator selects a post, and clicks on the dropdown menu to choose the "Delete selected posts" option, a warning screen should present to the user highlighting that the article will be deleted. If the administrator proceeds to click on the "Yes I'm sure" button, the article and all associated comments & likes should be removed from the site | Delete article functionality operates as expected | Pass
+  Approve a comment | If an administrator selects an (unapproved) comment from the comments inventory, and chooses "Approve comments" from the dropdown menu, the comment should then appear for viewing under the article it was submitted against on the live website, with a date & timestamp | Approve comments functionality works per expectations | Pass
   Reject a comment | Expected result | To be tested | TBD
   Add an email address | Expected result | To be tested | TBD
   Verify an email address | Expected result | To be tested | TBD
