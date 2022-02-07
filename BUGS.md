@@ -17,8 +17,6 @@ In keeping with the Agile methodology I am using to manage this project, the iss
 
 ![Error resolution](readme/bug1_closed.png)
 
-## Unresolved Bugs
-
 ### 2. CSS Styles
 
 An additional bug is currently present where the CSS styles are not being properly applied in the live deployed (Heroku) site. 
@@ -29,7 +27,17 @@ The styles are correct in the Development Environment (Gitpod) site:
 
 ![Bug2](readme/bug2-deployedcssstylesgit.png)
 
-This bug is currently under investigation for resolution
+This bug was caused by the debug flag being set to "True" which was preventing the static CSS formats from being correctly recognised by the Heroku application on deployment. Following a change in the debug flag, the bug has been resolved: 
+
+![Bug2 - solution](readme/bug2-solution.png)
+
+The issue has also been closed in the Agile Methodology Issue Tracker in Github
+
+![Bug2 - closed](readme/bug2-closed.png)
+
+## Unresolved Bugs
+
+
 
 ### 3. Account created email notification
 
