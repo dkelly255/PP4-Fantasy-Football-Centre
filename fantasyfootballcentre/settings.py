@@ -30,7 +30,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')
+# Note:Had to disable env variable approach to troubleshoot heroku formatting
+# DEBUG = os.environ.get('DEBUG')
+DEBUG = False
 
 ALLOWED_HOSTS = ['fantasyfootballcentre.herokuapp.com', 'localhost']
 
