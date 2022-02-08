@@ -39,7 +39,18 @@ The core website data  will be stored in Heroku's PostgreSQL add-on, and website
 
 ## Code Structure
 
-### Model, View, Template
+### - *Model, View, Template*
+
+Generically the project is structured using the "Model, View, Template" software design pattern. 
+
+- The Model supports with database management, being a data access layer which primarily handles data. 
+- The Views are used toe xecute the business logic and interact with the model to carry data and render a template
+- The Templates are the presentation layers, which handle the User Interface aspects of the application.
+
+The diagram below (sourced from [javatpoint.com](https://www.javatpoint.com/django-mvt)) illustrates the MVT structure & control flow used for this project:
+
+![MVT](readme/mvt.png)
+
 ### Requirements.txt 
 ### Procfile
 
