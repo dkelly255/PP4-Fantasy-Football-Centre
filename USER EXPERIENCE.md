@@ -81,6 +81,11 @@ Note the Foreign Key will be the "Post" field, and that this will need to cascad
 ![Comments table ERD](readme/erd_comments.png)
 
 ### - PostgreSQL:
+
+The database system used to underpin the models section of the project structure is an application known as [PostgreSQL](https://www.postgresql.org/). 
+
+As illustrated in this overview at [postgresqltutorial.com](https://www.postgresqltutorial.com/what-is-postgresql/) - PostgreSQL is an advanced, enterprise-class, open-source relational database system, which supports both relational querying, and is compatible with most popular programming languages (including Python) and is therefore ideal for the requirements of this project.
+
 ### - Cloudinary
 ### - Crispy Forms
 ### - Summernote
