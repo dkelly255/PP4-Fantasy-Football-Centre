@@ -51,7 +51,7 @@ The diagram below (sourced from [javatpoint.com](https://www.javatpoint.com/djan
 
 ![MVT](readme/mvt.png)
 
-### Requirements.txt 
+### - *Requirements.txt* 
 
 The project structure includes a requirements.txt in keeping with Python Standards & best practices - as per this overview from [idkrtm.com](https://www.idkrtm.com/what-is-the-python-requirements-txt/), the requirements.txt file is used for specifiying which Python packages are required to run the overall project.
 
@@ -59,7 +59,10 @@ The current packages and dependencies list for the project are shown below:
 
 ![Requirements](readme/requirements.png)
 
-### Procfile
+### - *Procfile*
+
+A Procfile is also an integral element of the project structure - as per the overview in [medium.com](https://medium.com/@bennettgarner/deploying-django-to-heroku-procfile-static-root-other-pitfalls-e7ab8b2ba33b) - the Procfile is a file in the project's root directory that tells Heroku how the application should start and run - in this case, via a Gunicorn server.
+
 
 ## Database Structure
 
