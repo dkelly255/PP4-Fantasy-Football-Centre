@@ -52,6 +52,13 @@ The diagram below (sourced from [javatpoint.com](https://www.javatpoint.com/djan
 ![MVT](readme/mvt.png)
 
 ### Requirements.txt 
+
+The project structure includes a requirements.txt in keeping with Python Standards & best practices - as per this overview from [idkrtm.com](https://www.idkrtm.com/what-is-the-python-requirements-txt/), the requirements.txt file is used for specifiying which Python packages are required to run the overall project.
+
+The current packages and dependencies list for the project are shown below:
+
+![Requirements](readme/requirements.png)
+
 ### Procfile
 
 ## Database Structure
