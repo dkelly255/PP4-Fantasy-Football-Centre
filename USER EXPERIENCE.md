@@ -126,6 +126,9 @@ The wireframes below illustrate the skeleton of the site, including the home pag
 The Bootstrap framework has been used to construct the Surface of the website, with the following design choices helping to deliver the optimum user experience:
 
 - Typography
+
+For the Fonts on the site I am using a combination of [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) and [Lato](https://fonts.google.com/specimen/Lato?query=lato) to display the content. As per the overview on Google Fonts linked above, Lato is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic (“Lato” means “Summer” in Polish), whereas Roboto has a dual nature, with a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+
 - Imagery
 - Color Palette
 - Summernote - WYSIWYG editor for admin panel
