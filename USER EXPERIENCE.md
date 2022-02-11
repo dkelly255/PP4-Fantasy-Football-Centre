@@ -137,7 +137,9 @@ The [Lato](https://fonts.google.com/specimen/Lato?query=lato) font is also used 
 
 - Imagery
 
-I am using fantasy football related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of screenshots from various key elements of the Fantasy Football game - including screenshots of the top-performing teams of the week, screenshots of the daily price changes, and other relevant fantasy football imagery
+I am using fantasy football related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of screenshots from various key elements of the Fantasy Football game - including screenshots of the top-performing teams of the week, screenshots of the daily price changes, fixture lists, and other relevant fantasy football imagery. Some examples are shown below:
+
+![Imagery](readme/imagery.png)
 
 - Color Palette
 - Summernote - WYSIWYG editor for admin panel
