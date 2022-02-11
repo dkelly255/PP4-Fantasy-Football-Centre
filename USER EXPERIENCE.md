@@ -142,4 +142,4 @@ I am using fantasy football related imagery throughout the Surface layer of the 
 ![Imagery](readme/imagery.png)
 
 - Color Palette
-- Summernote - WYSIWYG editor for admin panel
+
