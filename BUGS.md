@@ -54,3 +54,11 @@ If an administrator tries to add an email address for a previously registered us
 ![Bug4](readme/bug4-usernamedisplay.png)
 
 This bug is also currently under investigation for resolution
+
+### 5. Admin Panel display formatting errors
+
+During development, the Administration panel display developed a bug where the standard formatting would not apply and the panel was close to unreadable as a result:
+
+![Bug5](readme/bug5-adminform.png)
+
+This bug is currently under investigation for resolution

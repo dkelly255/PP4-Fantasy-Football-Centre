@@ -53,17 +53,17 @@ class PostDetail(View):
         else:
             comment_form = CommentForm()
 
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "commented": True,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },
-        )
+        template = "post_detail.html"
+
+        context = {
+            "post": post,
+            "comments": comments,
+            "commented": False,
+            "liked": liked,
+            "comment_form": CommentForm()
+        }
+
+        return render(request, template, context)
 
     
 class PostLike(View):
