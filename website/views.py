@@ -23,17 +23,17 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },
-        )
+        template = "post_detail.html"
+
+        context = {
+            "post": post,
+            "comments": comments,
+            "commented": False,
+            "liked": liked,
+            "comment_form": CommentForm()
+        }
+
+        return render(request, template, context)
 
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
