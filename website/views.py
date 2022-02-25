@@ -5,6 +5,11 @@ from .models import Post
 from .forms import CommentForm
 
 
+
+def landing_page(request):
+    return render(request, 'landing_page.html')
+
+
 # Create your views here.
 class PostList(generic.ListView):
     model = Post
