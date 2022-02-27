@@ -1,5 +1,6 @@
 body {
     background-color: #F9FAFC;
+    
 }
 
 .brand {
@@ -27,6 +28,7 @@ body {
 
 .main-bg {
     background-color: #F9FAFC;
+    background-image: url(../images/background.jpg);
 }
 
 .card {
