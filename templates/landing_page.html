@@ -2,19 +2,27 @@
 
 {% block content %}
 
-<div id="home-container">
-    <h1 class="text-center mb-5">Welcome!</h1>
-    <div class="container">
-        
-        <Article class="container">
-            Welcome to Fantasy Football Centre. The site will allow you to browse, read and comment on articles covering:
-            <hr>
-            <p>(1) Reviews looking back on the previous gameweek, highest and lowest scoring players, and key talking points </p>
-            <p>(2) Previews looking forward to the upcoming Gameweek & Fixtures </p>
-            <p>(3) Daily & Weekly Price Changes</p>
-            <hr>
-        </Article>
-        <a class = "btn btn-primary" href="{% url 'post_list' %}" role="button">Current Article Listing</a>
+<div id="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                <div class="col-md-10 border border-primary pt-4 pb-4" id="about-box">
+                    <h1 class="text-center mb-5">Welcome!</h1>
+                    <div class="container">
+                        
+                        <Article class="container">
+                            Welcome to Fantasy Football Centre. The site will allow you to browse, read and comment on articles covering:
+                            <hr>
+                            <p>(1) Reviews looking back on the previous gameweek, highest and lowest scoring players, and key talking points </p>
+                            <p>(2) Previews looking forward to the upcoming Gameweek & Fixtures </p>
+                            <p>(3) Daily & Weekly Price Changes</p>
+                            <hr>
+                        </Article>
+                        <a class = "btn btn-primary" href="{% url 'post_list' %}" role="button">Current Article Listing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
