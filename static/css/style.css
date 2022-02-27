@@ -162,10 +162,7 @@ body {
     background-size:contain;
     background-repeat: no-repeat; */
     /* background-position: center; */
-    background-color: #f9fafcfa;
-    
-    
-    
+    background-color: #198754d8;
 }
 
 #landing-page {
@@ -177,6 +174,16 @@ body {
     
 }
 
-#welcome-message {
-    
+article {
+    color: white;
+}
+
+#welcome-title {
+    display: flex;
+    justify-content:space-between;
+}
+
+.icon {
+    width:100px;
+    height:53px;
 }
