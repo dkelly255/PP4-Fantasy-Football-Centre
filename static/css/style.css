@@ -1,6 +1,7 @@
 body {
     /* background-color: #F9FAFC; */
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
 }
 
 .brand {
@@ -152,11 +153,18 @@ body {
 } */
 
 .card-body-background {
-    background-color: #F9FAFC;
+    background-color: #f9fafce5;
 }
 
 #about-box {
-    background-color: #f9fafcc7;
+    /* background-color: #f9fafce5; */
+    /* background-image: url(../images/django_background.png);
+    background-size:contain;
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-color: #f9fafcfa;
+    
+    
     
 }
 
@@ -166,5 +174,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;  
+    
+}
+
+#welcome-message {
     
 }
