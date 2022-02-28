@@ -172,6 +172,7 @@ article {
 #welcome-title {
     display: flex;
     justify-content:space-between;
+    color: white
 }
 
 .icon {
@@ -182,4 +183,9 @@ article {
 .green {
     background-color: #198754d8;
     /* display: flex; */
+}
+
+#signup {
+    height: 80vh;
+    color: white;
 }
