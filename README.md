@@ -10,7 +10,7 @@ Please select a section to review by clicking on the hyperlinks below:
 
 Section: | Title:  | Content:
 ------------- | ------------- | ------------ 
-1 | [**UX (User Experience)**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/USER%20EXPERIENCE.md) | Review of the five planes of UX as they relate to the Fantasy Football Centre Django Application
+1 | [**UX (User Experience)**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/USER%20EXPERIENCE.md) | Review of the five planes of UX as they relate to the Django Blog Application
 2 | [**Features**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/FEATURES.md) | Overview of the core features of the website, as well as potential future features
 3 | [**Testing**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/TESTING.md) | Detail behind the testing exercises undertaken on key aspects of website functionality
 4 | [**Bugs**](https://github.com/dkelly255/PP4-Fantasy-Football-Centre/blob/main/BUGS.md) | Review of the bugs encountered during and after development, both resolved and unresolved
