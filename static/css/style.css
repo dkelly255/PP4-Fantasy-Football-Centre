@@ -156,15 +156,6 @@ body {
     background-color: #f9fafce5;
 }
 
-#about-box {
-    /* background-color: #f9fafce5; */
-    /* background-image: url(../images/django_background.png);
-    background-size:contain;
-    background-repeat: no-repeat; */
-    /* background-position: center; */
-    background-color: #198754d8;
-}
-
 #landing-page {
     height: 80vh;
     display: flex;
@@ -186,4 +177,9 @@ article {
 .icon {
     width:100px;
     height:53px;
+}
+
+.green {
+    background-color: #198754d8;
+    /* display: flex; */
 }
