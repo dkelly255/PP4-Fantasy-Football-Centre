@@ -3,6 +3,11 @@
 
 CRUD Functionality - to be added 
 
+- Create
+- Read
+- Update
+- Delete
+
 ### - Home Page
 
 The Home page is constructed primarily using customised Bootstrap, and is where the site users will intially land upon visiting the site. The Home page is designed to enable users to seamlessly access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. The page is also fully responsive, utilising bootstrap responsiveness/scaling features to ensure a positive UX on devices of all screen-sizes. A snapshot of the home page feature is shown below:
