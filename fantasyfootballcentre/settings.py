@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Note:Had to disable env variable approach to troubleshoot heroku formatting
-# DEBUG = os.environ.get('DEBUG')
-DEBUG = "DEVELOPMENT" in os.environ
+# DEBUG = os.environ.get('DEBUG'), "DEVELOPMENT" in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['fantasyfootballcentre.herokuapp.com', 'localhost']
 
