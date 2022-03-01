@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = os.environ.get('DEBUG'), "DEVELOPMENT" in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['fantasyfootballcentre.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['p4-django-blog.herokuapp.com', 'localhost']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
