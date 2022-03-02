@@ -1,31 +1,5 @@
 # Testing
 
-## Browser Compatability
-
-The site's compatibility with different browsers and device sizes has been extensively tested to help ensure the best positive experience for site users & visitors, with some of the primary browser & device-size compatability screenshots being displayed below:
-
-- Google Chrome:
-
-![Chrome](readme/chrome.png)
-
-- Microsoft Edge:
-
-![Edge](readme/edge.png)
-
-- Mozilla Firefox:
-
-![Firefox](readme/firefox.png)
-
-- Android (Samsung Galaxy S10 Mobile):
-
-![Android](readme/android.png)
-
-- Apple Safari (iPad Tablet):
-
-![aPPLE](readme/safari.png)
-
-## Accessibility
-
 
 ## Manual Testing - User Workflows:
 
@@ -58,3 +32,51 @@ Test Case | Expected Result | Actual Result | Pass/Fail
   Delete a user | When navigating to the "Users" section of the administration dashboard, a user with the correct access should be able to select a username from the available list, and select "Delete selected users" from the dropdown menu. Clicking "Go" should then trigger a warning message to the user, asking if they are sure they wish to proceed with the deletion, and clicking "Yes, I'm sure" should result in the deletion of the selected Username | Delete user functionality works as expected | Pass
   Change a password | Note - this refers to the password change within the administrative area. By clicking on the "Change password" option from the top right menu in the Administration area, an administrator should be presented with the password change screen, where they can specify a new password after confirming their old password. Confirming the change should result in a confirmation screen that the change was successful | Password change functionality works as expected | Pass
 
+
+## Browser Compatibility
+
+The site's compatibility with different browsers and device sizes has been extensively tested to help ensure the best positive experience for site users & visitors, with some of the primary browser & device-size compatability screenshots being displayed below:
+
+- Google Chrome:
+
+![Chrome](readme/chrome.png)
+
+- Microsoft Edge:
+
+![Edge](readme/edge.png)
+
+- Mozilla Firefox:
+
+![Firefox](readme/firefox.png)
+
+- Android (Samsung Galaxy S10 Mobile):
+
+![Android](readme/android.png)
+
+- Apple Safari (iPad Tablet):
+
+![Apple](readme/safari.png)
+
+## Accessibility
+
+The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessiblity deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, Accessibility. The pre-SEO adjusted Lighthouse scores (with SEO deficiency) are shown below for reference
+
+- Homepage Lighthouse Scores (pre-SEO adjustment):
+
+![Chrome](readme/lighthouse_home.png)
+
+- Articles Page (pre-SEO adjustment):
+
+![Chrome](readme/lighthouse_articles.png)
+
+- Article Detail Display Page (pre-SEO adjustment):
+
+![Chrome](readme/lighthouse_article.png)
+
+- Login Page (pre-SEO adjustment):
+
+![Chrome](readme/lighthouse_login.png)
+
+- Signup Page (pre-SEO adjustment):
+
+![Chrome](readme/lighthouse_signup.png)
