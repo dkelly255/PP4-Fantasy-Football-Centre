@@ -1,5 +1,5 @@
 # Django Blog
-Django Blog is a Django-based web application that will allow users to browse, read, and comment on articles covering the Django Web Development framework:
+Django Blog is a Python & Django based web application that will allow users to browse, read, and comment on articles which cover many aspects and perspectives on the Django Web Development framework:
 
 ![Title](readme/home.png)
 

@@ -1,7 +1,7 @@
 # UX Planes
 I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
 ## Strategy
-The strategy for the site is to offer a one-stop shop to users interested in Fantasy Football where they can obtain content in the form of Articles, and can have the ability to post their own comments on the subject matter to engage in discussion within a braoder community of Fantasy Football enthusiasts. 
+The strategy for the site is to offer a resource to users interested in the Django framework where they can obtain content in the form of Articles, and can have the ability to post their own comments on the subject matter to engage in discussion within a braoder community of Django users. 
 
 The strategic aim of the site is to address the following **User Stories**:
 
@@ -10,7 +10,7 @@ The strategic aim of the site is to address the following **User Stories**:
 - View a list of the site's articles so that I can select one to read
 - View an organised list of artciles so that I can select which article I wish to view
 - Open an article so that I can read the full content
-- Add my own comments to articles so that I can join in the discussion on current fantasy football hot topics and issues
+- Add my own comments to articles so that I can join in the discussion on current Django hot topics and issues
 
 ### **As a site administrator I can:**
 - Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the website
@@ -33,7 +33,7 @@ A view of the Kanban board with the user stories having been brought through "To
 
 ## Structure
 
-The website is structured using the Django Framework functionality, with a home page, a login option, and a signup page. The home page contains the main content of the site, housing the Fantasy Football Articles, together with the comments that have been posted by other users/viewers.
+The website is structured using the Django Framework functionality, with a home page, an articles page, a login option, and a signup page. The home page greets the visitor with a welcome message and links to the the main content of the site, the articles page houses the Django Articles, together with the comments that have been posted by other users/viewers.
 
 The core website data  will be stored in Heroku's PostgreSQL add-on, and website static files and media/images will be stored on the Cloudinary Platform. I have made the decision to store website images on Cloudinary rather than Heroku due to the fact that Heroku is an ephemeral file system, and the Dyno system it utilizes can cause problems in situations where the project has been idle or if it has not been accessed for a certain length of time. Cloudinary is a persistent file store, and will therefore minimise the likelihood of such issues occurring and interrupting or deteriorating the User Experience, ensuring site visitors have less chance of seeing broken image links when browsing the site. In terms of the Cloudinary design choice, it is also less complicated to setup than other persistent file stores (such as Amazon S3 or Microsoft Azure) so will fit well for the scope of this project.
 
@@ -66,7 +66,7 @@ A Procfile is also an integral element of the project structure - as per the ove
 
 ## Database Structure
 
-The site's content will utilise a simple database structure, consisting of two main models - one for the Fantasy Football Articles, and one for the comments that users can add to those articles
+The site's content will utilise a simple database structure, consisting of two main models - one for the Articles about Django topics, and one for the comments that users can add to those articles
 
 The Entity Relationship Diagram for the Articles Table is shown below, with the field names, types, and key status. 
 
@@ -88,7 +88,7 @@ As illustrated in this overview at [postgresqltutorial.com](https://www.postgres
 
 ### - Crispy Forms
 
-The project structure also utilises an applicatino known as [CrispyForms](https://django-crispy-forms.readthedocs.io/en/latest/) to enable controlling the rendering behaviour of the key forms within the application.
+The project structure also utilises an application known as [CrispyForms](https://django-crispy-forms.readthedocs.io/en/latest/) to enable controlling the rendering behaviour of the key forms within the application.
 
 As per this overview article at [merixstudio.com](https://www.merixstudio.com/blog/django-crispy-forms-what-are-they-about/) Django-crispy-forms is an application that helps to manage Django forms and allows adjusting forms' properties (such as method, send button or CSS classes) on the backend without having to re-write them in the template.
 
@@ -137,9 +137,16 @@ The [Lato](https://fonts.google.com/specimen/Lato?query=lato) font is also used 
 
 - Imagery
 
-I am using fantasy football related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of screenshots from various key elements of the Fantasy Football game - including screenshots of the top-performing teams of the week, screenshots of the daily price changes, fixture lists, and other relevant fantasy football imagery. Some examples are shown below:
+I am using fantasy football related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of different Django-related pictures & diagrams. Some examples are shown below:
 
 ![Imagery](readme/imagery.png)
 
 - Color Palette
 
+As part of the surface layer of the website's user experience, I wanted to use a green color palette as part of the site's theme - Bootstrap has a large array of color-schemes & themes to choose from, illustrated in the screenshot below:
+
+![Imagery](readme/bootstrap_color.png)
+
+A deeper dive on the Green color scheme allows many different shades, hues, and opacities depending on the user's needs, for themajority of the site's surface I am using the default shade of green (code #198754 & its' derivations) - shown below:
+
+![Imagery](readme/bootstrap_color_green.png)
