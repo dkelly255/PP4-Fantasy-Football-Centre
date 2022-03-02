@@ -19,15 +19,15 @@ In keeping with the Agile methodology I am using to manage this project, the iss
 
 ### 2. CSS Styles
 
-An additional bug is currently present where the CSS styles are not being properly applied in the live deployed (Heroku) site. 
+When the site was originally developed around fantasy football content, prior to the change in appraoch to a Django blog, an additional bug was present where the CSS styles were not being properly applied in the live deployed (Heroku) site. 
 
 ![Bug2](readme/bug2-deployedcssstyles.png)
 
-The styles are correct in the Development Environment (Gitpod) site:
+The styles were, however, correct in the Development Environment (Gitpod) site:
 
 ![Bug2](readme/bug2-deployedcssstylesgit.png)
 
-This bug was caused by the debug flag being set to "True" which was preventing the static CSS formats from being correctly recognised by the Heroku application on deployment. Following a change in the debug flag, the bug has been resolved: 
+This bug was caused by the debug flag being set to "True" which was preventing the static CSS formats from being correctly recognised by the Heroku application on deployment. Following a change in the debug flag, the bug was resolved: 
 
 ![Bug2 - solution](readme/bug2-solution.png)
 
