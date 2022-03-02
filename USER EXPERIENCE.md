@@ -1,6 +1,6 @@
 # UX Planes
 I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
-## Strategy
+## 1. Strategy
 The strategy for the site is to offer a resource to users interested in the Django framework where they can obtain content in the form of Articles, and can have the ability to post their own comments on the subject matter to engage in discussion within a braoder community of Django users. 
 
 The strategic aim of the site is to address the following **User Stories**:
@@ -23,7 +23,7 @@ The strategic aim of the site is to address the following **User Stories**:
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 
 
-## Scope
+## 2. Scope
 
 To deliver the scope of the project, an Agile approach to Software Development has been pursued for the project implementation, with the user stories above being managed via Github's Kanban board functionality.
 
@@ -31,7 +31,7 @@ A view of the Kanban board with the user stories having been brought through "To
 
 ![Title](readme/kanban.png)
 
-## Structure
+## 3. Structure
 
 The website is structured using the Django Framework functionality, with a home page, an articles page, a login option, and a signup page. The home page greets the visitor with a welcome message and links to the the main content of the site, the articles page houses the Django Articles, together with the comments that have been posted by other users/viewers.
 
@@ -96,7 +96,7 @@ As per this overview article at [merixstudio.com](https://www.merixstudio.com/bl
 
 Summernote is used as an editor for the article functionality within the site. The Summernote [website](https://summernote.org/) contains comprehensive & useful documentatino on the editor - for the purposes of this project's structure - it is used as a "WYSIWYG" (What You See Is What You Get) editor, due to it's simple & easy-to-use nature.
 
-## Skeleton
+## 4. Skeleton
 
 The wireframes below illustrate the skeleton of the site, including the home page, login page, signup page, together with the various nav bars and footers that underpin the site structure:
 
@@ -121,7 +121,7 @@ The wireframes below illustrate the skeleton of the site, including the home pag
 ![Article page](readme/wireframe-admin.png)
 
 
-## Surface
+## 5. Surface
 
 I have used the Bootstrap framework to build the Surface of the website, with the following design choices helping to deliver the optimum user experience:
 
