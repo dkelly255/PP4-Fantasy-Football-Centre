@@ -1,5 +1,10 @@
 # Testing
 
+## Browser Compatability
+
+## Accessibility
+
+
 ## Manual Testing - User Workflows:
 
 The key tests below are part of the manual testing procedures I have followed to prove out the functionality of the primary User-based workflows available within the application:
