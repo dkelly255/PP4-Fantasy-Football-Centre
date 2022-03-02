@@ -2,6 +2,28 @@
 
 ## Browser Compatability
 
+The site's compatibility with different browsers and device sizes has been extensively tested to help ensure the best positive experience for site users & visitors, with some of the primary browser & device-size compatability screenshots being displayed below:
+
+- Google Chrome:
+
+![Chrome](readme/chrome.png)
+
+- Microsoft Edge:
+
+![Edge](readme/edge.png)
+
+- Mozilla Firefox:
+
+![Firefox](readme/firefox.png)
+
+- Android (Samsung Galaxy S10 Mobile):
+
+![Android](readme/android.png)
+
+- Apple Safari (iPad Tablet):
+
+![aPPLE](readme/safari.png)
+
 ## Accessibility
 
 
