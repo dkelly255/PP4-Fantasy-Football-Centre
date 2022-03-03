@@ -15,15 +15,15 @@ As part of the development process for the site, I required guidance from a numb
 
     This completed project build can also be found in my associated github repository: [Corey Schafer Django Blog](https://github.com/dkelly255/CS-Django-Blog)
 
-4. The [Official Django Forum](https://forum.djangoproject.com/c/users/6) - where I was able to receive help and support with several technical issues and queries when working through the process of building the official Django poll app tutorial. Please note, special recognition must go to Django Forums' [KenWhitesell](https://forum.djangoproject.com/u/KenWhitesell) who was able to help me with several queries & issues I had whilst working through the official Django documentation including:
+I also must acknowledge and highly recommend the [Official Django Forum](https://forum.djangoproject.com/c/users/6) - where I was able to receive help and support with several technical issues and queries when working through the process of building the official Django poll app tutorial with special recognition going to Django Forums' [KenWhitesell](https://forum.djangoproject.com/u/KenWhitesell) who was able to help me with several queries & issues I had whilst working through the official Django documentation. Below I have included links & acknowledgement to all of the discussion and content of the troubleshooting and debugging advice I was able to receive on these topics including :
 
-    (i) How to solve a [404 Page not found error](https://forum.djangoproject.com/t/page-not-found-404-tutorial-1/12135/5)
+1. How to solve a [404 Page not found error](https://forum.djangoproject.com/t/page-not-found-404-tutorial-1/12135/5)
 
-    (ii) Guidance on how to work through a [CSRF token verification failure](https://forum.djangoproject.com/t/tutorial-2-error-forbidden-csrf-verification-failed/12143)
+2. Guidance on how to work through a [CSRF token verification failure](https://forum.djangoproject.com/t/tutorial-2-error-forbidden-csrf-verification-failed/12143)
 
-    (iii) How to locate files in [Django's source code & directories](https://forum.djangoproject.com/t/tutorial-7-base-site-html-location/12187/3)
+3. How to locate files in [Django's source code & directories](https://forum.djangoproject.com/t/tutorial-7-base-site-html-location/12187/3)
     
-    (iv) Support with trying to resolve a [101 - Network Unavilable error](https://forum.djangoproject.com/t/oserror-at-password-reset-errno-101-network-is-unreachable/12348/2)
+4. Support with trying to resolve a [101 - Network Unavilable error](https://forum.djangoproject.com/t/oserror-at-password-reset-errno-101-network-is-unreachable/12348/2)
 
 ## Content
 - The "Model, View, Template" explanation in the "Structure" section of the User Experience overview is sourced from [javatpoint.com](https://www.javatpoint.com/django-mvt)
