@@ -185,7 +185,7 @@ article {
     /* display: flex; */
 }
 
-#signup {
+.signup-out {
     height: 80vh;
     color: white;
 }
