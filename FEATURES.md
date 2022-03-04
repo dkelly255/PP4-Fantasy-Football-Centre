@@ -6,7 +6,7 @@ As described in detail in this helpful [article](https://www.sumologic.com/gloss
 
 Below you can see details on the CRUD features and funcitonality of the Django Blog application, with examples and illustrations of each key operation:
 
-### - Create Records
+### - Create Records:
 
 #### (i) Create an article:
 
@@ -26,7 +26,7 @@ This feature allows a user who is signed in to like (or unlike) an article by cl
 
 ![Like](readme/features-likeunlike.png)
 
-### - Locate Records
+### - Locate Records:
 
 #### (i) Articles Page
 
@@ -34,7 +34,7 @@ The Articles page allows users to locate article/post records from the backend/d
 
 ![Home page](readme/features-articles.png)
 
-### - Display Records
+### - Display Records:
 
 #### (i) Article Display
 
@@ -42,14 +42,19 @@ This feature enables the user to drill down into the contents of the site by cli
 
 ![Article](readme/features-article.png)
 
-### - Edit Records
+### - Edit Records:
 
 #### (i) Edit an article
 Additionally, the "Change Post" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
 
 ![Edit Article](readme/features-editarticle.png)
 
-### - Delete Records
+#### (ii) Approve a comment
+The application also contains features which help with the management of the comments posted on articles in the site. Before any comment can be publicly displayed, it must be edited (specifically - its status must be changed to "approved" by an administrator), to minimize the risk of offensive or illegal comments being posted. When an administrator or superuser wants to approve a comment, he or she can simply select the comment from the menu, check the appropriate selection box, and then select "approve comments" from the dropdown menu:
+
+![Approve Comment](readme/features-approvecomment.png)
+
+### - Delete Records:
 
 #### (i) Delete an article
 The "Delete an article feature" grants a user with the correct permissions the ability to remove previously published articles from the site's content. This feature ensures that the site content can be maintained & kept current, and would allow reacting to any unexpected or accidental misinformation or errors that may require an article to be deleted from the site. The superuser/admin must check the box to the left of the article they wish to delete, and then select the delete option from the drop-down menu & confirm.
@@ -110,11 +115,6 @@ The comment counter is present under all articles created on the site, and perfo
 The administration area is a key feature of the Fantasy Football Centre web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. The administration area has been craeted using Django's administration functionality, and contains many key functions, illlustrated in the snapshot below, and reviweed in detail in the remainder of the feature walkthrough section of this readme document:
 
 ![Admin](readme/features-admin.png)
-
-### - Approve a comment
-The application also contains features which help with the management of the comments posted on articles in the site. Before any comment can be publicly displayed, it must be approved by an administrator, to minimize the risk of offensive or illegal comments being posted. When an administrator or superuser wants to approve a comment, he or she can simply select the comment from the menu, check the appropriate selection box, and then select "approve comments" from the dropdown menu:
-
-![Approve Comment](readme/features-approvecomment.png)
 
 ## 3. Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
