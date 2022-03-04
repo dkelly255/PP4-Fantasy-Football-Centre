@@ -29,6 +29,7 @@ I also must acknowledge and highly recommend the [Official Django Forum](https:/
 - The "Model, View, Template" explanation in the "Structure" section of the User Experience overview is sourced from [javatpoint.com](https://www.javatpoint.com/django-mvt)
 - In the "What is Django article", the [Official Django Documentation](https://www.djangoproject.com/), and the [Django Wikipedia Page](https://www.djangoproject.com/) are both used and accredited to provide article content
 - In the "Who Uses Django" article, [instagram-engineering](https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad), [dev.to](https://dev.to/developerroad/what-is-django-and-why-you-should-use-it-5a07), the [official Django documentation](https://www.djangoproject.com/weblog/2005/dec/08/congvotes/#:~:text=Django%20powers%20the%20entire%20votes,didn't%20break%20a%20sweat.), and [Django Stars](https://djangostars.com/blog/why-we-use-django-framework/), are used to provide content and context for the article
+- The Features' section definition & context on Create, Read, Update Delete (CRUD) functionality was informed and accredited to [Sumologic.com](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.)
     
 
 ## Code
