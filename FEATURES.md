@@ -2,7 +2,7 @@
 
 ## 1. CRUD Features & Functionality:
 
-As per this [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), "CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete". 
+As described in detail in this helpful [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), "CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete". 
 
 Below you can see details on the CRUD features and funcitonality of the Django Blog application, with examples and illustrations of each key operation:
 
