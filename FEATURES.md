@@ -16,7 +16,7 @@ A key feature within the administration area is the ability to add articles. The
 
 #### (ii) Create a comment:
 
-This additional functionality allows a user to add comments to the site articles. This adds a degree of interactivity to the site, and acts as a discussion board where users can discuss and debate current topics of interest in relation to Fantasy Football. Note, from a site security & administration perspective - a user must be signed in to leave a comment, and the comments must be individually approved by a site superuser/admin before they will be publicly visible below the articles.
+This additional functionality allows a user to add comments to the site articles. This adds a degree of interactivity to the site, and acts as a discussion board where users can discuss and debate current topics of interest in relation to Django. Note, from a site security & administration perspective - a user must be signed in to leave a comment, and the comments must be individually approved by a site superuser/admin before they will be publicly visible below the articles.
 
 ![Comment](readme/features-comment.png)
 
@@ -38,7 +38,7 @@ The Articles page allows users to locate article/post records from the backend/d
 
 #### (i) Article Display
 
-This feature enables the user to drill down into the contents of the site by clicking on the title of any article. Upon clicking, the detailed article view will load, showing the article's main image, followed by the textual content. This feature is the heart of the site functionality, and is where site visitors can browse & digest the Fantasy Football content on a regular basis. The formatting is again put together using custom bootstrap, and the design ensures a positive UX by having an uncluttered, clear area of focus for the site visitor.
+This feature enables the user to drill down into the contents of the site by clicking on the title of any article. Upon clicking, the detailed article view will load, showing the article's main image, followed by the textual content. This feature is the heart of the site functionality, and is where site visitors can browse & digest the Django-related content on a regular basis. The formatting is again put together using custom bootstrap, and the design ensures a positive UX by having an uncluttered, clear area of focus for the site visitor.
 
 ![Article](readme/features-article.png)
 
@@ -62,7 +62,7 @@ The "Delete an article feature" grants a user with the correct permissions the a
 ![Delete Article](readme/features-deletearticle.png)
 
 ### (ii) Delete a comment
-The functionality to delete a previously approved (or unapproved) comment is also present in the Fantasy Football Centre web application - via this option a super user or administrator can select the comment they wish to delete by checking the appropriate selection box, and simply select "delete selected comments" from the dropdown menu:
+The functionality to delete a previously approved (or unapproved) comment is also present in the Django Blog web application - via this option a super user or administrator can select the comment they wish to delete by checking the appropriate selection box, and simply select "delete selected comments" from the dropdown menu:
 
 ![Delete Comment](readme/features-deletecomment.png)
 
@@ -112,7 +112,7 @@ The comment counter is present under all articles created on the site, and perfo
 
 ### - Administration Area
 
-The administration area is a key feature of the Fantasy Football Centre web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. The administration area has been craeted using Django's administration functionality, and contains many key functions, illlustrated in the snapshot below, and reviweed in detail in the remainder of the feature walkthrough section of this readme document:
+The administration area is a key feature of the Django Blog web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. The administration area has been craeted using Django's administration functionality, and contains many key functions, illlustrated in the snapshot below, and reviweed in detail in the remainder of the feature walkthrough section of this readme document:
 
 ![Admin](readme/features-admin.png)
 
@@ -129,7 +129,7 @@ This would involve adding functionality to the site whereby existing users have 
 
 ### - Premium articles & Analysis
 
-Following on from the Member's area would be additional members-only articles, and access to player data & analysis to help premium members gain an edge with their fantasy football management. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
+Following on from the Member's area would be additional members-only articles, and access to player data & analysis to help premium members gain even more insight into Django and it's hisotry, purpose, and usage. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
 
 ### - Forgotten Password Functionality
 
