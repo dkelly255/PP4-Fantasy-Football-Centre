@@ -1,6 +1,6 @@
 # Features
 
-## CRUD Features & Functionality:
+## 1. CRUD Features & Functionality:
 
 As per this [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), "CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete". 
 
@@ -8,19 +8,19 @@ Below you can see details on the CRUD features and funcitonality of the Django B
 
 ### - Create Records
 
-#### 1. Create an article:
+#### (i). Create an article:
 
 A key feature within the administration area is the ability to add articles. The articles form the majority of the site content, and this option allows a superuser or administrator to add new articles when required to keep the site current and up to date with recent events of interest to the site's target audience. As you can see from the screenshot below, there are fields allowing the Article attributes to be built out, including - title, slug, author, a hero image, an excerpt and the actual article body/content. Changing the article status from "draft" to "published" will trigger the article's publication on the live site.
 
 ![Add Article](readme/features-addarticle.png)
 
-#### 2. Create a comment:
+#### (ii). Create a comment:
 
 This additional functionality allows a user to add comments to the site articles. This adds a degree of interactivity to the site, and acts as a discussion board where users can discuss and debate current topics of interest in relation to Fantasy Football. Note, from a site security & administration perspective - a user must be signed in to leave a comment, and the comments must be individually approved by a site superuser/admin before they will be publicly visible below the articles.
 
 ![Comment](readme/features-comment.png)
 
-#### 3. Add a Like/Unlike to an article:
+#### (iii). Add a Like/Unlike to an article:
 
 This feature allows a user who is signed in to like (or unlike) an article by clicking on the like/heart icon under each article. When a user clicks the button it will increment the like count by one, and when a user clicks the icon a second time, it will decrement the like counter by one to "unlike" the previous like. When the article has been liked, the heart icon will turn solid red, and if it is unliked, the icon will return to its hollow red outline format:
 
@@ -31,7 +31,7 @@ This feature allows a user who is signed in to like (or unlike) an article by cl
 
 ### - Display Records
 
-#### 1. Article Display
+#### (i). Article Display
 
 This feature enables the user to drill down into the contents of the site by clicking on the title of any article. Upon clicking, the detailed article view will load, showing the article's main image, followed by the textual content. This feature is the heart of the site functionality, and is where site visitors can browse & digest the Fantasy Football content on a regular basis. The formatting is again put together using custom bootstrap, and the design ensures a positive UX by having an uncluttered, clear area of focus for the site visitor.
 
@@ -39,24 +39,24 @@ This feature enables the user to drill down into the contents of the site by cli
 
 ### - Edit Records
 
-#### 1. Edit an article
+#### (i). Edit an article
 Additionally, the "Change Post" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
 
 ![Edit Article](readme/features-editarticle.png)
 
 ### - Delete Records
 
-#### 1. Delete an article
+#### (i). Delete an article
 The "Delete an article feature" grants a user with the correct permissions the ability to remove previously published articles from the site's content. This feature ensures that the site content can be maintained & kept current, and would allow reacting to any unexpected or accidental misinformation or errors that may require an article to be deleted from the site. The superuser/admin must check the box to the left of the article they wish to delete, and then select the delete option from the drop-down menu & confirm.
 
 ![Delete Article](readme/features-deletearticle.png)
 
-### - 2. Delete a comment
+### - (ii). Delete a comment
 The functionality to delete a previously approved (or unapproved) comment is also present in the Fantasy Football Centre web application - via this option a super user or administrator can select the comment they wish to delete by checking the appropriate selection box, and simply select "delete selected comments" from the dropdown menu:
 
 ![Delete Comment](readme/features-deletecomment.png)
 
-## Other Key Existing Features
+## 2. Other Key Existing Features
 
 In addition to the core CRUD functionality & features described above, there are many additional key features underpinning the functionality of the Django Blog application, the most important of which are described & reviewed below:
 
@@ -117,8 +117,7 @@ The application also contains features which help with the management of the com
 
 ![Approve Comment](readme/features-approvecomment.png)
 
-
-## Future Features 
+## 3. Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
 
 ### - Notifications
