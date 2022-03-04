@@ -1,6 +1,6 @@
 # Features
 
-## 1. CRUD Features & Functionality:
+## 1. CRUD Features:
 
 As described in detail in this helpful [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete. 
 
@@ -28,7 +28,7 @@ This feature allows a user who is signed in to like (or unlike) an article by cl
 
 ### - Locate Records
 
-#### (i) - Articles Page
+#### (i) Articles Page
 
 The Articles page allows users to locate article/post records from the backend/database, and is constructed with customised Bootstrap HTML/CSS. This is where the site users will land upon asking to view the articles via either the nav bar (see below) or the "view articles" option on the home page (see above). The Articles page is designed to enable users to seamlessly locate & access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. The page is also fully responsive, utilising bootstrap responsiveness/scaling features to ensure a positive UX on devices of all screen-sizes. A snapshot of the home page feature is shown below:
 
@@ -56,7 +56,7 @@ The "Delete an article feature" grants a user with the correct permissions the a
 
 ![Delete Article](readme/features-deletearticle.png)
 
-### - (ii) Delete a comment
+### (ii) Delete a comment
 The functionality to delete a previously approved (or unapproved) comment is also present in the Fantasy Football Centre web application - via this option a super user or administrator can select the comment they wish to delete by checking the appropriate selection box, and simply select "delete selected comments" from the dropdown menu:
 
 ![Delete Comment](readme/features-deletecomment.png)
