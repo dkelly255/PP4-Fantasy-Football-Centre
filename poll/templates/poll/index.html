@@ -2,15 +2,35 @@
 
 {% block content %}
 
-<h1>Polls Page</h1>
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'poll:detail' question.id %}">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+<div id="landing-page">
+    <div id="container">
+
+        <div class="row">
+            <div class="col-12 mt-3 left">
+                <div class="row">
+                    <div class="border border-white pt-4 pb-4 green">
+                            <div id="welcome-title">
+                                <h1 class="text-center mb-5">Polls Page</h1>
+                            </div>
+                    
+
+
+                                {% if latest_question_list %}
+                                    <ul>
+                                    {% for question in latest_question_list %}
+                                        <li><a href="{% url 'poll:detail' question.id %}">{{ question.question_text }}</a></li>
+                                    {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <p>No polls are available.</p>
+                                {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
 
 {% endblock %}
