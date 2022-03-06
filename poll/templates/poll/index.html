@@ -3,34 +3,38 @@
 {% block content %}
 
 <div id="landing-page">
-    <div id="container">
+    
 
-        <div class="row">
-            <div class="col-12 mt-3 left">
-                <div class="row">
-                    <div class="border border-white pt-4 pb-4 green">
+        
+            
+                
+                    <div class="border border-white pt-4 pb-4 green" id="poll-page">
                             <div id="welcome-title">
-                                <h1 class="text-center mb-5">Polls Page</h1>
+                                <h1 class="text-center mb-5">Polls Page</h1>                                
                             </div>
-                    
+                            <article class="pl-3">
+                                <h3 class="ml-3">Please take a second to vote in any/all of our polls below:</h3>
+                                <hr>
 
 
                                 {% if latest_question_list %}
                                     <ul>
                                     {% for question in latest_question_list %}
-                                        <li><a href="{% url 'poll:detail' question.id %}">{{ question.question_text }}</a></li>
+                                        <li><a class ="text-light" href="{% url 'poll:detail' question.id %}">Question {{ question.id }} - {{ question.question_text }}</a></li>
                                     {% endfor %}
                                     </ul>
                                 {% else %}
                                     <p>No polls are available.</p>
                                 {% endif %}
+                            </article>
+
                     </div>
-                </div>
-            </div>
-        </div>
+                
+            
+        
 
 
-    </div>
+    
 </div>
 
 {% endblock %}

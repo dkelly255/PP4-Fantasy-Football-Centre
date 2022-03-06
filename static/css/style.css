@@ -189,3 +189,7 @@ article {
     height: 80vh;
     color: white;
 }
+
+#poll-page {
+    min-width: 80vw;
+}
