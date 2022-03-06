@@ -40,8 +40,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
-INSTALLED_APPS = [
-    'poll.apps.PollConfig',
+INSTALLED_APPS = [    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,6 +56,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'website',
+    'poll',
 ]
 
 SITE_ID = 1
