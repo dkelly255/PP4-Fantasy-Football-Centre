@@ -33,7 +33,9 @@ I also must acknowledge and highly recommend the [Official Django Forum](https:/
     
 
 ## Code
-- The project structure is based on the Code Institute [Blog lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) project 
+- The blog app (website folder in project directory) and project structure is based on the Code Institute [Blog lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) project and has been adapted for my project needs
+- The poll app (poll folder in project directory) is based on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) introduction to Django tutorial and has been adapted for my project needs
+- The Automated testing of the poll app is based heavily on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) automated testing tutorials
 
 ## Media
 - The site background image was sourced from [Pexels](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/) and is free to use with no attribution required
