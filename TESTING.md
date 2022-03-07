@@ -1,28 +1,5 @@
 # Testing
 
-## Automated Testing - Poll application:
-
-The tests below are part of the Automated testing procedures I have used to prove out the functionality of the primary functionality within the poll application. Please note - as called out in the readme credits section, and as noted in the poll/tests.py module code comments, I have heavily utilised the testing section of the [official Django Documentation](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) in arriving at and building these tests, as they are effective at testing my poll app funcitonality for the purposes of the Blog Project:
-
-Automated Test | Expected Result | Actual Result | Pass/Fail
- ------------- | ------------- | ------------ | ------------- 
-  test_was_published_recently_with_future_question(self):| The method should return a "False" value if the question's publication date is in the future | The initial test run returned a value of true which caused my automated test to Fail | Fail (see screenshot below)
-
-![Test1](readme/AT_1.png)
-
-The solution to resolve this test error was to update the method in the Question model to ensure it returns "False" for dates in the future, and "True" for dates in the past. Upon making this change you can see the updated test results below:
-
-Automated Test | Expected Result | Actual Result | Pass/Fail
- ------------- | ------------- | ------------ | ------------- 
-  test_was_published_recently_with_future_question(self):| The method should return a "False" value if the question's publication date is in the future | As expected | Pass (see screenshot below)
-
-![Test2](readme/AT_2.png)
-
-Automated Test | Expected Result | Actual Result | Pass/Fail
- ------------- | ------------- | ------------ | ------------- 
-  test_was_published_recently_with_old_question(self):| The method should return a "False" value if the question's publication date is older than one day | As expected | Pass 
-  test_was_published_recently_with_recent_question(self):| The method should return a "True" value if the question's publication date is within the last one day | As expected | Pass
-
 ## Manual Testing - User Workflows:
 
 The key tests below are part of the manual testing procedures I have followed to prove out the functionality of the primary User-based workflows available within the application:
@@ -53,6 +30,40 @@ Test Case | Expected Result | Actual Result | Pass/Fail
   Add a user | An administrator should be able to add a user manually to the database by navigating to the "Users" section of the Administration area, and clicking "add". The following fields should be populated, building out the user's attributes (Username, Password, and password confirmation) and clicking "save". A prompt should then be displayed to the administrator confirming that the user has been successfully added | Functionality performs as expected | Pass
   Delete a user | When navigating to the "Users" section of the administration dashboard, a user with the correct access should be able to select a username from the available list, and select "Delete selected users" from the dropdown menu. Clicking "Go" should then trigger a warning message to the user, asking if they are sure they wish to proceed with the deletion, and clicking "Yes, I'm sure" should result in the deletion of the selected Username | Delete user functionality works as expected | Pass
   Change a password | Note - this refers to the password change within the administrative area. By clicking on the "Change password" option from the top right menu in the Administration area, an administrator should be presented with the password change screen, where they can specify a new password after confirming their old password. Confirming the change should result in a confirmation screen that the change was successful | Password change functionality works as expected | Pass
+
+## Automated Testing:
+
+### 1. Testing The Question Model's "was_published_recently" method 
+The tests below are part of the Automated testing procedures I have used to prove out the functionality of some of the core aspects within the poll application. Please note - as called out in the readme credits section, and as noted in the poll/tests.py module code comments, I have heavily utilised the testing section of the [official Django Documentation](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) in arriving at and building these tests, as they are effective at testing my poll app funcitonality for the purposes of the Blog Project:
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  test_was_published_recently_with_future_question(self):| The method should return a "False" value if the question's publication date is in the future | The initial test run returned a value of true which caused my automated test to Fail | Fail (see screenshot below)
+
+![Test1](readme/AT_1.png)
+
+The solution to resolve this test error was to update the method in the Question model to ensure it returns "False" for dates in the future, and "True" for dates in the past. Upon making this change you can see the updated test results below:
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  test_was_published_recently_with_future_question(self):| The method should return a "False" value if the question's publication date is in the future | As expected | Pass (see screenshot below)
+
+![Test2](readme/AT_2.png)
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  test_was_published_recently_with_old_question(self):| The method should return a "False" value if the question's publication date is older than one day | As expected | Pass 
+  test_was_published_recently_with_recent_question(self):| The method should return a "True" value if the question's publication date is within the last one day | As expected | Pass
+
+### 2. Testing The Poll's Class-Based View "IndexView"  
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  test_no_questions(self):| If no questions exist in the poll, the error message "No Polls exist" should be displayed | The method functions as expected | Pass 
+  test_past_question(self):| Questions with a published date in the past should be displayed on the polls index page | Method functions as expected | Pass
+  test_future_question(self):| Questions with a publication date in the *future* should not be displayed on the polls index page | Method functions as expected | Pass
+  test_future_question_and_past_question(self):| Only questions with a publication date in the past should be displayed on the poll index page, even if both past and future questions exist | Method functions as expected | Pass
+  test_two_past_questions(self):| The polls question index page should be able to display multiple questions simultaneously | Method functions as expected | Pass
 
 
 ## Browser Compatibility
