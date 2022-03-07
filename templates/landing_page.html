@@ -24,9 +24,9 @@
                                 <hr>
                             </Article>
                             <a class = "btn btn-light" href="{% url 'post_list' %}" role="button">Browse Articles</a>
-                            {% if user.is_authenticated %}
+                            <!-- {% if user.is_authenticated %} -->
                             <a class = "btn btn-light" href="{% url 'poll:index' %}" role="button">Vote in Polls</a>
-                            {% endif %}
+                            <!-- {% endif %} -->
                         </div>
                     </div>
                 </div>
