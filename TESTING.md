@@ -1,5 +1,22 @@
 # Testing
 
+## Automated Testing - Poll application:
+
+The tests below are part of the Automated testing procedures I have used to prove out the functionality of the primary functionality within the poll application:
+
+Test Case | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  Test the "was_published_recently()" method of the Question class-based model| The method should return a "False" value if the question's publication date is in the future | The initial test run returned a value of true which caused my automated test to Fail | Fail (see screenshot below)
+
+![Test1](readme/AT_1.png)
+
+The solution to resolve this test error was to update the method in the Question model to ensure it returns "False" for dates in the future, and "True" for dates in the past. Upon making this change you can see the updated test results below:
+
+Test Case | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  Test the "was_published_recently()" method of the Question class-based model| The method should return a "False" value if the question's publication date is in the future | As expected | Pass (see screenshot below)
+
+![Test2](readme/AT_2.png)
 
 ## Manual Testing - User Workflows:
 
