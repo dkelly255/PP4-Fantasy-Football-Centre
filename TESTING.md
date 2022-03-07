@@ -2,21 +2,26 @@
 
 ## Automated Testing - Poll application:
 
-The tests below are part of the Automated testing procedures I have used to prove out the functionality of the primary functionality within the poll application:
+The tests below are part of the Automated testing procedures I have used to prove out the functionality of the primary functionality within the poll application. Please note - as called out in the readme credits section, and as noted in the poll/tests.py module code comments, I have heavily utilised the testing section of the [official Django Documentation](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) in arriving at and building these tests, as they are effective at testing my poll app funcitonality for the purposes of the Blog Project:
 
-Test Case | Expected Result | Actual Result | Pass/Fail
+Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-  Test the "was_published_recently()" method of the Question class-based model| The method should return a "False" value if the question's publication date is in the future | The initial test run returned a value of true which caused my automated test to Fail | Fail (see screenshot below)
+  test_was_published_recently_with_future_question(self):| The method should return a "False" value if the question's publication date is in the future | The initial test run returned a value of true which caused my automated test to Fail | Fail (see screenshot below)
 
 ![Test1](readme/AT_1.png)
 
 The solution to resolve this test error was to update the method in the Question model to ensure it returns "False" for dates in the future, and "True" for dates in the past. Upon making this change you can see the updated test results below:
 
-Test Case | Expected Result | Actual Result | Pass/Fail
+Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-  Test the "was_published_recently()" method of the Question class-based model| The method should return a "False" value if the question's publication date is in the future | As expected | Pass (see screenshot below)
+  test_was_published_recently_with_future_question(self):| The method should return a "False" value if the question's publication date is in the future | As expected | Pass (see screenshot below)
 
 ![Test2](readme/AT_2.png)
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+  test_was_published_recently_with_old_question(self):| The method should return a "False" value if the question's publication date is older than one day | As expected | Pass 
+  test_was_published_recently_with_recent_question(self):| The method should return a "True" value if the question's publication date is within the last one day | As expected | Pass
 
 ## Manual Testing - User Workflows:
 
