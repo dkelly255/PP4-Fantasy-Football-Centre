@@ -2,17 +2,24 @@
 
 {% block content %}
 
-<form action="{% url 'poll:vote' question.id %}" method="post">
-    {% csrf_token %}
-    <fieldset>
-        <legend><h1>{{ question.question_text }}</h1></legend>
-        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-        {% for choice in question.choice_set.all %}
-            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-            <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
-        {% endfor %}
-    </fieldset>
-    <input type="submit" value="Vote">
-    </form>
+<div id="landing-page">
+    <div class="border border-white p-4 green" id="poll-page">
+            <form action="{% url 'poll:vote' question.id %}" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    <legend class="d-flex justify-content-center"><h1>{{ question.question_text }}</h1></legend>
+                    <hr>
+                    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+                    {% for choice in question.choice_set.all %}
+                        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+                    {% endfor %}
+                </fieldset>
+                <hr>
+                <input type="submit" value="Vote">
+            </form>
+    </div>
+</div>
+
 
 {%endblock%}
