@@ -17,7 +17,7 @@ In keeping with the Agile methodology I am using to manage this project, the iss
 
 ![Error resolution](readme/bug1_closed.png)
 
-### 2. CSS Styles
+### 2. CSS Formats not applying in Heroku Deployment
 
 When the site was originally developed around fantasy football content, prior to the change in appraoch to a Django blog, an additional bug was present where the CSS styles were not being properly applied in the live deployed (Heroku) site. 
 
@@ -35,17 +35,33 @@ The issue has also been closed in the Agile Methodology Issue Tracker in Github
 
 ![Bug2 - closed](readme/bug2-closed.png)
 
+### 3. Failure to Run Test Script
+Initially when starting my development of automated testing I encountered the below error in the command line when trying to start the test script:
+
+![Bug3](readme/bug6_testing_failure.png)
+
+Through researching on debugging this error and working with Code Institute Tutor Support, I discovered that this was due to the database connection - Automated testing must take place in the SQLite database, whereas my project was connected to the PostGreSQL database. 
+
+The solution was to disconnect my project from the production database, and connect to the test database by changing my `DATABASE` variable in `settings.py` from:
+
+```
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+```
+to the updated variable below:
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+```
+
 ## Unresolved Bugs
 
-
-
-### 3. Account created email notification
-
-Upon creation of a new account, a user will receive a notification that a confirmation email has been sent to the email they used during signup. However, currently the email is not sent or received. 
-
-![Bug3](readme/bug3-emailnotification.png)
-
-This bug is also currently under investigation for resolution
 
 ### 4. Add email address - username display error 
 
