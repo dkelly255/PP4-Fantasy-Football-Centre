@@ -66,7 +66,9 @@ A Procfile is also an integral element of the project structure - as per the ove
 
 ## Database Structure
 
-The site's content will utilise a simple database structure, consisting of two main models - one for the Articles about Django topics, and one for the comments that users can add to those articles
+### 1. "website" App
+
+The website app's content will utilise a simple database structure, consisting of two main models - one for the Articles about Django topics, and one for the comments that users can add to those articles
 
 The Entity Relationship Diagram for the Articles Table is shown below, with the field names, types, and key status. 
 
@@ -80,11 +82,33 @@ Note the Foreign Key will be the "Post" field, and that this will need to cascad
 
 ![Comments table ERD](readme/erd_comments.png)
 
-### - PostgreSQL:
+### 2. "poll" App
 
-The database system used to underpin the models is an application known as [PostgreSQL](https://www.postgresql.org/). 
+The poll app's content will also be implemented via a relatively simple database structure, consisting of two main models - one for the Poll Questions, and one for the choices that users can vote for under each of these questions
+
+The Entity Relationship Diagram for the `Questions` Table is shown below, with the field names, types, and key status:
+
+![Questions table ERD](readme/erd_questions.png)
+
+The Entity Relationship Diagram for the `Choices` Table is shown below, with the field names, types, key status, and additional information. 
+
+Note the Foreign Key will be the "Question" field, and that this will need to cascade on delete, so that when a Question is removed, the choices for that question are also removed, that is, the deletion is cascaded through the models.
+
+![Choices table ERD](readme/erd_choices.png)
+
+### - Production Database - PostgreSQL:
+
+The database system used for the models in production is an application known as [PostgreSQL](https://www.postgresql.org/). 
 
 As illustrated in this overview at [postgresqltutorial.com](https://www.postgresqltutorial.com/what-is-postgresql/) - PostgreSQL is an advanced, enterprise-class, open-source relational database system, which supports both relational querying, and is compatible with most popular programming languages (including Python) and is therefore ideal for the requirements of this project.
+
+### - Development Database - SQLite3:
+
+The database system used for the models in testing and development is an application known as [SQLite3](https://www.sqlite.org/index.html). 
+
+As illustrated in this overview at [Python.org](https://docs.python.org/3/library/sqlite3.html) - SQLite3 a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language, and is typically used in Django Applications for testing & development.
+
+Note - for more information, please see the `Testing` and `Bugs` readme sections for more detail on the two databases - SQLite3 and PostgrSQL and changing between the two.
 
 ### - Crispy Forms
 
