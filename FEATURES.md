@@ -82,7 +82,7 @@ The Nav bar contains links to the main functionality sections of the site, and c
 ![Nav](readme/features-nav.png)
 
 ### - Footer
-The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully resposive using media queries from large screens down to small mobile devices. It contains a combination of blue backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme.
+The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully resposive using media queries from large screens down to small mobile devices. It contains a combination of green backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme.
 
 ![Footer](readme/features-footer.png)
 
