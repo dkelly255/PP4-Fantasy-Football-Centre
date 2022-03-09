@@ -8,12 +8,18 @@ The strategic aim of the site is to address the following **User Stories**:
 ### **As a site user I can:**
 - Create and register for an account so that I can add my own comments and likes to the articles and content
 - View a list of the site's articles so that I can select one to read
-- View an organised list of artciles so that I can select which article I wish to view
+- View an organised list of articles so that I can select which article I wish to view
 - Open an article so that I can read the full content
 - Add my own comments to articles so that I can join in the discussion on current Django hot topics and issues
+- Add a like to an article so that I can provide my opinion on the content
+- Remove a like from an article so that I can correct the record if I have mistakenly added a like
+- View a list of the site's opinion poll questions so that I can view the issues being polled
+- View a list of the opinion poll question answer choices so that I can assess which answer best fits my perspective
+- Vote my own preference to an opinion poll question so that I can have my opinion counted in the poll
+
 
 ### **As a site administrator I can:**
-- Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the website
+- Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the website - both polls and articles
 - Create draft articles so that I can complete the articles at a later time
 - Approve or reject comments so that I can ensure no unacceptable comments are posted on the site
 
@@ -21,6 +27,8 @@ The strategic aim of the site is to address the following **User Stories**:
 
 - View a count of likes on each article so that I can guage general user sentiment on the site content
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
+- View the current voting results status of an opinion poll question so that I can assess user sentiment on polled issues
+
 
 
 ## 2. Scope
@@ -161,7 +169,7 @@ The [Lato](https://fonts.google.com/specimen/Lato?query=lato) font is also used 
 
 - Imagery
 
-I am using fantasy football related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of different Django-related pictures & diagrams. Some examples are shown below:
+I am using Django related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of different Django-related pictures & diagrams. Some examples are shown below:
 
 ![Imagery](readme/imagery.png)
 
