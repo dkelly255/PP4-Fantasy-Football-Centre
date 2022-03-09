@@ -4,12 +4,14 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Question, Choice
 
 # Create your views here.
 
-class IndexView(generic.ListView):
+
+class IndexView(LoginRequiredMixin, generic.ListView):
     template_name = 'poll/index.html'
     context_object_name = 'latest_question_list'
 

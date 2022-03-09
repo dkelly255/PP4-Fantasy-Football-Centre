@@ -76,16 +76,7 @@ By removing the reverse operator from the code, I was able to succesfully resolv
 
 ![Bug7](readme/bug7-closed.png)
 
-## Unresolved Bugs
-
-
-### 4. Add email address - username display error 
-
-If an administrator tries to add an email address for a previously registered user (who did not include an email address), the system will not recognise the username, but will only recognise the user "number" - for example, username "brian" has usernumber "3". The username is not recognised by the system, but the usernumber "3" will be recognised:
-
-![Bug4](readme/bug4-usernamedisplay.png)
-
-This bug is also currently under investigation for resolution
+In keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
 ### 5. Admin Panel display formatting errors
 
@@ -93,4 +84,28 @@ During development, the Administration panel display developed a bug where the s
 
 ![Bug5](readme/bug5-adminform.png)
 
-This bug is currently under investigation for resolution
+This bug may also have been caused by a combination of the debug flag and other settings in `settings.py` - as post-resolution of bug#2 above, the admin panel has displayed properly, I have been unable to recreate this error and the bug has not reoccurred. As in keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
+
+![Bug5](readme/bug5-closed-readme.png)
+
+### 6. Unauthorised users permitted to access Polls App
+
+The initial build of my poll application included a bug which enabled a user who was not logged in (and therefore unauthorised and unathenticated) to be able to access the polls application via manually adding `/poll` to the end of the homepage URL:
+
+![Bug6](readme/bug6-unauthorised-poll.png)
+
+As part of completing the [Django Tutorial](https://www.youtube.com/watch?v=3aVqWaLjqS4&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=7) series from [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g) I was able to understand that we can add authorisation & authentication controls to a class-based view by importing a `LoginRequiredMixin` from `django.contrib.auth.mixins`, and including it in the view for the relevant class. 
+
+Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `django.contrib.auth.mixins` to the `IndexView` class in `poll/views.py`, the bug was succesfully resolved, and a non-logged-in user is now re-routed to the `signin` page if trying to circumvent access controls via manual manipulation of the address bar & URL:
+
+![Bug6](readme/bug6-closed.png)
+
+As per the Agile development methodology used to deliver this project, this bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
+
+## Unresolved Bugs
+
+
+
+
+
+
