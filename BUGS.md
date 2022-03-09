@@ -100,11 +100,13 @@ Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `d
 
 ![Bug6](readme/bug6-closed.png)
 
-As per the Agile development methodology used to deliver this project, this bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
+I have also added the `LoginRequiredMixin` to the other appropriate views in `poll/views.py` (`DetailView` and `ResultsView` respectively) to prevent similar bugs from being present in the application.
+
+ As per the Agile development methodology used to deliver this project, this bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
 ## Unresolved Bugs
 
-
+There are no known unresolved bugs present in the application at the point in time of this release
 
 
 

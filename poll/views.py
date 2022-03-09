@@ -23,7 +23,7 @@ class IndexView(LoginRequiredMixin, generic.ListView):
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('pub_date')[:5]
 
 
-class DetailView(generic.DetailView):
+class DetailView(LoginRequiredMixin, generic.DetailView):
     model = Question
     template_name = 'poll/detail.html'
 
@@ -34,7 +34,7 @@ class DetailView(generic.DetailView):
         return Question.objects.filter(pub_date__lte=timezone.now())
 
 
-class ResultsView(generic.DetailView):
+class ResultsView(LoginRequiredMixin, generic.DetailView):
     model = Question
     template_name = 'poll/results.html'
 
