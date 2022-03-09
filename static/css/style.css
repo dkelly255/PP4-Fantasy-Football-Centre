@@ -27,11 +27,6 @@ body {
     background-color: #445261;
 }
 
-.main-bg {
-    /* background-color: #F9FAFC; */
-    
-}
-
 .card {
     border: none;
     background-color: transparent;
@@ -171,8 +166,10 @@ article {
 
 #welcome-title {
     display: flex;
-    justify-content:center;
-    color: white
+    justify-content:space-around;
+    color: #ffffff;
+    
+    
 }
 
 .icon {
@@ -192,4 +189,9 @@ article {
 
 #poll-page {
     min-width: 80vw;
+}
+
+.site-icon {
+    padding-left:10px;
+    padding-right:10px;
 }
