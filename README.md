@@ -4,6 +4,10 @@ Django Blog is a Python & Django based web application that will allow users to 
 ![Title](readme/home.png)
 
 
+Please note - I originally started this project as a Fantasy Football Content blog/website but during development it has subsequently evolved into a blog about Django - primarily due to the quantity of content and material I was researching in relation to learning the framework, I found that writing articles about Django helped contribute to, and accelerate, the learning process. 
+
+All elements of the Django project directory structure, and Heroku deployment have been renamed accordingly, with the exception of the overall project directory (which still bears the name `fantasyfootballcenter`)
+
 Below are the list of key sections of the Readme document to help users familiarize themselves with how the application was designed & developed, and how it operates. 
 
 Please select a section to review by clicking on the hyperlinks below:

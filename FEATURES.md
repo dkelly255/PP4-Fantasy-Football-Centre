@@ -26,6 +26,10 @@ This feature allows a user who is signed in to like (or unlike) an article by cl
 
 ![Like](readme/features-likeunlike.png)
 
+#### (iv) Create an account:
+
+#### (iv) Create a poll:
+
 ### - Locate Records:
 
 #### (i) Articles Page
@@ -34,6 +38,9 @@ The Articles page allows users to locate article/post records from the backend/d
 
 ![Home page](readme/features-articles.png)
 
+#### (ii) Polls Page
+
+
 ### - Display Records:
 
 #### (i) Article Display
@@ -41,6 +48,8 @@ The Articles page allows users to locate article/post records from the backend/d
 This feature enables the user to drill down into the contents of the site by clicking on the title of any article. Upon clicking, the detailed article view will load, showing the article's main image, followed by the textual content. This feature is the heart of the site functionality, and is where site visitors can browse & digest the Django-related content on a regular basis. The formatting is again put together using custom bootstrap, and the design ensures a positive UX by having an uncluttered, clear area of focus for the site visitor.
 
 ![Article](readme/features-article.png)
+
+#### (ii) Question Display
 
 ### - Edit Records:
 
@@ -54,6 +63,8 @@ The application also contains features which help with the management of the com
 
 ![Approve Comment](readme/features-approvecomment.png)
 
+#### (iii) Edit a Poll
+
 ### - Delete Records:
 
 #### (i) Delete an article
@@ -66,15 +77,19 @@ The functionality to delete a previously approved (or unapproved) comment is als
 
 ![Delete Comment](readme/features-deletecomment.png)
 
+### (iii) Delete a Question
+
+### (iv) Delete a Choice
+
 ## 2. Other Key Existing Features
 
 In addition to the core CRUD functionality & features described above, there are many additional key features underpinning the functionality of the Django Blog application, the most important of which are described & reviewed below:
 
 ### - Home Page
 
-The Home page is where visitors will initially land upon loading the site, and consists of a centralised welcome message, greeting the user, and informing them about the purpose of the site. The welcome message also contains a direct link to the site content/articles, allowing the user to quickly and seamlessly progress to the main site content.
+The Home page is where visitors will initially land upon loading the site, and consists of a centralised welcome message, greeting the user, and informing them about the purpose of the site. The welcome message also contains a direct link to the site content/articles, allowing the user to quickly and seamlessly progress to the main site content. A link to the polls feature is also included to allow the user to vote in the site opinion polls should they wish to do so.
 
-![Home page](readme/features-home.png)
+![Home page](readme/home.png)
 
 ### - Nav Bar
 The Nav bar contains links to the main functionality sections of the site, and contains a highlight to both show the user which page they are currently on, as well as highlighting when the user scrolls over a clickable link. The Nav bar is also fully responsive from ultra-wide down to mobile device screen sizes below 300 pixels in width, and contains the site tag line "Django Framework Perspectives" to the right hand side to help promote a positive UX for site visitors:
