@@ -64,9 +64,9 @@ The current packages and dependencies list for the project are shown below:
 A Procfile is also an integral element of the project structure - as per the overview in [medium.com](https://medium.com/@bennettgarner/deploying-django-to-heroku-procfile-static-root-other-pitfalls-e7ab8b2ba33b) - the Procfile is a file in the project's root directory that tells Heroku how the application should start and run - in this case, via a Gunicorn server.
 
 
-## Database Structure
+## Database Structure & Schema
 
-### 1. "website" App
+### 1. Website App
 
 The website app's content will utilise a simple database structure, consisting of two main models - one for the Articles about Django topics, and one for the comments that users can add to those articles
 
@@ -82,7 +82,7 @@ Note the Foreign Key will be the "Post" field, and that this will need to cascad
 
 ![Comments table ERD](readme/erd_comments.png)
 
-### 2. "poll" App
+### 2. Poll App
 
 The poll app's content will also be implemented via a relatively simple database structure, consisting of two main models - one for the Poll Questions, and one for the choices that users can vote for under each of these questions
 
