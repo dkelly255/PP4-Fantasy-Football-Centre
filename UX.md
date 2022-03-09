@@ -37,7 +37,7 @@ To deliver the scope of the project, an Agile approach to Software Development h
 
 A view of the Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
 
-![Title](readme/kanban.png)
+![Kanban board](readme/kanban.png)
 
 ## 3. Structure
 
