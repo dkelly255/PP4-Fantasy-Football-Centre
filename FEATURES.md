@@ -93,7 +93,18 @@ The application also contains features which help with the management of the com
 
 ![Approve Comment](readme/features-approvecomment.png)
 
-#### (iii) Edit a Poll
+#### (iii) Edit a Poll Question 
+
+This aspect of the "Edit" section of the applications CRUD featureset allows an administrator to edit the contents of a pre-existing poll question record. In order to complete this, navigate to the administration area location shown in the screenshot below (`Home/Poll/Questions/Question`), which will then allow the edit functionality to be applied to the question text and/or publication dates & times:
+
+![Edit Question](readme/edit-question.png)
+
+#### (iv) Edit a Poll Answer Choice
+
+Similarly, this aspect of the "Edit" section of the applications CRUD featureset allows an administrator to edit the contents of a pre-existing poll question answer choice. In order to complete this, navigate to the administration area location shown in the screenshot below (`Home/Poll/Choices/Choice`), which will then allow the edit functionality to be applied to the Answer text and/or the question it is linked to:
+
+![Edit Answer](readme/edit-answer.png)
+
 
 ### - Delete Records:
 
@@ -109,7 +120,15 @@ The functionality to delete a previously approved (or unapproved) comment is als
 
 ### (iii) Delete a Question
 
+In order to delete a pre-existing question record, simply navigate to the question section of the administration area shown in the screenshot below, and after selecting the appropriate question, the `Delete` button can clicked. This will trigger a warning to the user asking if they wish to confirm the deletion, and the record will be removed.
+
+![Delete Question](readme/delete-question.png)
+
 ### (iv) Delete a Choice
+
+In order to delete an answer choice from a question record, simply navigate to the question section of the administration area shown in the screenshot below, and after selecting the appropriate answer choice, the `Delete` button can clicked. This will trigger a warning to the user asking if they wish to confirm the deletion, and the record will be removed.
+
+![Delete Answer](readme/delete-answer.png)
 
 ## 2. Other Key Existing Features
 
