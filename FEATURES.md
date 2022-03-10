@@ -28,7 +28,24 @@ This feature allows a user who is signed in to like (or unlike) an article by cl
 
 #### (iv) Create an account:
 
-#### (iv) Create a poll:
+In order to create an account, Users should navigate to the "Signup" link in the nav bar, this will bring the user to the "Signup" page shown below, built using Crispy Forms, and consists of an invitation & instruction set to the user to direct them on how to create an account with the site.
+
+![Signup](readme/features-signup.png)
+
+There is an additional prompt on the signup form reminding the user that they should "Sign In" rather than "Sign Up" if they already have an account, and following that, there are four fields the user can fill in to supply the required details for creation of a new account - Username, Email, Password, and a confirmation of the password.
+
+#### (iv) Create a Poll Question:
+
+Another key element of the "Create" CRUD functionality of the site is the ability to create new poll questions. This can be completed by navigating to the administration area, and choosing the `add` option beside the `Questions` element of the `poll` app as shown in the screenshot below, then completing the required fields, `Question text`, and `Published Dates`, followed by selecting the `Save` option:
+
+![Add Question](readme/create-question.png)
+
+#### (iv) Create Answer Choices for a Poll Question:
+
+The next element of the "Create" CRUD functionality consists of the ability to create answers/choices for Existing Poll Questions. This can be completed by navigating to the administration area, and choosing the `add` option beside the `Choices` element of the `poll` app as shown below, then completing the required fields, `Question`, and `Choice Text`, followed by selecting the `Save` option.
+
+![Add Question](readme/create-answers.png)
+
 
 ### - Locate Records:
 
@@ -100,12 +117,6 @@ The Nav bar contains links to the main functionality sections of the site, and c
 The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully resposive using media queries from large screens down to small mobile devices. It contains a combination of green backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme.
 
 ![Footer](readme/features-footer.png)
-
-### - Signup Form
-The Sign Up form is built using Crispy Forms, and consists of a brief, but concise invitation & instruction set to the user to direct them on how to create an account with the site. There is an additional prompt on the form reminding the user that they should "Sign In" rather than "Sign Up" if they already have an account, and following that, there are four fields the user can fill in to supply the required details for creation of a new account - Username, Email, Password, and a confirmation of the password.
-
-
-![Signup](readme/features-signup.png)
 
 ### - Login Form
 
