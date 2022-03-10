@@ -51,12 +51,15 @@ The next element of the "Create" CRUD functionality consists of the ability to c
 
 #### (i) Articles Page
 
-The Articles page allows users to locate article/post records from the backend/database, and is constructed with customised Bootstrap HTML/CSS. This is where the site users will land upon asking to view the articles via either the nav bar (see below) or the "view articles" option on the home page (see above). The Articles page is designed to enable users to seamlessly locate & access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. The page is also fully responsive, utilising bootstrap responsiveness/scaling features to ensure a positive UX on devices of all screen-sizes. A snapshot of the home page feature is shown below:
+The Articles page allows users to locate article/post records from the backend/database, and is constructed with customised Bootstrap HTML/CSS. This is where the site users will land upon asking to view the articles via either the nav bar (see below) or the "view articles" option on the home page (see above). The Articles page is designed to enable users to seamlessly locate & access the site's content, via a combination of the intuitively laid out navigation bar & clickable links to site articles. The page is also fully responsive, utilising bootstrap responsiveness/scaling features to ensure a positive UX on devices of all screen-sizes. A snapshot of the feature is shown below:
 
 ![Home page](readme/features-articles.png)
 
 #### (ii) Polls Page
 
+A user can locate Poll questions via this feature, provided they are correctly authorised by signing in. Similar to the Article display page above, it is constructed with customised Bootstrap HTML/CSS and is where the site users will land upon asking to view the Polls via either the nav bar (see below) or the "polls" option on the home page (see above). The Polls page is designed to enable users to seamlessly locate & access the site's poll content, via a combination of the intuitively laid out navigation bar & clickable links to Poll questions. The page is also fully responsive, utilising bootstrap responsiveness/scaling features to ensure a positive UX on devices of all screen-sizes. A snapshot of the poll page feature is shown below:
+
+![Article](readme/features-poll.png)
 
 ### - Display Records:
 
@@ -66,7 +69,17 @@ This feature enables the user to drill down into the contents of the site by cli
 
 ![Article](readme/features-article.png)
 
-#### (ii) Question Display
+#### (ii) Answer Choice Display
+
+This feature enables the user to drill down into the available question answer choices by clicking on the individual poll question. Upon clicking, the detailed poll answer choice view will load, showing the Poll's question, followed by the available answers, against which a user can vote if they wish. This feature is also at the heart of the site functionality, and is where site visitors can give their opinions on the Django-related poll questions. The formatting is again put together using custom bootstrap, and the design ensures a positive UX by having an uncluttered, clear area of focus for the site visitor.
+
+![Article](readme/features-answers.png)
+
+#### (iii) Poll Results Display
+
+This feature enables the user to view a display of the results of the poll question they have voted in. It is accessed by voting in a poll question, and will automatically display to the user following their vote, showing each available answer choice, and a running total of the votes accumulated for each choice, together with an option to return to the home page, or to view the site articles:
+
+![Article](readme/features-results.png)
 
 ### - Edit Records:
 
