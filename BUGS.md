@@ -38,7 +38,7 @@ The issue has also been closed in the Agile Methodology Issue Tracker in Github
 ### 3. Failure to Run Test Script
 Initially when starting my development of automated testing I encountered the below error in the command line when trying to start the test script:
 
-![Bug3](readme/bug6_testing_failure.png)
+![Bug3](readme/bug3_testing_failure.png)
 
 Through researching on debugging this error and working with Code Institute Tutor Support, I discovered that this was due to the database connection - Automated testing must take place in the SQLite database, whereas my project was connected to the PostGreSQL database. 
 
@@ -66,15 +66,15 @@ This succesfully resolved the bug and enabled proceeding with the development of
 
 Upon first building the poll app, I noticed that the questions were appearing in reverse order:
 
-![Bug7](readme/bug7-question-sequence.png)
+![Bug4](readme/bug4-question-sequence.png)
 
  Whilst this was technically not impacting the operation of the site, I found that it was not the optimal User Experience, and wanted to have the questions displaying in numbered sequence. As per the credits section, I had originally used the [official Django Documentation](https://www.google.com/search?q=django+tutorial&oq=django+tutorial&aqs=chrome.0.69i59j0i512l2j69i60l3j69i65l2.1632j0j7&sourceid=chrome&ie=UTF-8) tutorial to develop the poll application, and after researching and troubleshooting I found that this was due to the reverse operator included in the `get_queryset()` method of the `IndexView()` class-based view in `poll/views.py`
 
 By removing the reverse operator from the code, I was able to succesfully resolve the bug, and have the question list display in sequential order, improving the user experience in the process:
 
-![Bug7](readme/indexview.png)
+![Bug4](readme/indexview.png)
 
-![Bug7](readme/bug7-closed.png)
+![Bug4](readme/bug4-closed.png)
 
 In keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
@@ -103,6 +103,21 @@ Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `d
 I have also added the `LoginRequiredMixin` to the other appropriate views in `poll/views.py` (`DetailView` and `ResultsView` respectively) to prevent similar bugs from being present in the application.
 
  As per the Agile development methodology used to deliver this project, this bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
+
+### 7. Fontawesome Icon Display Bugs
+
+During the surface plane development process, I encountered a bug whereby the fontawesome icons I wanted to use would not display properly on the site. Following the fontawesome instructions led to the display errors below:
+
+![Bug7](readme/bug7-icons.png)
+
+Debugging this issue, I found that by going back to check my previous projects, it looks like there now is an error in the element code specified on the Fontawesome website for embedding the icons. The fontawesome direction is below, where we are instructed to use the code `<i class="fa-solid fa-rocket"></i>` to embed the icon:
+
+![Bug7](readme/bug7-directions.png)
+
+However, this code does not work, and instead the code `<i class="fas fa-rocket"></i>` must be used. Upon updating the element code, the bug is resolved, and the icons will display correctly:
+
+![Bug7](readme/bug7-closed.png)
+
 
 ## Unresolved Bugs
 
