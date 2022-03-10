@@ -174,6 +174,24 @@ The administration area is a key feature of the Django Blog web application, and
 
 ![Admin](readme/features-admin.png)
 
+### - Login Notification Message
+
+To help with contrbuting to as positive a User Experience as possible, several Javascript-driven notification messages are also designed into the application. The first of these is triggered when a User Logs into the site, and is displayed in the screenshot below. The message will appear on the screen upon login, and will disappear automatically via Javascript programming after a pre-set time interval:
+
+![Messages](readme/message-login.png)
+
+### - Logout Notification Message
+
+The equivalent message displayed to a user when logging out is shown below:
+
+![Messages](readme/message-logout.png)
+
+### - Account Creation Notification Message
+
+The equivalent messages displayed to a user when creating a new account are also shown below:
+
+![Messages](readme/message-signup.png)
+
 ## 3. Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
 

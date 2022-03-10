@@ -83,7 +83,18 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
   test_past_question(self):| The question's text should be displayed for the detail view of a question with a published date in the past | Method functions as expected | Pass
 
 
-## 4. Browser Compatibility Testing
+## 4. Javascript Testing
+
+As part of my testing activities I have also designed and implemented the Javascript test procedures below. The Javascript content of the site is primarly related to the notification messaging features, and I felt that manual test procedures would best fit the functionality involved:
+
+No. |Test Case | Expected Result | Actual Result | Pass/Fail
+ ------------- |------------- | ------------- | ------------ | ------------- 
+  1 | User Login Message Notification | A user should be greeted with a `login success` notification message when they succesfully log in, the message should disappear again after the pre-set timeinterval in the Javascript function | The notification message appears and disappears as expected | Pass
+  2 | User Logout Message Notification | A user should be greeted with a `logout` notification message when they succesfully log out, the message should disappear again after the pre-set timeinterval in the Javascript function | The notification message appears and disappears as expected | Pass
+  3 | Account Creation Notification | A user should be greeted with a notification message when they succesfully create an account, the message should disappear again after the pre-set timeinterval in the Javascript function | The notification message appears and disappears as expected | Pass
+
+
+## 5. Browser Compatibility Testing
 
 The site's compatibility with different browsers and device sizes has been extensively tested to help ensure the best positive experience for site users & visitors, with some of the primary browser & device-size compatability screenshots being displayed below:
 
@@ -107,7 +118,7 @@ The site's compatibility with different browsers and device sizes has been exten
 
 ![Apple](readme/safari.png)
 
-## 5. Accessibility Testing
+## 6. Accessibility Testing
 
 The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessiblity deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, Accessibility. The pre-SEO adjusted Lighthouse scores (with SEO deficiency) are shown below for reference
 
