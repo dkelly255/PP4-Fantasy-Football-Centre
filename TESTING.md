@@ -6,7 +6,7 @@ The key tests below are part of the manual testing procedures I have followed to
 
 No. |Test Case | Expected Result | Actual Result | Pass/Fail
  ------------- |------------- | ------------- | ------------ | ------------- 
-  1 | Register an account | When clicking the `Sign Up` option, a user should be presented with the sign up form. Upon population of the required fields within the form, the user should receive a confirmation email if they have specified an email address during sign-up, and should have a newly created account. | User account created as expected | Pass
+  1 | Register an account | When clicking the `Sign Up` option, a user should be presented with the sign up form. Upon population of the required fields within the form, the user should  have a newly created account. | User account created as expected | Pass
   2 | Sign in | Upon clicking the `Login` option from the navigation bar, the `Sign In` form should display to the user, prompting a username & password. Upon entering these details, a user should be logged into the site| Log in option & form functions as expected | Pass
   3 | Open an article | When a user clicks on the `title` of an article, the detailed content of the article should load, together with the articles image, the excerpt, and the most recent time of editing - allowing a user to read the content of the article | Open article functionality operates as expected | Pass
   4 | Post a comment | Clicking into the `Leave a comment` section below an article should allow a user to compose & submit a comment in relation to the article content. Upon clicking of the `submit` button, a notification should be displayed to the user informing them that their comment has been submitted for approval | Post Comment functionality operates as expected | Pass
@@ -122,13 +122,13 @@ The site's compatibility with different browsers and device sizes has been exten
 
 The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessiblity deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, Accessibility. The pre-SEO adjusted Lighthouse scores (with SEO deficiency) are shown below for reference
 
-- Homepage Lighthouse Scores (pre-SEO adjustment):
+- Homepage Lighthouse Scores:
 
-![Chrome](readme/lighthouse_home.png)
+![Chrome](readme/lighthouse-home.png)
 
-- Articles Page (pre-SEO adjustment):
+- Articles Page:
 
-![Chrome](readme/lighthouse_articles.png)
+![Chrome](readme/lighthouse-articles.png)
 
 - Article Detail Display Page (pre-SEO adjustment):
 
@@ -141,3 +141,8 @@ The DevTools suite, and Lighthouse were used to audit the site's accessibility a
 - Signup Page (pre-SEO adjustment):
 
 ![Chrome](readme/lighthouse_signup.png)
+
+- Polls Page:
+
+![Chrome](readme/lighthouse-polls.png)
+

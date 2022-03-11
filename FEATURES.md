@@ -85,6 +85,8 @@ This feature enables the user to view a display of the results of the poll quest
 
 #### (i) Vote in a poll
 
+A user can vote in any of the available polls by navigating through the poll features detailed above, and then clicking on the `vote` button detailed in the screenshot below. This will edit the existing `choice` model record to increment its' `vote` attribute by one to reflect the new vote registered by the user:
+
 ![Vote in poll](readme/vote.png)
 
 #### (ii) Edit an article
