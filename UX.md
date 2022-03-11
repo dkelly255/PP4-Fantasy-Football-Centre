@@ -1,11 +1,18 @@
 # UX Planes
 I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
 ## 1. Strategy
-The strategy for the site is to offer a resource to users interested in the Django framework where they can obtain content in the form of Articles, and can have the ability to post their own comments on the subject matter to engage in discussion within a braoder community of Django users. 
+The strategy for the site is to offer a resource to users interested in the Django framework where they can obtain content in the form of Articles, and can have the ability to post their own comments on the subject matter to engage in discussion within a broader community of Django users. 
 
-The strategic aim of the site is to address the following **User Stories**:
+The strategic aim of the site is to deliver the following **Epics**:
 
-### **As a site user I can:**
+1. Epic #1 - Create a Blog Website App to allow users to locate, display, like and comment on articles about Django
+2. Epic #2 - Create a Poll App to allow users to express their preference and opinions on topics relevant to the Website App content
+
+With these two broad epics as the overall strategic goal of the project, we are then able to refine the epics into the following **User Stories**:
+
+### **Epic #1 - Blog Website App - User Story Mapping:**
+
+### *As a site user I can:*
 - Create and register for an account so that I can add my own comments and likes to the articles and content
 - View a list of the site's articles so that I can select one to read
 - View an organised list of articles so that I can select which article I wish to view
@@ -13,23 +20,32 @@ The strategic aim of the site is to address the following **User Stories**:
 - Add my own comments to articles so that I can join in the discussion on current Django hot topics and issues
 - Add a like to an article so that I can provide my opinion on the content
 - Remove a like from an article so that I can correct the record if I have mistakenly added a like
+
+### *As a site administrator I can:*
+- Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the blog website app
+- Create draft articles so that I can complete the articles at a later time
+- Approve or reject comments so that I can ensure no unacceptable comments are posted on the site
+
+### *As both a site user and administrator I can:*
+
+- View a count of likes on each article so that I can guage general user sentiment on the site content
+- View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
+
+### **Epic #2 - Poll App - User Story Mapping:**
+
+### *As a site user I can:*
+
 - View a list of the site's opinion poll questions so that I can view the issues being polled
 - View a list of the opinion poll question answer choices so that I can assess which answer best fits my perspective
 - Vote my own preference to an opinion poll question so that I can have my opinion counted in the poll
 
+### *As a site administrator I can:*
+- Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the poll app
+- Create draft polls so that I can complete the poll at a later time
 
-### **As a site administrator I can:**
-- Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the website - both polls and articles
-- Create draft articles so that I can complete the articles at a later time
-- Approve or reject comments so that I can ensure no unacceptable comments are posted on the site
+### *As both a site user and administrator I can:*
 
-### **As both a site user and administrator I can:**
-
-- View a count of likes on each article so that I can guage general user sentiment on the site content
-- View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 - View the current voting results status of an opinion poll question so that I can assess user sentiment on polled issues
-
-
 
 ## 2. Scope
 
