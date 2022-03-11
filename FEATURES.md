@@ -20,9 +20,9 @@ This additional functionality allows a user to add comments to the site articles
 
 ![Comment](readme/features-comment.png)
 
-#### (iii) Add a Like/Unlike to an article:
+#### (iii) Add a Like to an article:
 
-This feature allows a user who is signed in to like (or unlike) an article by clicking on the like/heart icon under each article. When a user clicks the button it will increment the like count by one, and when a user clicks the icon a second time, it will decrement the like counter by one to "unlike" the previous like. When the article has been liked, the heart icon will turn solid red, and if it is unliked, the icon will return to its hollow red outline format:
+This feature allows a user who is signed in to add a like an article by clicking on the like/heart icon under each article. When a user clicks the button it will increment the like count by one. When the article has been liked, the heart icon will turn solid red:
 
 ![Like](readme/features-likeunlike.png)
 
@@ -83,23 +83,27 @@ This feature enables the user to view a display of the results of the poll quest
 
 ### - Edit Records:
 
-#### (i) Edit an article
+#### (i) Vote in a poll
+
+![Vote in poll](readme/vote.png)
+
+#### (ii) Edit an article
 Additionally, the "Change Post" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
 
 ![Edit Article](readme/features-editarticle.png)
 
-#### (ii) Approve a comment
+#### (iii) Approve a comment
 The application also contains features which help with the management of the comments posted on articles in the site. Before any comment can be publicly displayed, it must be edited (specifically - its status must be changed to "approved" by an administrator), to minimize the risk of offensive or illegal comments being posted. When an administrator or superuser wants to approve a comment, he or she can simply select the comment from the menu, check the appropriate selection box, and then select "approve comments" from the dropdown menu:
 
 ![Approve Comment](readme/features-approvecomment.png)
 
-#### (iii) Edit a Poll Question 
+#### (iv) Edit a Poll Question 
 
 This aspect of the "Edit" section of the applications CRUD featureset allows an administrator to edit the contents of a pre-existing poll question record. In order to complete this, navigate to the administration area location shown in the screenshot below (`Home/Poll/Questions/Question`), which will then allow the edit functionality to be applied to the question text and/or publication dates & times:
 
 ![Edit Question](readme/edit-question.png)
 
-#### (iv) Edit a Poll Answer Choice
+#### (v) Edit a Poll Answer Choice
 
 Similarly, this aspect of the "Edit" section of the applications CRUD featureset allows an administrator to edit the contents of a pre-existing poll question answer choice. In order to complete this, navigate to the administration area location shown in the screenshot below (`Home/Poll/Choices/Choice`), which will then allow the edit functionality to be applied to the Answer text and/or the question it is linked to:
 
@@ -113,18 +117,24 @@ The "Delete an article feature" grants a user with the correct permissions the a
 
 ![Delete Article](readme/features-deletearticle.png)
 
-### (ii) Delete a comment
+#### (ii) Delete a Like from an article:
+
+This feature allows a user who is signed in to delete a like they may have previously added to an article in error by re-clicking on the like/heart icon under each article. When a user clicks the button to unlike the article, it will decrement the like count by one and delete the previously added like from the article. When the article has been unliked, the heart icon will revert back to hollow/red outline:
+
+![Like](readme/features-likeunlike.png)
+
+### (iii) Delete a comment
 The functionality to delete a previously approved (or unapproved) comment is also present in the Django Blog web application - via this option a super user or administrator can select the comment they wish to delete by checking the appropriate selection box, and simply select "delete selected comments" from the dropdown menu:
 
 ![Delete Comment](readme/features-deletecomment.png)
 
-### (iii) Delete a Question
+### (iv) Delete a Question
 
 In order to delete a pre-existing question record, simply navigate to the question section of the administration area shown in the screenshot below, and after selecting the appropriate question, the `Delete` button can clicked. This will trigger a warning to the user asking if they wish to confirm the deletion, and the record will be removed.
 
 ![Delete Question](readme/delete-question.png)
 
-### (iv) Delete a Choice
+### (v) Delete a Choice
 
 In order to delete an answer choice from a question record, simply navigate to the question section of the administration area shown in the screenshot below, and after selecting the appropriate answer choice, the `Delete` button can clicked. This will trigger a warning to the user asking if they wish to confirm the deletion, and the record will be removed.
 

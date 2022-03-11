@@ -55,13 +55,13 @@ There are many principles and features common to Agile approaches, including, Sc
 
 A view of the Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
 
-### (i) Kanban Board #1 - User Stories
+### (i) Kanban Board #1 - User Stories [Link](https://github.com/dkelly255/pp4-django-blog/projects/1)
 
 ![Kanban board](readme/kanban.png)
 
 With the equivalent Kanban board for the debugging exercises having been brought through similar phases of completion including - "Not Assigned", "In Progress", and "Closed" columns as follows:
 
-### (ii) Kanban Board #2 - Bugs & Debugging
+### (ii) Kanban Board #2 - Bugs & Debugging [Link](https://github.com/dkelly255/pp4-django-blog/projects/2)
 
 ![Kanban board](readme/kanban-bugs.png)
 
