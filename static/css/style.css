@@ -1,7 +1,20 @@
-body {
-    /* background-color: #F9FAFC; */
-    background-image: url(https://res.cloudinary.com/dkelly25/image/upload/v1645985430/static/images/background2.c1fb751e6a5d.jpg);
+html, body {
+    height:100%;
+}
+
+body > footer {
+    position:sticky;
+    top:100vh;
+}
+
+html {    
+    background: url(https://res.cloudinary.com/dkelly25/image/upload/v1645985430/static/images/background2.c1fb751e6a5d.jpg) no-repeat center center fixed;
     background-size: cover;
+
+}
+
+body {
+    background-color: transparent;
 }
 
 .brand {
