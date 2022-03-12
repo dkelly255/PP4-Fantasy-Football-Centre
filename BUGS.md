@@ -17,23 +17,36 @@ In keeping with the Agile methodology I am using to manage this project, the iss
 
 ![Error resolution](readme/bug1_closed.png)
 
-### 2. CSS Formats not applying in Heroku Deployment
+### 2. Notification Messages glitch when creating an account
 
-When the site was originally developed around fantasy football content, prior to the change in appraoch to a Django blog, an additional bug was present where the CSS styles were not being properly applied in the live deployed (Heroku) site. 
+The original code for the messages functionality unfortunately contained a bug which would cause the `confirmation email sent` message to stay on the screen until a user changed pages, as illustrated in the screenshot below:
 
-![Bug2](readme/bug2-deployedcssstyles.png)
+![Bug2](readme/bug2-message-signup.png)
 
-The styles were, however, correct in the Development Environment (Gitpod) site:
+This bug was caused by an error in the original Javascript code for the messages functionality illustrated in the code block below:
+```
+setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2500);
+```
 
-![Bug2](readme/bug2-deployedcssstylesgit.png)
+This code would operate correctly in situations where only a single message would be displayed/removed - but would not remove more than one message due to the use of the `document.getElementById('msg)` Javascript selector (which will select a singular element with iterating over multiple messages in scenarios where multiples exist).
 
-This bug was caused by the debug flag being set to "True" which was preventing the static CSS formats from being correctly recognised by the Heroku application on deployment. Following a change in the debug flag, the bug was resolved: 
+I was able to debug and resolve the issue by updating my code to use a multiple element selector `document.querySelectorAll()` and iterating over multiple messages in scenarios where multiples exist, updating the Javascript function to reflect the below structure:
 
-![Bug2 - solution](readme/bug2-solution.png)
+```
+setTimeout(function () {
+            let messages = document.querySelectorAll('.alert');
+            messages.forEach(message => {
+                let alert = new bootstrap.Alert(message);
+                alert.close();
+            });
+        }, 2500);
+```
 
-The issue has also been closed in the Agile Methodology Issue Tracker in Github
-
-![Bug2 - closed](readme/bug2-closed.png)
+Which now ensures multiple messages will disappear in situations where they are displayed - the issue has also been closed in the Agile Methodology Issue Tracker in Github
 
 ### 3. Failure to Run Test Script
 Initially when starting my development of automated testing I encountered the below error in the command line when trying to start the test script:
