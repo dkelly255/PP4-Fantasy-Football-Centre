@@ -131,6 +131,22 @@ However, this code does not work, and instead the code `<i class="fas fa-rocket"
 
 ![Bug7](readme/bug7-closed.png)
 
+### 8. Heroku Javascript/Static File bug - messaging
+
+When breaking out my javascript code into a separate file `base.js` to keep separate from my `base.html` template, I encountered a bug where the mesage functionality would continue to behave as expected in the development server/githubport-8000 browser, but would behave differently in the Heroku deployment. Specifically, the notification messages would appear as expected in Heroku, but would not disappear again despite being specified to do so by the javascript code in `base.js` via the code below:
+
+```
+<script src="../static/js/base.js"></script>
+```
+
+Through working to debug & understand this issue I discovered that this was due to the fact that I had failed to use the jinja templating syntax when detailing the `source` attribute of the `script` element linking to my `base.js` file. Due to the way Heroku & Github source static files, this was creating the situation where the app appeared to function as expected in the development environment, but would glitch in the production/heroku deployment.
+
+Updting the code to reflect the Jinja temaplting syntax per the code block below has resolved the issue, and the live heroku deployment messaging functionality now behaves as expected. I have closed the bug on the kanban tracker:
+
+```
+<script src="<script src="{% static 'js/base.js' %}"></script>"></script>
+```
+
 
 ## Unresolved Bugs
 
