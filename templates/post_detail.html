@@ -40,11 +40,11 @@
                                 {% csrf_token %}
                                 {% if liked %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like" aria-label="like button"><i class="fas fa-heart"></i></button>
                                 
                                 {% else %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like" aria-label="like button"><i class="far fa-heart"></i></button>
 
                                 {% endif %}
 
