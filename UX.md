@@ -5,12 +5,12 @@ The strategy for the site is to offer a resource to users interested in the Djan
 
 The strategic aim of the site is to deliver the following **Epics**:
 
-1. Epic #1 - Create a Blog Website App to allow users to locate, display, like and comment on articles about Django
-2. Epic #2 - Create a Poll App to allow users to express their preference and opinions on topics relevant to the Website App content
+1. Epic 1 - Create a Blog Website App to allow users to locate, display, like and comment on articles about Django
+2. Epic 2 - Create a Poll App to allow users to express their preference and opinions on topics relevant to the Website App content
 
 With these two broad epics as the overall strategic goal of the project, we are then able to refine the epics into the following **User Stories**:
 
-### **Epic #1 - Blog Website App - User Story Mapping:**
+### **Epic 1 - Blog Website App - User Story Mapping:**
 
 ### *As a site user I can:*
 - Create and register for an account so that I can add my own comments and likes to the articles and content
@@ -31,7 +31,7 @@ With these two broad epics as the overall strategic goal of the project, we are 
 - View a count of likes on each article so that I can guage general user sentiment on the site content
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 
-### **Epic #2 - Poll App - User Story Mapping:**
+### **Epic 2 - Poll App - User Story Mapping:**
 
 ### *As a site user I can:*
 
@@ -55,13 +55,13 @@ There are many principles and features common to Agile approaches, including, Sc
 
 A view of the Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
 
-### (i) Kanban Board #1 - User Stories [Link](https://github.com/dkelly255/pp4-django-blog/projects/1)
+### (i) Kanban Board 1 - User Stories [(Link)](https://github.com/dkelly255/pp4-django-blog/projects/1)
 
 ![Kanban board](readme/kanban.png)
 
 With the equivalent Kanban board for the debugging exercises having been brought through similar phases of completion including - "Not Assigned", "In Progress", and "Closed" columns as follows:
 
-### (ii) Kanban Board #2 - Bugs & Debugging [Link](https://github.com/dkelly255/pp4-django-blog/projects/2)
+### (ii) Kanban Board 2 - Bugs & Debugging [(Link)](https://github.com/dkelly255/pp4-django-blog/projects/2)
 
 ![Kanban board](readme/kanban-bugs.png)
 

@@ -242,7 +242,7 @@ As described in detail in this helpful [article](https://www.sumologic.com/gloss
 
 Below you can see details on the CRUD features and funcitonality of the Django Blog application, with examples and illustrations of each key operation:
 
-### - Create Records:
+### - <u>Create Records</u>:
 
 #### (i) Create an article:
 
@@ -283,7 +283,7 @@ The next element of the "Create" CRUD functionality consists of the ability to c
 ![Add Question](readme/create-answers.png)
 
 
-### - Locate Records:
+### - <u>Locate Records</u>:
 
 #### (i) Articles Page
 
@@ -297,7 +297,7 @@ A user can locate Poll questions via this feature, provided they are correctly a
 
 ![Article](readme/features-poll.png)
 
-### - Display Records:
+### - <u>Display Records</u>:
 
 #### (i) Article Display
 
@@ -317,7 +317,7 @@ This feature enables the user to view a display of the results of the poll quest
 
 ![Article](readme/features-results.png)
 
-### - Edit Records:
+### - <u>Edit Records</u>:
 
 #### (i) Vote in a poll
 
@@ -348,7 +348,7 @@ Similarly, this aspect of the "Edit" section of the applications CRUD featureset
 ![Edit Answer](readme/edit-answer.png)
 
 
-### - Delete Records:
+### - <u>Delete Records</u>:
 
 #### (i) Delete an article
 The "Delete an article feature" grants a user with the correct permissions the ability to remove previously published articles from the site's content. This feature ensures that the site content can be maintained & kept current, and would allow reacting to any unexpected or accidental misinformation or errors that may require an article to be deleted from the site. The superuser/admin must check the box to the left of the article they wish to delete, and then select the delete option from the drop-down menu & confirm.
