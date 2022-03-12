@@ -28,12 +28,12 @@ The strategy for the site is to offer a resource to users interested in the Djan
 
 The strategic aim of the site is to deliver the following **Epics**:
 
-1. Epic #1 - Create a Blog Website App to allow users to locate, display, like and comment on articles about Django
-2. Epic #2 - Create a Poll App to allow users to express their preference and opinions on topics relevant to the Website App content
+1. Epic 1 - Create a Blog Website App to allow users to locate, display, like and comment on articles about Django
+2. Epic 2 - Create a Poll App to allow users to express their preference and opinions on topics relevant to the Website App content
 
 With these two broad epics as the overall strategic goal of the project, we are then able to refine the epics into the following **User Stories**:
 
-### **Epic #1 - Blog Website App - User Story Mapping:**
+### **Epic 1 - Blog Website App - User Story Mapping:**
 
 ### *As a site user I can:*
 - Create and register for an account so that I can add my own comments and likes to the articles and content
@@ -54,7 +54,7 @@ With these two broad epics as the overall strategic goal of the project, we are 
 - View a count of likes on each article so that I can guage general user sentiment on the site content
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 
-### **Epic #2 - Poll App - User Story Mapping:**
+### **Epic 2 - Poll App - User Story Mapping:**
 
 ### *As a site user I can:*
 
@@ -78,13 +78,13 @@ There are many principles and features common to Agile approaches, including, Sc
 
 A view of the Kanban board with the user stories having been brought through "To Do", "In Progress", and "Done" columns as follows:
 
-### (i) Kanban Board #1 - User Stories [Link](https://github.com/dkelly255/pp4-django-blog/projects/1)
+### (i) Kanban Board 1 - User Stories [Link](https://github.com/dkelly255/pp4-django-blog/projects/1)
 
 ![Kanban board](readme/kanban.png)
 
 With the equivalent Kanban board for the debugging exercises having been brought through similar phases of completion including - "Not Assigned", "In Progress", and "Closed" columns as follows:
 
-### (ii) Kanban Board #2 - Bugs & Debugging [Link](https://github.com/dkelly255/pp4-django-blog/projects/2)
+### (ii) Kanban Board 2 - Bugs & Debugging [Link](https://github.com/dkelly255/pp4-django-blog/projects/2)
 
 ![Kanban board](readme/kanban-bugs.png)
 
@@ -288,7 +288,7 @@ setTimeout(function () {
 
 This code would operate correctly in situations where only a single message would be displayed/removed - but would not remove more than one message due to the use of the `document.getElementById('msg)` Javascript selector (which will select a singular element with iterating over multiple messages in scenarios where multiples exist).
 
-I was able to debug and resolve the issue by updating my code to use a multiple element selector `document.querySelectorAll()` and iterating over multiple messages in scenarios where multiples exist, updating the Javascript function to reflect the below structure:
+Through working with my mentor I was able to debug and resolve the issue by updating my code to use a multiple element selector `document.querySelectorAll()` and iterating over multiple messages in scenarios where multiples exist, updating the Javascript function to reflect the below structure:
 
 ```
 setTimeout(function () {
@@ -351,7 +351,7 @@ During development, the Administration panel display developed a bug where the s
 
 ![Bug5](readme/bug5-adminform.png)
 
-This bug may also have been caused by a combination of the debug flag and other settings in `settings.py` - as post-resolution of bug#2 above, the admin panel has displayed properly, I have been unable to recreate this error and the bug has not reoccurred. As in keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
+This bug may also have been caused by a combination of the debug flag and other settings in `settings.py` - as since updating the debug flag in `settings.py`, the admin panel has displayed properly, I have been unable to recreate this error and the bug has not reoccurred. As in keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
 ![Bug5](readme/bug5-closed-readme.png)
 
@@ -393,9 +393,9 @@ When breaking out my javascript code into a separate file `base.js` to keep sepa
 <script src="../static/js/base.js"></script>
 ```
 
-Through working to debug & understand this issue I discovered that this was due to the fact that I had failed to use the jinja templating syntax when detailing the `source` attribute of the `script` element linking to my `base.js` file. Due to the way Heroku & Github source static files, this was creating the situation where the app appeared to function as expected in the development environment, but would glitch in the production/heroku deployment.
+Through working to debug & understand this issue with Code Institute Tutor Support I discovered that this was due to the fact that I had failed to use the jinja templating syntax when detailing the `source` attribute of the `script` element linking to my `base.js` file. Due to the way Heroku & Github source static files, this was creating the situation where the app appeared to function as expected in the development environment, but would glitch in the production/heroku deployment.
 
-Updting the code to reflect the Jinja temaplting syntax per the code block below has resolved the issue, and the live heroku deployment messaging functionality now behaves as expected. I have closed the bug on the kanban tracker:
+Updating the code to reflect the Jinja temaplting syntax per the code block below has resolved the issue, and the live heroku deployment messaging functionality now behaves as expected. I have closed the bug on the kanban tracker:
 
 ```
 <script src="<script src="{% static 'js/base.js' %}"></script>"></script>
