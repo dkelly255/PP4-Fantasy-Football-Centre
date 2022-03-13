@@ -147,3 +147,19 @@ The DevTools suite, and Lighthouse were used to audit the site's accessibility a
 
 ![Chrome](readme/lighthouse-polls.png)
 
+## 7. Compliance Testing
+
+This section will review the testing activities undertaken to ensure compliant code throughout the project, including the HTML code passing through the official W3C validator, CSS code passing through the official Jigsaw validator, Javascript code passing through the `jshint es version:8` linter, and that the Python code is consistent in style and conforms to the PEP8 style guide:
+
+### (i) HTML Validation
+
+### (ii) CSS Validation [(Jigsaw)](https://jigsaw.w3.org/css-validator/validator)
+
+![CSS](readme/validation-css.png) 
+
+### (iii) Javascript Validation [(Jshint)](https://jshint.com/)
+
+![JS](readme/validation-js.png)
+
+### (iv) Python Validation
+
