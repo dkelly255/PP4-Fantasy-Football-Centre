@@ -2,26 +2,6 @@
 
 {% block content %}
 
-<!-- <div id="landing-page">
-    
-        <div id="container">
-            <div class="border border-white p-4 green" id="poll-page">
-
-                <h1>{{ question.question_text }}</h1>
-
-                <ul>
-                {% for choice in question.choice_set.all %}
-                    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-                {% endfor %}
-                </ul>
-
-                <a class = "btn btn-light" href="{% url 'poll:detail' question.id %}">Vote again?</a>
-                <a class = "btn btn-light" href="{% url 'home' %}">Return Home</a>
-
-            </div>
-        </div>
-</div> -->
-
 <div id="landing-page">
     <div id="container">
         <div class="row">
