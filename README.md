@@ -400,6 +400,18 @@ Updating the code to reflect the Jinja temaplting syntax per the code block belo
 ```
 <script src="<script src="{% static 'js/base.js' %}"></script>"></script>
 ```
+### 9. Missing Alt Texts on Cloudinary images
+
+During my [accessibility testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#6-accessibility-testing) activities, the `post_detail.html` page would continually receive below 90% accessibility scores from Lighthouse audits due to missing `alt text` tags on image elements.
+
+In my first attempts at improving initial accessiblilty, I had performed a thorough scrub of all `.html` templates and `img` elements, ensuring that the `alt` attributes were all present, however I would still receive the `images missing alt text` warnings below:
+
+![Bug9](readme/bug9-accessibility.png)
+
+The images driving the missing `alt` attributes warnings were actually the images uploaded to Cloudinary as part of creating the articles, and therefore were not reachable by templating or injection via jinja tags. 
+
+Through researching how to resolve this I eventually discovered that the solution was to add the `alt` tags indirectly through the `Cloudinary` interface, shown in the screenshot below:
+
 
 
 ## Unresolved Bugs
