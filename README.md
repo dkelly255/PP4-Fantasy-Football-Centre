@@ -343,6 +343,47 @@ By removing the reverse operator from the code, I was able to succesfully resolv
 
 ![Bug4](readme/bug4-closed.png)
 
+Note this bug subsequently also caused a knock-on impact which I did not catch until re-running my automated tests later in the development process - and required an update to my `Automated Testing` for this view, specifically the [`test_two_past_questions(self):`](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#ii-testing-the-polls-view-indexview) test. 
+
+Originally i had setup the test as follows:
+
+```
+def test_two_past_questions(self):
+        """
+        The questions index page may display multiple questions.
+        """
+        question1 = create_question(question_text="Past question 1.", days=-30)
+        question2 = create_question(question_text="Past question 2.", days=-5)
+        response = self.client.get(reverse('poll:index'))
+        self.assertQuerysetEqual(
+            response.context['latest_question_list'],
+            [question2, question1],
+        )
+```
+
+However, as I had now updated the view to change the sequential order of the questions, my test would now fail with an assertion below:
+
+```
+AssertionError: Lists differ: [<Question: Past question 1.>, <Question: Past question 2.>] != [<Question: Past question 2.>, <Question: Past question 1.>]
+
+First differing element 0:
+<Question: Past question 1.>
+<Question: Past question 2.>
+
+- [<Question: Past question 1.>, <Question: Past question 2.>]
+?                           ^                             ^
+
++ [<Question: Past question 2.>, <Question: Past question 1.>]
+?                           ^                             ^
+```
+
+Through troubleshooting and using the `Rubber Duck` method, I was able to retrace my steps through all elements of my code & determine that in order to get the automated test apssing again I simply required an update to the question sequence in the test to the below:
+
+```
+question1 = create_question(question_text="Past question 1.", days=-5)
+question2 = create_question(question_text="Past question 2.", days=-30)
+```
+
 In keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
 ### 5. Admin Panel display formatting errors
