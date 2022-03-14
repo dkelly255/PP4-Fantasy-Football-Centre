@@ -69,7 +69,7 @@ class PostDetail(View):
 
         return render(request, template, context)
 
-    
+
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):

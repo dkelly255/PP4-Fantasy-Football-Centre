@@ -11,7 +11,7 @@ from .models import Question, Choice
 # Create your views here.
 
 
-class IndexView(LoginRequiredMixin, generic.ListView):
+class IndexView(generic.ListView):
     template_name = 'poll/index.html'
     context_object_name = 'latest_question_list'
 
@@ -23,7 +23,7 @@ class IndexView(LoginRequiredMixin, generic.ListView):
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('pub_date')[:5]
 
 
-class DetailView(LoginRequiredMixin, generic.DetailView):
+class DetailView(generic.DetailView):
     model = Question
     template_name = 'poll/detail.html'
 
@@ -34,9 +34,10 @@ class DetailView(LoginRequiredMixin, generic.DetailView):
         return Question.objects.filter(pub_date__lte=timezone.now())
 
 
-class ResultsView(LoginRequiredMixin, generic.DetailView):
+class ResultsView(generic.DetailView):
     model = Question
     template_name = 'poll/results.html'
+
 
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
@@ -55,4 +56,3 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('poll:results', args=(question.id,)))
-
