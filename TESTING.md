@@ -153,6 +153,48 @@ This section will review the testing activities undertaken to ensure compliant c
 
 ### (i) HTML Validation
 
+All HTML pages have been passed through the official W3C validator without any issues, (with the exception of the [article detail]() page - see context below) with accompanying screenshots of the output below:
+
+- Home Page
+
+![HTML Validation](readme/html-validation-home-page.png)
+
+- Articles Index
+
+![HTML Validation](readme/html-validation-articles-index.png)
+
+- Article Detail^
+
+^Please note - errors number one and two below are driven by the summernote text interface and are known & understood. The `100%` attribute on the `width` of the `img` element is required to keep the image at 100% of the width of it's parent element for formatting purposes. The `No p element in scope` error number two should not be displaying, as I have taken the full contents of the html invovled & audited them in my text editor and can see that every `<p>` element has a corresponding `</p>` closure:
+
+![HTML Validation](readme/html-validation-article-detail.png)
+
+^Also please see [Bug #9](https://github.com/dkelly255/pp4-django-blog/issues/27) for a note on how adding images via the `content` field in the Django admin panel's content field when writing articles may also cause further issues driven by missing `alt text` attributes that cannot be directly injected to the HTML via jinja or templating without the use of a special API which is outside the scope of this project.
+
+- Polls Index
+
+![HTML Validation](readme/html-validation-polls-index.png)
+
+- Poll Detail
+
+![HTML Validation](readme/html-validation-polls-detail.png)
+
+- Poll Results
+
+![HTML Validation](readme/html-validation-polls-results.png)
+
+- Signup Page
+
+![HTML Validation](readme/html-validation-signup.png)
+
+- Login Page
+
+![HTML Validation](readme/html-validation-signin.png)
+
+- Logout page
+
+![HTML Validation](readme/html-validation-logout-page.png)
+
 ### (ii) CSS Validation [(Jigsaw)](https://jigsaw.w3.org/css-validator/validator)
 
 ![CSS](readme/validation-css.png) 
