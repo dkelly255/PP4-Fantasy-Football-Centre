@@ -400,6 +400,9 @@ Updating the code to reflect the Jinja temaplting syntax per the code block belo
 ```
 <script src="<script src="{% static 'js/base.js' %}"></script>"></script>
 ```
+
+## Unresolved Bugs
+
 ### 9. Missing Alt Texts on Cloudinary images
 
 During my [accessibility testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#6-accessibility-testing) activities, the `post_detail.html` page would continually receive below 90% accessibility scores from Lighthouse audits due to missing `alt text` tags on image elements.
@@ -412,11 +415,11 @@ The images driving the missing `alt` attributes warnings were actually the image
 
 Through researching how to resolve this I eventually discovered that the solution was to add the `alt` tags indirectly through the `Cloudinary` interface, shown in the screenshot below:
 
+![Bug9](readme/bug9-cloudinary.png)
 
+However, this still would not allow the alt text to dial through into the Django html - further research on this issue led me to believe that an API will be required (Cloudinary's [Get Single Resource](https://cloudinary.com/documentation/admin_api#get_the_details_of_a_single_resource) API) as per this [section](https://cloudinary.com/blog/m16y_make_your_cloudinary_images_more_accessible#setup_and_retrieval_of_alt_text_with_api) of Cloudinary's documentation.
 
-## Unresolved Bugs
-
-There are no known unresolved bugs present in the application at the point in time of this release
+In keeping with an Agile software development methodology,  and considering that the accessibility deficiency is understood and acknowledged, and will not invalidate the majority of the site content, I have decided to de-prioiritise this task in favour of other more project-critical activities which still require completion prior to deadline, and will revisit in future when time is less of a constraint.
 
 # SECTION 5: DEPLOYMENT
 
