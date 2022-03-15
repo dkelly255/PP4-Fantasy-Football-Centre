@@ -207,7 +207,7 @@ All HTML pages have been passed through the official W3C validator without any i
 
 This section will summarise the Python validation activities carried out across the various python files consisting the structure of the application, using the [PEP8 Online Check](http://pep8online.com/) utility:
 
-#### **(a) Main Project Directory:** PP4-DJANGO-BLOG/fantasyfootballcentre:
+#### **(a) Main Project Directory:** [PP4-DJANGO-BLOG/fantasyfootballcentre](fantasyfootballcentre):
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
