@@ -220,23 +220,23 @@ No. |Python File | PEP8 Status | Screenshot
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
-1 | [admin.py](poll/admin.py) | No issues | [link]()
-2 | [apps.py](poll/apps.py) | No issues | [link]()
-3 | [models.py](poll/models.py) | No issues | [link]()
-4 | [tests.py](poll/tests.py) | No issues | [link]()
-5 | [urls.py](poll/urls.py) | No issues | [link]()
-6 | [views.py](poll/views.py) | No issues | [link]()
+1 | [admin.py](poll/admin.py) | No issues | [link](readme/pep8/pep8-poll-admin.png)
+2 | [apps.py](poll/apps.py) | No issues | [link](readme/pep8/pep8-poll-apps.png)
+3 | [models.py](poll/models.py) | No issues | [link](readme/pep8/pep8-poll-models.png)
+4 | [tests.py](poll/tests.py) | No issues | [link](readme/pep8/pep8-poll-tests.png)
+5 | [urls.py](poll/urls.py) | No issues | [link](readme/pep8/pep8-poll-urls.png)
+6 | [views.py](poll/views.py) | No issues | [link](readme/pep8/pep8-poll-views.png)
 
 #### **(c) Website App Directory:** PP4-DJANGO-BLOG/website:
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
-1 | admin.py | No issues | [link]()
-2 | apps.py | No issues | [link]()
-3 | forms.py | No issues | [link]()
-4 | models.py | No issues | [link]()
-5 | tests.py | No issues | [link]()
-6 | urls.py | No issues | [link]()
-7 | views.py | No issues | [link]()
+1 | [admin.py](website/admin.py) | No issues | [link](readme/pep8/pep8-website-admin.png)
+2 | [apps.py](website/apps.py) | No issues | [link](readme/pep8/pep8-website-apps.png)
+3 | [forms.py](website/forms.py) | No issues | [link](readme/pep8/pep8-website-forms.png)
+4 | [models.py](website/models.py) | No issues | [link](readme/pep8/pep8-website-models.png)
+5 | [tests.py](website/tests.py) | No issues | [link](readme/pep8/pep8-website-tests.png)
+6 | [urls.py](website/urls.py) | No issues | [link](readme/pep8/pep8-website-urls.png)
+7 | [views.py](website/views.py) | No issues | [link](readme/pep8/pep8-website-views.png)
 
 ^

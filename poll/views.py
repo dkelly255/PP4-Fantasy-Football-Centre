@@ -20,7 +20,8 @@ class IndexView(generic.ListView):
         Return the last five published questions (not including those set to be
         published in the future).
         """
-        return Question.objects.filter(pub_date__lte=timezone.now()).order_by('pub_date')[:5]
+        return Question.objects.filter(
+            pub_date__lte=timezone.now()).order_by('pub_date')[:5]
 
 
 class DetailView(generic.DetailView):
@@ -55,4 +56,5 @@ def vote(request, question_id):
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
-        return HttpResponseRedirect(reverse('poll:results', args=(question.id,)))
+        return HttpResponseRedirect(
+            reverse('poll:results', args=(question.id,)))
