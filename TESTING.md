@@ -211,7 +211,7 @@ This section will summarise the Python validation activities carried out across 
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
-1 | [asgi.py](/workspace/pp4-django-blog/fantasyfootballcentre/asgi.py) | No issues | [link]()
+1 | [asgi.py](fantasyfootballcentre/asgi.py) | No issues | [link]()
 2 | settings.py | No issues | [link]()
 3 | urls.py | No issues | [link]()
 4 | wsgi.py | No issues | [link]()
