@@ -216,7 +216,7 @@ No. |Python File | PEP8 Status | Screenshot
 3 | [urls.py](fantasyfootballcentre/urls.py) | No issues | [link](readme/pep8/pep8-project-urls.png)
 4 | [wsgi.py](fantasyfootballcentre/wsgi.py) | No issues | [link](readme/pep8/pep8-project-wsgi.png)
 
-#### **(b) Poll App Directory:** PP4-DJANGO-BLOG/poll:
+#### **(b) Poll App Directory:** [PP4-DJANGO-BLOG/poll](poll):
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
@@ -227,7 +227,7 @@ No. |Python File | PEP8 Status | Screenshot
 5 | [urls.py](poll/urls.py) | No issues | [link](readme/pep8/pep8-poll-urls.png)
 6 | [views.py](poll/views.py) | No issues | [link](readme/pep8/pep8-poll-views.png)
 
-#### **(c) Website App Directory:** PP4-DJANGO-BLOG/website:
+#### **(c) Website App Directory:** [PP4-DJANGO-BLOG/website](website):
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
