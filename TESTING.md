@@ -72,8 +72,8 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
   test_no_questions(self):| If no questions exist in the poll, the error message "No Polls exist" should be displayed | The method functions as expected | Pass 
   test_past_question(self):| Questions with a published date in the past should be displayed on the polls index page | Method functions as expected | Pass
   test_future_question(self):| Questions with a publication date in the *future* should not be displayed on the polls index page | Method functions as expected | Pass
-  test_future_question_and_past_question(self):| Only questions with a publication date in the past should be displayed on the poll index page, even if both past and future questions exist. (Please note: see [Bug #4](https://github.com/dkelly255/pp4-django-blog#4-poll-app-questions-displaying-in-reverse-order) for additional context on how this test was updated to account for changes in the `IndexView`) | Method functions as expected | Pass
-  test_two_past_questions(self):| The polls question index page should be able to display multiple questions simultaneously | Method functions as expected | Pass
+  test_future_question_and_past_question(self):| Only questions with a publication date in the past should be displayed on the poll index page, even if both past and future questions exist. | Method functions as expected | Pass
+  test_two_past_questions(self):| The polls question index page should be able to display multiple questions simultaneously. (Please note: see [Bug #4](https://github.com/dkelly255/pp4-django-blog#4-poll-app-questions-displaying-in-reverse-order) for additional context on how this test was updated to account for changes in the `IndexView`) | Method functions as expected | Pass
 
 ### (iii). Testing The Poll's View "DetailView"  
 
@@ -153,7 +153,7 @@ This section will review the testing activities undertaken to ensure compliant c
 
 ### (i) HTML Validation
 
-All HTML pages have been passed through the official W3C validator without any issues, (with the exception of the [article detail]() page - see context below) with accompanying screenshots of the output below:
+All HTML pages have been passed through the official W3C validator without any issues, (with the exception of the [article detail](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#i-html-validation) page - see context below) with accompanying screenshots of the output below:
 
 - Home Page
 

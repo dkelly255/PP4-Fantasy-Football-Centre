@@ -394,8 +394,6 @@ During development, the Administration panel display developed a bug where the s
 
 This bug may also have been caused by a combination of the debug flag and other settings in `settings.py` - as since updating the debug flag in `settings.py`, the admin panel has displayed properly, I have been unable to recreate this error and the bug has not reoccurred. As in keeping with the Agile development methodology used to deliver this project, the bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
-![Bug5](readme/bug5-closed-readme.png)
-
 ### 6. Unauthorised users permitted to access Polls App
 
 The initial build of my poll application included a bug which enabled a user who was not logged in (and therefore unauthorised and unathenticated) to be able to access the polls application via manually adding `/poll` to the end of the homepage URL:
@@ -408,7 +406,7 @@ Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `d
 
 ![Bug6](readme/bug6-closed.png)
 
-I have also added the `LoginRequiredMixin` to the other appropriate views in `poll/views.py` (`DetailView` and `ResultsView` respectively) to prevent similar bugs from being present in the application.
+I have also added the `LoginRequiredMixin` to the other appropriate views in `poll/views.py` (`DetailView` and `ResultsView` respectively) to prevent similar bugs from being present in the application. Note however, as per [Bug #4](https://github.com/dkelly255/pp4-django-blog#4-poll-app-questions-displaying-in-reverse-order) and my [Automated Testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#ii-testing-the-polls-view-indexview) of the Poll App's `IndexView` - this created a knock-on impact of failing my original automated test for multiple question displays, which required a test code update & re-test to keep the code from failing the tests.
 
  As per the Agile development methodology used to deliver this project, this bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
