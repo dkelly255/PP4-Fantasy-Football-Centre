@@ -211,21 +211,21 @@ This section will summarise the Python validation activities carried out across 
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
-1 | [asgi.py](fantasyfootballcentre/asgi.py) | No issues | [link]()
-2 | settings.py | No issues | [link]()
-3 | urls.py | No issues | [link]()
-4 | wsgi.py | No issues | [link]()
+1 | [asgi.py](fantasyfootballcentre/asgi.py) | No issues | [link](readme/pep8/pep8-project-asgi.png)
+2 | [settings.py](fantasyfootballcentre/settings.py) | Two Issues - E501 Line Length^ | [link](readme/pep8/pep8-project-settings.png)
+3 | [urls.py](fantasyfootballcentre/urls.py) | No issues | [link](readme/pep8/pep8-project-urls.png)
+4 | [wsgi.py](fantasyfootballcentre/wsgi.py) | No issues | [link](readme/pep8/pep8-project-wsgi.png)
 
 #### **(b) Poll App Directory:** PP4-DJANGO-BLOG/poll:
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
-1 | admin.py | No issues | [link]()
-2 | apps.py | No issues | [link]()
-3 | models.py | No issues | [link]()
-4 | tests.py | No issues | [link]()
-5 | urls.py | No issues | [link]()
-6 | views.py | No issues | [link]()
+1 | [admin.py](poll/admin.py) | No issues | [link]()
+2 | [apps.py](poll/apps.py) | No issues | [link]()
+3 | [models.py](poll/models.py) | No issues | [link]()
+4 | [tests.py](poll/tests.py) | No issues | [link]()
+5 | [urls.py](poll/urls.py) | No issues | [link]()
+6 | [views.py](poll/views.py) | No issues | [link]()
 
 #### **(c) Website App Directory:** PP4-DJANGO-BLOG/website:
 
@@ -238,3 +238,5 @@ No. |Python File | PEP8 Status | Screenshot
 5 | tests.py | No issues | [link]()
 6 | urls.py | No issues | [link]()
 7 | views.py | No issues | [link]()
+
+^
