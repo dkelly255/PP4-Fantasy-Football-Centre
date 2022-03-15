@@ -462,7 +462,7 @@ In keeping with an Agile software development methodology,  and considering that
 
 # SECTION 5: DEPLOYMENT
 
-The application is deployed via Heroku, and a link to the live deployment can be found by clicking [here](https://fantasyfootballcentre.herokuapp.com/)
+The application is deployed via Heroku, and a link to the live deployment can be found by clicking [here](https://p4-django-blog.herokuapp.com/)
 
 An extended list of detailed steps & instructions for deployment is covered in the section below:
 
@@ -480,7 +480,7 @@ The Steps for deployment to Heroku are as follows - Please note these steps are 
 
 ![New App creation](readme/heroku-newapp.png)
 
-- Choose a name for the application - I have chosen Fantasy Football Centre but please note that the name must be unique.
+- Choose a name for the application - I have chosen P4-Django-Blog but please note that the name must be unique.
 
 ![App name selection](readme/heroku-name.png)
 
@@ -517,11 +517,19 @@ and a button for the deployed link.
 ## Local Deployment
 Additionally - if you would like to make a local copy of the Github repository, you can clone it by typing the following command in your IDE terminal:
 
-- `git clone https://github.com/dkelly255/fantasy-football-centre.git`
+- `git clone https://github.com/dkelly255/pp4-django-blog.git`
 
 Alternatively, if you use Gitpod, you can click the button below to generate a new workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dkelly255/fantasy-football-centre)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dkelly255/pp4-django-blog)
+
+Note, please ensure that you install all of the required dependencies and packages, this can be performed by entering the following command into the terminal, 
+
+```
+pip3 install -r requirements.txt
+```
+
+Also please ensure to have an environment file correctly setup (`env.py`) with the following variables - `DATABASE_URL` , `SECRET_KEY` , `CLOUDINARY_URL` , and `DEVELOPMENT`
 
 
 # SECTION 6: CREDITS
