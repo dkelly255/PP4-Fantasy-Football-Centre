@@ -239,4 +239,4 @@ No. |Python File | PEP8 Status | Screenshot
 6 | [urls.py](website/urls.py) | No issues | [link](readme/pep8/pep8-website-urls.png)
 7 | [views.py](website/views.py) | No issues | [link](readme/pep8/pep8-website-views.png)
 
-^
+^Note - Lines 167 and 132 in settings.py are generating an `E501 code` for line length (exceeding 79 characters by one character & three characters respectively) - this is known and understood, and per [this](https://peps.python.org/pep-0008/) section of the [PEP8](https://www.python.org/) guidelines I have made a jusdgement call that applying the guideline in these two specific instance `would potentially make the code less readable, even for someone who is used to reading code that follows this PEP.`
