@@ -12,7 +12,7 @@ No. |Test Case | Expected Result | Actual Result | Pass/Fail
   4 | Post a comment | Clicking into the `Leave a comment` section below an article should allow a user to compose & submit a comment in relation to the article content. Upon clicking of the `submit` button, a notification should be displayed to the user informing them that their comment has been submitted for approval | Post Comment functionality operates as expected | Pass
   5 | Like an article | Clicking the `like` icon under an article should increment the like count on the article by one. This functionality should only be available to users who are signed in - Users who are not signed in should be unable to add a like to an article. | Like functionality operates as expected for users - and will only permit likes from signed in users | Pass
   6 | Unlike an article | Clicking the `like` icon under an article for a *second time* should *decrement* the like count on the article by one. This functionality should only be available to users who are signed in - Users who are not signed in should be unable to remove (or add) a like to an article. | Functionality operates as expected| Pass
-  7 | Sign out | When logged in and clicking on the `Logout` option from the navigation bar, a user should be presented with the `Sign Out` screen - asking the user for a confirmation that they do wish to sign out, and a `Sign Out` button which the user can click to formalise their Sign Our | Functionality operates as expected  | Pass
+  7 | Sign out | When logged in and clicking on the `Logout` option from the navigation bar, a user should be presented with the `Sign Out` screen - asking the user for a confirmation that they do wish to sign out, and a `Sign Out` button which the user can click to formalise their Sign Out | Functionality operates as expected  | Pass
   8 | Navigation Bar & Signin Status | The Navigation bar should have two statuses - firstly, signed in, where the menu options should consist of `Home`, `Polls`, and `Logout`... and secondly, signed out, where the menu options should consist of `Home`, `Signup`, and `Login` | Functionality operates as expected | Pass
   9 | View Poll Question List | A user (when signed in) should be able to view a list of the available poll questions when clicking on the `View Polls` button from the landing page, or from the "Polls" option on the Nav bar | Functionality operates as expected | Pass
   10 | View Poll Question Answer Choices | A user should be able to view a list of the available answer choices for a poll question when clicking on the `Question` Link button from the polls index page | Functionality operates as expected | Pass
@@ -205,3 +205,36 @@ All HTML pages have been passed through the official W3C validator without any i
 
 ### (iv) Python Validation
 
+This section will summarise the Python validation activities carried out across the various python files consisting the structure of the application, using the [PEP8 Online Check](http://pep8online.com/) utility:
+
+#### **(a) Main Project Directory:** PP4-DJANGO-BLOG/fantasyfootballcentre:
+
+No. |Python File | PEP8 Status | Screenshot 
+------------- |------------- | ------------- | ------------ 
+1 | [asgi.py](/workspace/pp4-django-blog/fantasyfootballcentre/asgi.py) | No issues | [link]()
+2 | settings.py | No issues | [link]()
+3 | urls.py | No issues | [link]()
+4 | wsgi.py | No issues | [link]()
+
+#### **(b) Poll App Directory:** PP4-DJANGO-BLOG/poll:
+
+No. |Python File | PEP8 Status | Screenshot 
+------------- |------------- | ------------- | ------------ 
+1 | admin.py | No issues | [link]()
+2 | apps.py | No issues | [link]()
+3 | models.py | No issues | [link]()
+4 | tests.py | No issues | [link]()
+5 | urls.py | No issues | [link]()
+6 | views.py | No issues | [link]()
+
+#### **(c) Website App Directory:** PP4-DJANGO-BLOG/website:
+
+No. |Python File | PEP8 Status | Screenshot 
+------------- |------------- | ------------- | ------------ 
+1 | admin.py | No issues | [link]()
+2 | apps.py | No issues | [link]()
+3 | forms.py | No issues | [link]()
+4 | models.py | No issues | [link]()
+5 | tests.py | No issues | [link]()
+6 | urls.py | No issues | [link]()
+7 | views.py | No issues | [link]()
