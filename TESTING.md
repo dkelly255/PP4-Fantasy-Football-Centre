@@ -4,9 +4,9 @@
 
 The key tests below are part of the manual testing procedures I have followed to prove out the functionality of the primary User-based workflows available within the application:
 
-No. |Test Case | Expected Result | Actual Result | Pass/Fail
- ------------- |------------- | ------------- | ------------ | ------------- 
-  1 | Register an account | When clicking the `Sign Up` option, a user should be presented with the sign up form. Upon population of the required fields within the form, the user should  have a newly created account. | User account created as expected | Pass
+No. |Test Case | Expected Result | Actual Result | Pass/Fail | Link
+ ------------- |------------- | ------------- | ------------ | ------------- | ------------- 
+  1 | Register an account | When clicking the `Sign Up` option, a user should be presented with the sign up form. Upon population of the required fields within the form, the user should  have a newly created account. | User account created as expected | Pass | [Screenshot](readme/testing/test1-signup.png)
   2 | Sign in | Upon clicking the `Login` option from the navigation bar, the `Sign In` form should display to the user, prompting a username & password. Upon entering these details, a user should be logged into the site| Log in option & form functions as expected | Pass
   3 | Open an article | When a user clicks on the `title` of an article, the detailed content of the article should load, together with the articles image, the excerpt, and the most recent time of editing - allowing a user to read the content of the article | Open article functionality operates as expected | Pass
   4 | Post a comment | Clicking into the `Leave a comment` section below an article should allow a user to compose & submit a comment in relation to the article content. Upon clicking of the `submit` button, a notification should be displayed to the user informing them that their comment has been submitted for approval | Post Comment functionality operates as expected | Pass
