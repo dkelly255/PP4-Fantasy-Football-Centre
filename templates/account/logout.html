@@ -7,20 +7,20 @@
 {% block content %}
 <div class="container">
 
-    <div class="signup-out">
+    
 
-        <div class="green border border-white pb-4 mt-5">
+        <div class="px-3 green border border-white text-light pb-4 my-4">
 
 
                 <div class="row">
-                    <div class="col-md-8 mt-3 offset-md-2">
+                    <div class="col-md-9 mt-3 offset-md-1">
                         <h3>{% trans "Sign Out" %}</h3>
 
                         <p>{% trans 'Are you sure you want to sign out of your session on Django Blog?' %}</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 mt-3 offset-md-2">
+                    <div class="col-md-9 mt-3 offset-md-1">
 
                         <form method="post" action="{% url 'account_logout' %}">
                             {% csrf_token %}
@@ -35,7 +35,7 @@
 
         </div>
 
-    </div>
+    
 
 </div>
 {% endblock %}

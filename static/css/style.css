@@ -130,14 +130,14 @@ body {
 }
 
 .link {
-    color: #23BBBB;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
 }
 
 .link:hover,
 .link:active {
     color: #fff;
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 .btn-like {
@@ -177,11 +177,6 @@ article {
 
 .green {
     background-color: #198754d8;
-}
-
-.signup-out {
-    height: 80vh;
-    color: white;
 }
 
 #poll-page {
