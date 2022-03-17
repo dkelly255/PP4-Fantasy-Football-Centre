@@ -41,25 +41,25 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active color text-white" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active color text-white" aria-current="page" href="{% url 'home' %}">Home<i class="fas fa-street-view text-dark ps-2"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active color text-white" aria-current="page" href="{% url 'post_list' %}">Articles</a>
+                        <a class="nav-link active color text-white" aria-current="page" href="{% url 'post_list' %}">Articles<i class="fas fa-book text-dark ps-2"></i></a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'poll:index' %}">Polls</a>
+                        <a class="nav-link text-white" href="{% url 'poll:index' %}">Polls<i class="fas fa-clipboard text-dark ps-2"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout<i class="fas fa-sign-out-alt text-dark ps-2"></i></a>
                     </li>
                     
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'account_signup' %}">Signup</a>
+                        <a class="nav-link text-white" href="{% url 'account_signup' %}">Signup<i class="fas fa-address-card text-dark ps-2"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link text-white" href="{% url 'account_login' %}">Login<i class="fas fa-door-open text-dark ps-2"></i></a>
                     </li>
                     
                     

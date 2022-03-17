@@ -9,7 +9,7 @@
     <div class="px-3 green border border-white pb-4 my-4 text-light">
         <div class="row">
             <div class="col-md-9 mt-3 offset-md-1">
-                <h3>{% trans "Sign Up" %}</h3>
+                <h3 class="py-4">{% trans "Sign Up" %}<i class="fas fa-address-card text-dark ps-3"></i></h3>
                 <p>{% blocktrans %}Welcome to Django Blog - Do you already have an account? Then please <a
                         class="link" href="{{ login_url }}">SIGN IN</a> instead.{% endblocktrans %}</p>
             </div>
@@ -22,7 +22,7 @@
                     {% if redirect_field_value %}
                     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                     {% endif %}
-                    <button class="btn btn-dark" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                    <button class="btn btn-dark mt-2" type="submit">{% trans "Sign Up" %} &raquo;</button>
                 </form>
             </div>
         </div>
