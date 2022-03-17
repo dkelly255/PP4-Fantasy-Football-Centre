@@ -1,13 +1,29 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container text-light text-center">
     <div class="row">
-        <div class="container green border d-flex justify-content-center align-items-center mt-4 mx-1">
-            <i class="rocket fas fa-rocket text-dark p-3"></i> 
-                <h1 class="pb-3 pt-3 pe-2 text-center">Django Blog </h1><h1 class="pb-3 pt-3 text-light font-weight-bold">|Welcome|</h1>
-            <i class="rocket fas fa-rocket text-dark p-3"></i> 
+        <div class="col green border d-flex justify-content-center align-items-center mt-4 mb-1 mx-1">
+            <i class="rocket fas fa-rocket text-dark pe-3"></i> 
+                <h1 class="pb-3 pt-3 pe-2 text-center text-dark">Django Blog </h1><h1 class="pb-3 pt-3 text-light font-weight-bold">|Welcome|</h1>
+            <i class="rocket fas fa-rocket text-dark ps-2"></i> 
         </div>
     </div>
+    
+    <div class="row">
+        <div class="col green border m-1">
+            <h2>Site Overview</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col green border m-1">
+            <h3>Articles</h3>
+        </div>
+        <div class="col green border m-1">
+            <h3>Polls</h3>
+        </div>
+    </div>
+
 </div>
 {% endblock %}
