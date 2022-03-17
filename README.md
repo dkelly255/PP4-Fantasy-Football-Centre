@@ -558,6 +558,8 @@ I also must acknowledge and highly recommend the [Official Django Forum](https:/
     
 4. Support with trying to resolve a [101 - Network Unavilable error](https://forum.djangoproject.com/t/oserror-at-password-reset-errno-101-network-is-unreachable/12348/2)
 
+As part of the process of learning how to use Bootstrap, I must also highly recommended the linked [BootStrap Tutorial Series](https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR) from the YouTube channel [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg). I found this series of 10+ tutorial videos to be hugely helpful in learning how to use Bootstrap to construct responsive, mobile-first designs and was able to utilise several ideas and techniques from the series in constructing my home page specifically, and the site generically.
+
 ## Content
 - The "Model, View, Template" explanation in the "Structure" section of the User Experience overview is sourced from [javatpoint.com](https://www.javatpoint.com/django-mvt)
 - In the "What is Django article", the [Official Django Documentation](https://www.djangoproject.com/), and the [Django Wikipedia Page](https://www.djangoproject.com/) are both used and accredited to provide article content
