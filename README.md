@@ -1,7 +1,7 @@
 # Django Blog: README
 Django Blog is a Python & Django based web application that will allow users to browse, read, and comment on articles which cover many aspects and perspectives on the Django Web Development framework:
 
-![Title](readme/home.png)
+![Title](readme/home_updated.png)
 
 
 Please note - I originally started this project as a Fantasy Football Content blog/website but during development it has subsequently evolved into a blog about Django - primarily due to the quantity of content and material I was researching in relation to learning the framework, I found that writing articles about Django helped contribute to, and accelerate, the learning process. 
