@@ -186,6 +186,16 @@ The administration area is a key feature of the Django Blog web application, and
 
 ![Admin](readme/features-admin.png)
 
+### - Default Article Picture/Image functionality
+
+This feature considers aspects of defensive design principles to ensure that in a situation where an article is created **without** the specification of an image, a default image will be used instead to help preserve and improve the integrity of the surface UX plane. Below is an illustration of how the article would be created without specifying an image:
+
+![Default article picture](readme/features-default-article-create.png)
+
+The default image is sourced from pexels, and is fully acknowledged in the credits section, whilst the code was originally adapted from the Code Institute blog walkthrough lesson, the image below shows how the article would look in the blog index page with the deafult/placeholder picture instead of an administrator-specified image accompanying the article:
+
+![Default article picture](readme/features-deafult-image.png)
+
 ### - Login Notification Message
 
 To help with contrbuting to as positive a User Experience as possible, several Javascript-driven notification messages are also designed into the application. The first of these is triggered when a User Logs into the site, and is displayed in the screenshot below. The message will appear on the screen upon login, and will disappear automatically via Javascript programming after a pre-set time interval:
