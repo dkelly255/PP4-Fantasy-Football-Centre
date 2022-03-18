@@ -7,6 +7,8 @@ from django.urls import reverse
 from .models import Question
 
 
+# Credits: Automated testing sourced from official Django
+# Documentation tutorials - please see readme credits section
 # Create your tests here.
 class QuestionModelTests(TestCase):
 

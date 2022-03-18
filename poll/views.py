@@ -11,7 +11,7 @@ from .models import Question, Choice
 # Create your views here.
 
 
-class IndexView(generic.ListView):
+class IndexView(LoginRequiredMixin, generic.ListView):
     template_name = 'poll/index.html'
     context_object_name = 'latest_question_list'
 
@@ -24,7 +24,7 @@ class IndexView(generic.ListView):
             pub_date__lte=timezone.now()).order_by('pub_date')[:5]
 
 
-class DetailView(generic.DetailView):
+class DetailView(LoginRequiredMixin, generic.DetailView):
     model = Question
     template_name = 'poll/detail.html'
 
@@ -35,7 +35,7 @@ class DetailView(generic.DetailView):
         return Question.objects.filter(pub_date__lte=timezone.now())
 
 
-class ResultsView(generic.DetailView):
+class ResultsView(LoginRequiredMixin, generic.DetailView):
     model = Question
     template_name = 'poll/results.html'
 
