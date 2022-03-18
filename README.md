@@ -220,7 +220,7 @@ The [Lato](https://fonts.google.com/specimen/Lato?query=lato) font is also used 
 
 - Imagery
 
-I am using Django related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of different Django-related pictures & diagrams. Some examples are shown below:
+I am using Django related imagery throughout the Surface layer of the site, to help with promoting a positive User Experience for the target audience. The imagery is primarily consisted of different Django-related pictures & diagrams. The site's background image is also selected due to it's relevance to coding, and having a similar color palette that matches with the site's surface. The background image was sourced from [pexels.com](https://www.pexels.com/) and is fully acknowledged in the credits section of this readme document. Some examples of the site imagery are shown below:
 
 ![Imagery](readme/imagery.png)
 
@@ -233,6 +233,14 @@ As part of the surface layer of the website's user experience, I wanted to use a
 A deeper dive on the Green color scheme allows many different shades, hues, and opacities depending on the user's needs, for themajority of the site's surface I am using the default shade of green (code #198754 & its' derivations) - shown below:
 
 ![Imagery](readme/bootstrap_color_green.png)
+
+- Iconography
+
+I have utilised the functionality available through the [Fontawesome](https://fontawesome.com/) suite to embed the site's icons, this helps emphasise important elements of the site, and to help with generating a positive emotional response with the site users. 
+
+Additionally I have added a favicon, which displays at the top of all the site's pages via the head element of the HTML to help with the User Experience & create a professional feel when browsing:
+    
+![alt text](static/images/favicon.png)
 
 # SECTION 2: FEATURES
 
@@ -573,6 +581,8 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
 - The Automated testing of the poll app is based heavily on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) automated testing tutorials
 
 ## Media
-- The site background image was sourced from [Pexels](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/) and is free to use with no attribution required
-- The "What is Django" article content was sourced from both the [Official Django Website](https://www.djangoproject.com/), as well as the [Django Wikipedia Page](https://en.wikipedia.org/wiki/Django_(web_framework))
+- The site `background image` was sourced from [Pexels](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/) and is free to use with no attribution required
+- The `Default Article` image was also sourced from [Pexels](https://www.pexels.com/photo/person-holding-smartphone-while-using-laptop-1181244/) and is free to use with no attribution required
+- The site fonts were taken from [Google Fonts](https://fonts.google.com/)
+- All `Icons`, including the `Favicon` used throughout the site were sourced from [FontAwesome](https://fontawesome.com/)
 
