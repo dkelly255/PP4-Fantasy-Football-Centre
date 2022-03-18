@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<!-- Credits: Note this code is adapted & customised from the CI Blog LMS lesson -->
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- Article Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -14,6 +14,7 @@
                     <div class="card-body card-body-background border border-success border-4">
                         <div class="image-container">
                             {% if "placeholder" in post.featured_image.url %}
+                            <!-- Different default image placeholder used here to differentiate & individualise the site/code -->
                             <img alt="default" class="card-img-top"
                                 src="https://res.cloudinary.com/dkelly25/image/upload/v1647618821/static/images/default-article.9bdfa9b6f255.jpg">
                             {% else %}
