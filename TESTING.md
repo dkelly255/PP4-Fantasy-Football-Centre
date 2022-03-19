@@ -80,10 +80,16 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-  test_future_question(self):| A 404 error should be returned for the DetailView of a question with a publication date in the future | The method functions as expected | Pass 
-  test_past_question(self):| The question's text should be displayed for the detail view of a question with a published date in the past | Method functions as expected | Pass
+  test_future_question(self):| A 404 error should be returned for the DetailView of a question with a publication date in the future | Functions as expected | Pass 
+  test_past_question(self):| The question's text should be displayed for the detail view of a question with a published date in the past | Operates correctly | Pass
 
-Upon completion of the current set of automated testing activities, we are able to use a tool called `coverage` to generate a report showing the level of coverage the tests are providing for the code-base of the application. Currently as you can see from the screenshot below, I am at >85% in terms of the automated testing coverage level, which when combined with the manual testing activities above, I feel is providing a good level of coverage given the project deadlines & time constraints:
+### (iii). Testing The Webite App's "landing_page" View:
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+test_view_landing_page(self):| A Response Code Status 200 should be recieved together with the `landing_page.html` template when sending a get request to the `/` path | The View functions as expected | Pass
+
+Upon completion of the current set of automated testing activities, I then used a tool called `coverage` to generate a report showing the level of coverage the tests are providing for the code-base of the application. Currently as you can see from the screenshot below, I am at >85% in terms of the automated testing coverage level, which when combined together with the manual testing activities above, I feel is providing a good level of successful testing coverage given the project deadlines & time constraints:
 
 ![Coverage Screenshot](readme/test_coverage.png)
 
