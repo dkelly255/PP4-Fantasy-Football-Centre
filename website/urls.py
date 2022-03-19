@@ -1,4 +1,4 @@
-from . import views
+landing_vifrom . import views
 from django.urls import path
 
 urlpatterns = [

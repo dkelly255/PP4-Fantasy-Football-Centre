@@ -5,6 +5,7 @@ from .models import Post
 from .forms import CommentForm
 
 
+# Function based view for landing page:
 def landing_page(request):
     return render(request, 'landing_page.html')
 
