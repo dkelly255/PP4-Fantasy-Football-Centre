@@ -41,7 +41,8 @@ class QuestionModelTests(TestCase):
         recent_question = Question(pub_date=time)
         self.assertIs(recent_question.was_published_recently(), True)
 
-
+# Credits: Automated testing sourced from official Django
+# Documentation tutorials - please see readme credits section
 def create_question(question_text, days):
     """
     Create a question with the given `question_text` and published the
@@ -141,6 +142,7 @@ class QuestionDetailViewTests(TestCase):
         The detail view of a question with a pub_date in the future
         returns a 404 not found.
         """
+        # Add login credentials to navigate LoginRequired Mixin
         test_user = User.objects.create_user(
             username='testuser', password='testpw'
             )
@@ -157,6 +159,7 @@ class QuestionDetailViewTests(TestCase):
         The detail view of a question with a pub_date in the past
         displays the question's text.
         """
+        # Add login credentials to navigate LoginRequired Mixin
         test_user = User.objects.create_user(
             username='testuser', password='testpw'
             )

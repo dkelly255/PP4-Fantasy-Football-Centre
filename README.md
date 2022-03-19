@@ -414,7 +414,7 @@ Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `d
 
 ![Bug6](readme/bug6-closed.png)
 
-I have also added the `LoginRequiredMixin` to the other appropriate views in `poll/views.py` (`DetailView` and `ResultsView` respectively) to prevent similar bugs from being present in the application. Note however, as per [Bug #4](https://github.com/dkelly255/pp4-django-blog#4-poll-app-questions-displaying-in-reverse-order) and my [Automated Testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#ii-testing-the-polls-view-indexview) of the Poll App's `IndexView` - this created a knock-on impact of failing my original automated test for multiple question displays, which required a test code update & re-test to keep the code from failing the tests.
+I have also added the `LoginRequiredMixin` to the other appropriate views in `poll/views.py` (`DetailView` and `ResultsView` respectively) to prevent similar bugs from being present in the application. Note however, as you will see later in this document, per [Bug #10](https://github.com/dkelly255/pp4-django-blog#4-poll-app-test-failures) and my [Automated Testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#ii-testing-the-polls-view-indexview) of the Poll App's `IndexView` - this code-change inadvertently created a latent knock-on impact of failing my original automated testing for multiple question displays, which later necessitated further debugging, re-testing and a test code update to keep the code from failing the tests. (This is detailed further in Bug#10 towards the end of the bugs section below)
 
  As per the Agile development methodology used to deliver this project, this bug has been documented and closed on the Kanban board & issue tracker in github, as well as this readme document.
 
@@ -447,6 +447,23 @@ Updating the code to reflect the Jinja temaplting syntax per the code block belo
 ```
 <script src="<script src="{% static 'js/base.js' %}"></script>"></script>
 ```
+
+### 10. Poll App Test failures
+
+After introducing valuable authentication & authorisation features to my Polls app via the `LoginRequiredMixin`, it transpired that my original set of automated testing for the Polls app would no longer pass - primarily due to the inability of the tests in their current form to navigate the added defensive design features of authentication & authorisation. See screenshot of the errors and warnings below:
+
+![Bug10](readme/bug10-poll-tests-fail.png)
+
+Through spending time researching & debugging this issue across Stack Overflow and the Code Institute Slack Channels, I was able to determine that my tests required login credentials in order to succesfully pass the newly introduced Authentication. By adding the code in the block below to my tests, together with the required import statements from the correct libraries, I was able to update my tests to succesfully pass again:
+
+```
+test_user = User.objects.create_user(
+    username='testuser', password='testpw'
+    )
+self.client.login(username='testuser', password='testpw') 
+```
+
+In keeping with the Agile Development approaches being used to deliver this project, this issue has been documented and closed on the Bugs Kanban Board in the Projects section of Github.
 
 ## Unresolved Bugs
 
