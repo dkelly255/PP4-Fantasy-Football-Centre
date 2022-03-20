@@ -89,7 +89,26 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
 test_view_landing_page(self):| A Response Code Status 200 should be recieved together with the `landing_page.html` template when sending a get request to the `/` path | The View functions as expected | Pass
 
-Upon completion of the current set of automated testing activities, I then used a tool called `coverage` to generate a report showing the level of coverage the tests are providing for the code-base of the application. Currently as you can see from the screenshot below, I am at >85% in terms of the automated testing coverage level, which when combined together with the manual testing activities above, I feel is providing a good level of successful testing coverage given the project deadlines & time constraints:
+###  Testing Coverage
+
+Upon completion of the current set of automated testing activities, I then used a tool called `coverage` to generate a report showing the level of coverage the tests are providing for the code-base of the application. 
+
+To install, run and generate a coverage report respectively, please enter the following three commands into the terminal:
+
+```
+pip3 install coverage
+coverage run - - source= manage.py test
+coverage report
+```
+
+Additionally, if you wish to view the report in a more user-friendly, separate & interactive HTML file, then you can run the additional two commands below, and click into the `htmlcov` folder:
+
+```
+coverage html
+python3 - m http.server
+```
+
+Currently as you can see from the screenshot below, I am at >85% in terms of the automated testing coverage level, which when combined together with the manual testing activities above, I feel is providing a good level of successful testing coverage given the project deadlines & time constraints:
 
 ![Coverage Screenshot](readme/test_coverage.png)
 
