@@ -93,19 +93,19 @@ test_view_landing_page(self):| A Response Code Status 200 should be recieved tog
 
 Upon completion of the current set of automated testing activities, I then used a tool called `coverage` to generate a report showing the level of coverage the tests are providing for the code-base of the application. 
 
-To install, run and generate a coverage report respectively, please enter the following three commands into the terminal:
+To install, run and generate a coverage report respectively, please ensure you are connected to the test database by changing the `DATABASES` variable in `settings.py`, saving, and then enter the following three commands into the terminal:
 
 ```
 pip3 install coverage
-coverage run - - source= manage.py test
+coverage run --source= manage.py test
 coverage report
 ```
 
-Additionally, if you wish to view the report in a more user-friendly, separate & interactive HTML file, then you can run the additional two commands below, and click into the `htmlcov` folder:
+Additionally, if you wish to view the report in a more user-friendly, separate & interactive HTML file, then you can run the additional two commands below, open the broswer on port 8000 and click into the `htmlcov` folder:
 
 ```
 coverage html
-python3 - m http.server
+python3 -m http.server
 ```
 
 Currently as you can see from the screenshot below, I am at >85% in terms of the automated testing coverage level, which when combined together with the manual testing activities above, I feel is providing a good level of successful testing coverage given the project deadlines & time constraints:
