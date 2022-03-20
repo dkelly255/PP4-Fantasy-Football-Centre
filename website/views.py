@@ -63,7 +63,7 @@ class PostDetail(View):
         context = {
             "post": post,
             "comments": comments,
-            "commented": False,
+            "commented": True,
             "liked": liked,
             "comment_form": CommentForm()
         }
