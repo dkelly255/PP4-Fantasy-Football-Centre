@@ -443,7 +443,7 @@ When breaking out my javascript code into a separate file `base.js` to keep sepa
 
 Through working to debug & understand this issue with Code Institute Tutor Support I discovered that this was due to the fact that I had failed to use the jinja templating syntax when detailing the `source` attribute of the `script` element linking to my `base.js` file. Due to Django's inability to serve static files in *production* (as opposed to development), the hardcoded relative file path link would not be served in production - creating the situation where the app appeared to function as expected in the development environment, but would glitch in the production/heroku deployment.
 
-Updating the code to reflect the Jinja temaplting syntax per the code block below has resolved the issue, and the live heroku deployment messaging functionality now behaves as expected. I have closed the bug on the kanban tracker:
+Updating the code to reflect the Jinja templating syntax per the code block below has resolved the issue, and the live heroku deployment messaging functionality now behaves as expected. I have closed the bug on the kanban tracker:
 
 ```
 <script src="<script src="{% static 'js/base.js' %}"></script>"></script>
