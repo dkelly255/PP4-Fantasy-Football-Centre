@@ -44,7 +44,7 @@ No. |Test Case | Expected Result | Actual Result | Pass/Fail | Link
 
 ## 3. Automated Testing:
 
-### (i). Testing The Question Model's "was_published_recently" method 
+### (i) Testing The Question Model's "was_published_recently" method 
 The tests below are part of the Automated testing procedures I have used to prove out the functionality of some of the core aspects within the poll application. Please note - as called out in the readme credits section, and as noted in the poll/tests.py module code comments, I have heavily utilised the testing section of the [official Django Documentation](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) in arriving at and building these tests, as they are effective at testing my poll app funcitonality for the purposes of the Blog Project:
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
@@ -66,7 +66,7 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
   test_was_published_recently_with_old_question(self):| The method should return a "False" value if the question's publication date is older than one day | As expected | Pass 
   test_was_published_recently_with_recent_question(self):| The method should return a "True" value if the question's publication date is within the last one day | As expected | Pass
 
-### (ii). Testing The Poll's View "IndexView"  
+### (ii) Testing The Poll's View "IndexView"  
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
@@ -76,18 +76,24 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
   test_future_question_and_past_question(self):| Only questions with a publication date in the past should be displayed on the poll index page, even if both past and future questions exist. | Method functions as expected | Pass
   test_two_past_questions(self):| The polls question index page should be able to display multiple questions simultaneously. (Please note: see [Bug #4](https://github.com/dkelly255/pp4-django-blog#4-poll-app-questions-displaying-in-reverse-order) for additional context on how this test was updated to account for changes in the `IndexView`) | Method functions as expected | Pass
 
-### (iii). Testing The Poll's View "DetailView"  
+### (iii) Testing The Poll's View "DetailView"  
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
   test_future_question(self):| A 404 error should be returned for the DetailView of a question with a publication date in the future | Functions as expected | Pass 
   test_past_question(self):| The question's text should be displayed for the detail view of a question with a published date in the past | Operates correctly | Pass
 
-### (iii). Testing The Webite App's "landing_page" View:
+### (iv) Testing The Webite App's "landing_page" (Function-based) View:
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
 test_view_landing_page(self):| A Response Code Status 200 should be recieved together with the `landing_page.html` template when sending a get request to the `/` path | The View functions as expected | Pass
+
+### (v) Testing The Webite App's "PostList" (Class-based) View:
+
+Automated Test | Expected Result | Actual Result | Pass/Fail
+ ------------- | ------------- | ------------ | ------------- 
+test_view_post_list(self):| A Response Code Status 200 should be recieved together with the `index.html` template when sending a get request to the `/post-list/` path | The View functions as expected | Pass
 
 ###  Testing Coverage
 
