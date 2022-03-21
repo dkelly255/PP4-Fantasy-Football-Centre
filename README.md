@@ -1,7 +1,7 @@
 # Django Blog: README
 Django Blog (Live deployment linked [here](https://p4-django-blog.herokuapp.com/)) is a fully-functioning, interactive Python & Django-based web application that allows users to browse, read, create their own account, and comment on articles covering key aspects and perspectives on the Django Web Development framework. Users can also choose to view and vote in opinion polls on important aspects of the site's content. 
 
-In terms of having a clear, jsutified rationale for this real-world application, I wanted to build this project to house articles and content on the Django framework itself for two primary reasons: 
+In terms of having a clear, justified rationale for this real-world application, I wanted to build this project to house articles and content on the Django framework itself for two primary reasons: 
 
 Firstly, the process of writing articles on various different aspects and perspectives on Django had the potential to be of huge benefit during my own learning experience & journey through understanding the Django Framework, what it is, how it works, who uses it and so forth.
 
