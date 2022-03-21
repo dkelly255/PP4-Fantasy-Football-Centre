@@ -1,20 +1,15 @@
 # Django Blog: README
-Django Blog (Live deployment linked [here](https://p4-django-blog.herokuapp.com/)) is a Python & Django based web application that will allow users to browse, read, create their own account, and comment on articles covering key aspects and perspectives on the Django Web Development framework. Users can also choose to view and vote in opinion polls on important aspects of the site's content:
+Django Blog (Live deployment linked [here](https://p4-django-blog.herokuapp.com/)) is a fully-functioning, interactive Python & Django-based web application that allows users to browse, read, create their own account, and comment on articles covering key aspects and perspectives on the Django Web Development framework. Users can also choose to view and vote in opinion polls on important aspects of the site's content. 
+
+In terms of having a clear, jsutified rationale for this real-world application, I wanted to build this project to house articles and content on the Django framework itself for two primary reasons: 
+
+Firstly, the process of writing articles on various different aspects and perspectives on Django had the potential to be of huge benefit during my own learning experience & journey through understanding the Django Framework, what it is, how it works, who uses it and so forth.
+
+And secondly, that the site would be of use to other Django-learners who are on a similar path to learning the framework, for example the article "How I am approaching learning Django" will be of benefit to others who are in similar cirucmstances in trying to learn & come up to speed on the Framework.
 
 ![Title](readme/amiresponsive.png)
 
-Below are the list of key sections of the Readme document to help users familiarize themselves with how the application was designed & developed, and how it operates. 
 
-Please select a section to review by clicking on the hyperlinks below:
-
-Section: | Title:  | Content:
-------------- | ------------- | ------------ 
-1 | [**UX**](https://github.com/dkelly255/pp4-django-blog#section-1-ux) | Review of the five planes of UX as they relate to the Django Blog Application
-2 | [**Features**](https://github.com/dkelly255/pp4-django-blog#section-2-features) | Overview of the core features of the website, as well as potential future features
-3 | [**Testing**](https://github.com/dkelly255/pp4-django-blog#section-3-testing) | Detail behind the testing exercises undertaken on key aspects of website functionality
-4 | [**Bugs**](https://github.com/dkelly255/pp4-django-blog#section-4-bugs) | Review of the bugs encountered during and after development, both resolved and unresolved
-5 | [**Deployment**](https://github.com/dkelly255/pp4-django-blog#section-5-deployment) | Walkthrough on deployment steps required for deployment on Heroku, Github, and Locally
-6 | [**Credits**](https://github.com/dkelly255/pp4-django-blog#section-6-credits) | Overview of the key credits & sources attributed used during design & development 
 
 # SECTION 1: UX 
 I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
