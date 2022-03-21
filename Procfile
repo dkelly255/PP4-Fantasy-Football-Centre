@@ -1,1 +1,1 @@
-web: gunicorn fantasyfootballcentre.wsgi
+web: gunicorn p4-django-project.wsgi
