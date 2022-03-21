@@ -3,11 +3,6 @@ Django Blog (Live deployment linked [here](https://p4-django-blog.herokuapp.com/
 
 ![Title](readme/amiresponsive.png)
 
-
-Please note - I originally started this project as a Fantasy Football Content blog/website but during development it has subsequently evolved into a blog about Django - primarily due to the quantity of content and material I was researching in relation to learning the framework, I found that writing articles about Django helped contribute to, and accelerate, the learning process. 
-
-All elements of the Django project directory structure, and Heroku deployment have been renamed accordingly, with the exception of the overall project directory (which still bears the name `fantasyfootballcenter`)
-
 Below are the list of key sections of the Readme document to help users familiarize themselves with how the application was designed & developed, and how it operates. 
 
 Please select a section to review by clicking on the hyperlinks below:
@@ -154,6 +149,17 @@ The Entity Relationship Diagram for the `Choices` Table is shown below, with the
 Note the Foreign Key will be the "Question" field, and that this will need to cascade on delete, so that when a Question is removed, the choices for that question are also removed, that is, the deletion is cascaded through the models.
 
 ![Choices table ERD](readme/erd_choices.png)
+
+### - Project Directory Renaming
+
+Please note - I originally started this project as a Fantasy Football Content website but during development it has subsequently evolved into a blog about Django - primarily due to the quantity of content and material I was researching in relation to learning the framework, I found that writing articles about Django helped contribute to, and accelerate, the learning process. 
+
+Whilst it was not critical to the application's functionality, from a completeness perspective, and from a learning-experience perspective, I wanted to understand how the process of renaming a Django project would work if it were to be undertaken, and what the potential pitfalls would be. 
+
+Through consultation with our fortnightly Group Stand-Up facilitator, and from watching the linked [How To Change The Name Of A Django Project](https://www.youtube.com/watch?v=ko83PEvotNI&t=1s) instructional video from [Master Code Online](https://www.youtube.com/channel/UCbhm6TbMBTWn_GxrIbPFapA), I was able to succesfully rename the project, across all elements of the directory structure, and the Heroku deployment. A snapshot of some of the key aspects of mapping exercise I undertook to succesfully rename the project directory structure is illustrated below:
+
+![renaming](readme/renaming.png)
+
 
 ### - Production Database - PostgreSQL:
 
@@ -590,6 +596,7 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
 - In the "What is Django article", the [Official Django Documentation](https://www.djangoproject.com/), and the [Django Wikipedia Page](https://www.djangoproject.com/) are both used and accredited to provide article content
 - In the "Who Uses Django" article, [instagram-engineering](https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad), [dev.to](https://dev.to/developerroad/what-is-django-and-why-you-should-use-it-5a07), the [official Django documentation](https://www.djangoproject.com/weblog/2005/dec/08/congvotes/#:~:text=Django%20powers%20the%20entire%20votes,didn't%20break%20a%20sweat.), and [Django Stars](https://djangostars.com/blog/why-we-use-django-framework/), are used to provide content and context for the article
 - The Features' section definition & context on Create, Read, Update Delete (CRUD) functionality was informed and accredited to [Sumologic.com](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.)
+- The project renaming exercise detailed in the `structure` section of my UX overview was guided and informed by the [How To Change The Name Of A Django Project](https://www.youtube.com/watch?v=ko83PEvotNI&t=1s) instructional video from [Master Code Online](https://www.youtube.com/channel/UCbhm6TbMBTWn_GxrIbPFapA)
     
 
 ## Code

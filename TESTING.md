@@ -128,6 +128,7 @@ No. |Test Case | Expected Result | Actual Result | Pass/Fail
   2 | User Logout Message Notification | A user should be greeted with a `logout` notification message when they succesfully log out, the message should disappear again after the pre-set timeinterval in the Javascript function | The notification message appears and disappears as expected | Pass
   3 | Account Creation Notification | A user should be greeted with a notification message when they succesfully create an account, the message should disappear again after the pre-set timeinterval in the Javascript function | Initially the notification message appears but would not disappear again as expected - See [Bug #8](https://github.com/dkelly255/pp4-django-blog/blob/main/BUGS.md#8-heroku-javascriptstatic-file-bug---messaging)| Fail
   4 | Account Creation Notification (re-test) | The notification message should disappear again after the Javascript -specified time interval - See [Bug #8 resolution](https://github.com/dkelly255/pp4-django-blog/blob/main/BUGS.md#8-heroku-javascriptstatic-file-bug---messaging) | Bug resolved and functionality now operates as expected | Pass
+  5 | Comment Submission Notification Message | When a user submits a comment under an article, they should receive a notificaiton message that their comments has been submitted and is pending approval, the message should disappear again after the specified time interval | Messaging functionality operates as expected | Pass
 
 
 ## 5. Browser Compatibility Testing

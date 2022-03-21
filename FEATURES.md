@@ -214,6 +214,12 @@ The equivalent messages displayed to a user when creating a new account are also
 
 ![Messages](readme/message-signup.png)
 
+### - Comment submission Notification Message
+
+The equivalent messages displayed to a user upon submission of a comment for approval is also shown below:
+
+![Messages](readme/message-comment.png)
+
 ## 3. Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
 
