@@ -9,7 +9,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Question, Choice
 
 # Create your views here.
-
+# Credits - please note this code is sourced from the 
+# Official Django documentation on poll tutorials and
+# is fully acknowledged & accredited in readme
 
 class IndexView(LoginRequiredMixin, generic.ListView):
     template_name = 'poll/index.html'
