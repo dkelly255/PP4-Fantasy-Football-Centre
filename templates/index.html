@@ -8,29 +8,29 @@
         <!-- Article Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for post in post_list %}
+                {% for article in article_list %}
                 <div class="col-sm-12 col-md-6 col-lg-4 card mb-4 ">
                     
                     <div class="card-body card-body-background border border-success border-4">
                         <div class="image-container">
-                            {% if "placeholder" in post.featured_image.url %}
+                            {% if "placeholder" in article.featured_image.url %}
                             <!-- Different default image placeholder used here to differentiate & individualise the site/code -->
                             <img alt="default" class="card-img-top"
                                 src="https://res.cloudinary.com/dkelly25/image/upload/v1647618821/static/images/default-article.9bdfa9b6f255.jpg">
                             {% else %}
-                            <img alt="Django Image" class="card-img-top" src=" {{ post.featured_image.url }}">
+                            <img alt="Django Image" class="card-img-top" src=" {{ article.featured_image.url }}">
                             {% endif %}
                             <div class="image-flash">
-                                <p class="author">Author: {{ post.author }}</p>
+                                <p class="author">Author: {{ article.author }}</p>
                             </div>
                         </div>
-                        <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                            <h2 class="card-title text-black">{{ post.title }}</h2>
-                            <p class="card-text text-black">{{ post.excerpt }}</p>
+                        <a href="{% url 'article_detail' article.slug  %}" class="post-link">
+                            <h2 class="card-title text-black">{{ article.title }}</h2>
+                            <p class="card-text text-black">{{ article.excerpt }}</p>
                         </a>
                         <hr>
-                        <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                            {{ post.number_of_likes }}</p>
+                        <p class="card-text text-muted h6">{{ article.created_on}} <i class="far fa-heart"></i>
+                            {{ article.number_of_likes }}</p>
                     </div>
                     
                 </div>  
