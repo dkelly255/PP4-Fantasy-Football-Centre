@@ -2,6 +2,46 @@
 
 ## 1. Authorisation, Authentication & Permission Features:
 
+Throughout the site I have identified and applied various layers of authorisation, authentication and permission features in keeping with a full-stack web application solution. Some examples to highlight these features are illustrated below:
+
+### - Signup Form:
+
+To ensure that the proper role-based registration functionality is in place, I have used a Signup form as illustrated below - where in order to create an account, Users should navigate to the "Signup" link in the nav bar, redirecting them to the "Signup" page shown below. The form is built using Crispy Forms, and consists of an invitation & instruction set to the user to direct them on how to create an account with the site, there are four fields the user can fill in to supply the required details for creation of a new account - Username, Email, Password, and a confirmation of the password. 
+
+![Signup](readme/features-signup.png)
+
+The current login status is also consistently reflected to the user, via prompts on the signup form reminding the user that they should "Sign In" rather than "Sign Up" if they already have an account, also ensuring that the user is not permitted to access restricted content or functionality prior to role-based login, and the provision of all information will ensure the correct permissions are then reflected to the user.
+
+### - Login Form
+
+To apply role-based login functionality, the Login form is built using Crispy Forms, and gives two fields for completion to grant the user access to the appropriate *user-level* (i.e. non-administrator) site features such as leaving comments or liking articles. From a UX perspective, the current login state is reflected to the user via additional notifications delivered to the user on the Login form that they must be logged in to like an article or leave a comment, and that if they have not yet created an account that they must Sign Up first to ensure that the correct role-based functionality is understood and applied. This also again helps to ensure that users are not permitted to access restricted content and/or functionality prior to their role-based login.
+
+![Login](readme/features-login.png)
+
+### - Logout Form
+
+The Logout form screenshot is shown below, illustrating the simple & intuitive nature of this feature, whereby the user is prompted with a confirmation that they wish to log out of the site, and a button they can click to confirm they wish to do so. A defensive design principle has been used for this form, so that a user cannot log out mistakenly with a single click, the confirmation button will help provide a positive UX where the user is less likely to log out accidentally, and also reinforcing the principle that the current login state is reflected to the user.
+
+![Logout](readme/features-logout.png)
+
+### - Administration Area
+
+In addition to the the User-Level access permissions, the site also includes an administrator-level permissions tier - implemented via Django's `superuser` functionality. In order to create a superuser, please follow the steps below in your Command Line Interface or Terminal display:
+
+```
+> create superuser
+> <Enter Superuser Username>
+> <Enter Superuser Email Address>
+> <Enter Superuser Password>
+> <Confirm Superuser Password>
+```
+
+Upon correctly following these steps, this should permit the superuser to login to the site with an extended set of `administrator-level` permissions allowing access to the administration area functionality. The administration area itself is a key feature of the Django Blog web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. 
+
+The administration area has been craeted using Django's administration functionality, and contains many key functions, including Create, Read, Update and Delete privileges for both the Site Articles and Polls applications, as well as User and comment/like features, illustrated in the snapshot below, and reviewed in detail in the next section:
+
+![Admin](readme/features-admin.png)
+
 ## 2. CRUD Features:
 
 As described in detail in this helpful [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete. 
@@ -27,14 +67,6 @@ This additional functionality allows a user to add comments to the site articles
 This feature allows a user who is signed in to add a like an article by clicking on the like/heart icon under each article. When a user clicks the button it will increment the like count by one. When the article has been liked, the heart icon will turn solid red:
 
 ![Like](readme/features-likeunlike.png)
-
-#### (iv) Create an account:
-
-In order to create an account, Users should navigate to the "Signup" link in the nav bar, this will bring the user to the "Signup" page shown below, built using Crispy Forms, and consists of an invitation & instruction set to the user to direct them on how to create an account with the site.
-
-![Signup](readme/features-signup.png)
-
-There is an additional prompt on the signup form reminding the user that they should "Sign In" rather than "Sign Up" if they already have an account, and following that, there are four fields the user can fill in to supply the required details for creation of a new account - Username, Email, Password, and a confirmation of the password.
 
 #### (iv) Create a Poll Question:
 
@@ -164,29 +196,11 @@ The site footer contains "Constructed By" label crediting the site to (fictional
 
 ![Footer](readme/features-footer.png)
 
-### - Login Form
-
-The Login form is also built using Crispy Forms, and gives two fields for completion to authenticate the user for access to the site features such as leaving comments or liking articles. There is an additional notification to the user on the Login form that they must be logged in to like an article or leave a comment, and that if they have not yet created an account that they must Sign Up first.
-
-![Login](readme/features-login.png)
-
-### - Logout Form
-
-The Lougout form screenshot is shown below, illustrating the simple & intuitive nature of this feature, whereby the user is prompted with a confirmation that they wish to log out of the site, and a button they can click to confirm they wish to do so. A defensive design principle has been used for this form, so that a user cannot log out mistakenly with a single click, the confirmation button will help provide a positive UX where the user is less likely to log out accidentally.
-
-![Logout](readme/features-logout.png)
-
 ### - Comment Counter
 
 The comment counter is present under all articles created on the site, and performs the role of allowing site visitors to see at a glance how many comments have been lodged under each article, giving a sense of how much discussion and debate an article may have generated. Each time a comment has been approved by the administrator/superuser, the comments counter will increment by one:
 
 ![Counter](readme/features-commentcounter.png)
-
-### - Administration Area
-
-The administration area is a key feature of the Django Blog web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. The administration area has been craeted using Django's administration functionality, and contains many key functions, illlustrated in the snapshot below, and reviweed in detail in the remainder of the feature walkthrough section of this readme document:
-
-![Admin](readme/features-admin.png)
 
 ### - Default Article Picture/Image functionality
 
