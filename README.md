@@ -251,9 +251,10 @@ Please navigate to the linked locations below to view a more detailed walkthroug
 
 Section: | Features Documentation:  | 
   ------------- | ------------- | 
- 1 | [**CRUD Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#features) | 
- 2 | [**Other Core  Functionality & Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#2-other-key-existing-features) | 
- 3 | [**Future Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#3-future-features)
+ 1 | [**Authentication, Authorisation & Permission Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#features) | 
+ 2 | [**CRUD Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#features) | 
+ 3 | [**Other Key Existing Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#2-other-key-existing-features) | 
+ 4 | [**Future Features**](https://github.com/dkelly255/pp4-django-blog/blob/main/FEATURES.md#3-future-features)
 
 # SECTION 3: TESTING
 

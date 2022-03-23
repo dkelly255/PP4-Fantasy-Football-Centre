@@ -1,6 +1,8 @@
 # Features
 
-## 1. CRUD Features:
+## 1. Authorisation, Authentication & Permission Features:
+
+## 2. CRUD Features:
 
 As described in detail in this helpful [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete. 
 
@@ -142,7 +144,7 @@ In order to delete an answer choice from a question record, simply navigate to t
 
 ![Delete Answer](readme/delete-answer.png)
 
-## 2. Other Key Existing Features
+## 3. Other Key Existing Features
 
 In addition to the core CRUD functionality & features described above, there are many additional key features underpinning the functionality of the Django Blog application, the most important of which are described & reviewed below:
 
@@ -220,7 +222,7 @@ The equivalent messages displayed to a user upon submission of a comment for app
 
 ![Messages](readme/message-comment.png)
 
-## 3. Future Features 
+## 4. Future Features 
 In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
 
 ### - Notifications
