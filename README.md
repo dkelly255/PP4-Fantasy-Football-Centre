@@ -466,6 +466,20 @@ self.client.login(username='testuser', password='testpw')
 
 In keeping with the Agile Development approaches being used to deliver this project, this issue has been documented and closed on the Bugs Kanban Board in the Projects section of Github.
 
+### 11. Favicon Display Bugs
+
+Initially I encountered a bug in the development server/port8000 view of my application, after adding the favicon to the `base.html` template, in that the favicon would only display on the `landing_page.html` (home page) and would not display on any of the other site pages. I discovered this was due to the way I had structured the path link to the favicon, as I had not used the proper file path notation:
+
+![Bug11](readme/bug11-favicon1.png)
+
+When updating my file path from the above to the below, this resolved the initial issue, and the favicon started to appear on all site pages as intended:
+
+![Bug11](readme/bug11-favicon2.png)
+
+However, the favicon bugs still existed when I tried to view the site in the production environment/Heroku, and the favicon would not display on *any* pages. Through further research, debugging, and trial and error, I discovered that this was due to the way I had approached the favicon addition - where I had stored the favicon in my static images folder, I actually needed to use the Cloudinary link, as this was where my images were being served to Heroku. Upon updating my favicon location link to the below, this succesfully resolved the issue and closed the bug:
+
+![Bug11](readme/bug11-favicon3.png)
+
 ## Unresolved Bugs
 
 ### 9. Missing Alt Texts on Cloudinary images
@@ -604,15 +618,9 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
 - The `Default Article` image was also sourced from [Pexels](https://www.pexels.com/photo/person-holding-smartphone-while-using-laptop-1181244/) and is free to use with no attribution required
 - The site fonts were taken from [Google Fonts](https://fonts.google.com/)
 - All `Icons`, including the `Favicon` used throughout the site were sourced from [FontAwesome](https://fontawesome.com/)
-
-https://www.pexels.com/photo/close-up-view-of-system-hacking-5380642/
-
-https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/
-
-https://www.pexels.com/photo/two-men-looking-at-a-laptop-4974920/
-
-https://www.pexels.com/photo/man-using-3-computers-4974914/ Photo by olia danilevich from Pexels
-
-https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298/ Photo by Christina Morillo from Pexels
-
-https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/ Photo by Designecologist from Pexels
+- The Article [Image](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380642/) for "What is Django" was taken from Pexels and is free to use with no attribution required
+- The Article [Image](https://www.pexels.com/photo/gray-laptop-computer-109371/) for "Why Use Django" is a Photo by Monoar Rahman from Pexels
+- The Article [Image](https://www.pexels.com/photo/two-men-looking-at-a-laptop-4974920/) for "Who Uses Django" was taken from Pexels and is free to use with no attribution required
+- The Article [Image](https://www.pexels.com/photo/man-using-3-computers-4974914/) for "How Does Django Work" is a Photo by olia danilevich from Pexels
+- The Article [Image](https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298/) for "Approaches to learning Django" is a Photo by Christina Morillo from Pexels
+- The Article [Image](https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/) for "Useful Django Resources" is a Photo by Designecologist from Pexels
