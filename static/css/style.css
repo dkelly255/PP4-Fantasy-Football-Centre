@@ -183,6 +183,10 @@ article {
     background-color: #198754d8;
 }
 
+.greenicon {
+    color: #146b43d8;
+}
+
 #poll-page {
     min-width: 80vw;
 }

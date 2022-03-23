@@ -68,7 +68,7 @@
     
     <div class="row border-top border-success border-4">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments: <i class="fas fa-comments ps-1"></i></h3>
+            <h3>Comments: <i class="fas fa-comments ps-1 greenicon"></i></h3>
             <div class="card-body">
                 <!-- Use Horizontal Lining for demarcation and readability of comments to differentiate and improve UX -->
                 <hr>
@@ -77,7 +77,7 @@
                 <div class="comments p-2">
                     <p class="font-weight-bold">
                         <!-- User leaving the comment's name below: -->
-                        <i class="far fa-comment pe-2"></i>{{ comment.name }}
+                        <i class="far fa-comment pe-2 greenicon"></i>{{ comment.name }}
                         <span class=" text-muted font-weight-normal">
                             <!-- Creation date and time attached to comment -->
                             {{ comment.created_on }}
@@ -103,7 +103,7 @@
                 {% else %}
                 <!-- Otherwise, display the empty comments form in readiness for a comment to be posted by the user -->
                 {% if user.is_authenticated %}
-                <h3>Add a Comment: <i class="fas fa-comment ps-1"></i></h3>
+                <h3>Add a Comment: <i class="fas fa-comment ps-1 greenicon"></i></h3>
                 <p>Commenting as: {{ user.username }}</p>
                 <form method="post" class ="mt-3">
                     {{ comment_form | crispy }}
