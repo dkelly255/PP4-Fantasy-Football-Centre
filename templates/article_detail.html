@@ -37,7 +37,8 @@
                     {{ article.content | safe }}
                 </p>
                 <div class="row">
-                    <div class="col-1">
+                    <!-- Update responsive bootstrap grid to ensure comments & likes display properly on smaller screen sizes -->
+                    <div class="col-3 col-sm-2 col-lg-1">
                         <strong>
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'article_like' article.slug %}" method="POST">
@@ -54,7 +55,8 @@
                             <span class="text-secondary">{{ article.number_of_likes }} </span>
                         </strong>                        
                     </div>
-                    <div class="col-1">
+                    <!-- Update responsive bootstrap grid to ensure comments & likes display properly on smaller screen sizes -->
+                    <div class="col-3 col-sm-2 col-lg-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
                             <!-- Add the count of total_comments variable here -->
