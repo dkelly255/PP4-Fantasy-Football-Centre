@@ -605,3 +605,14 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
 - The site fonts were taken from [Google Fonts](https://fonts.google.com/)
 - All `Icons`, including the `Favicon` used throughout the site were sourced from [FontAwesome](https://fontawesome.com/)
 
+https://www.pexels.com/photo/close-up-view-of-system-hacking-5380642/
+
+https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/
+
+https://www.pexels.com/photo/two-men-looking-at-a-laptop-4974920/
+
+https://www.pexels.com/photo/man-using-3-computers-4974914/ Photo by olia danilevich from Pexels
+
+https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298/ Photo by Christina Morillo from Pexels
+
+https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/ Photo by Designecologist from Pexels
