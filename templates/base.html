@@ -26,9 +26,7 @@
 </head>
 
 <body class="d-flex flex-column main-bg">
-
-    <!-- Navigation -->
-
+    <!-- Navigation menu bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
@@ -54,17 +52,14 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout<i class="fas fa-sign-out-alt text-dark ps-2"></i></a>
-                    </li>
-                    
+                    </li>                    
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_signup' %}">Signup<i class="fas fa-address-card text-dark ps-2"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_login' %}">Login<i class="fas fa-door-open text-dark ps-2"></i></a>
-                    </li>
-                    
-                    
+                    </li>                   
                     {% endif %}
                 </ul>
                 <span class="brand" >
@@ -73,7 +68,6 @@
             </div>
         </div>
     </nav>
-
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -86,13 +80,11 @@
             </div>
         </div>
     </div>
-
     <main class="flex-shrink-1 main-bg">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-
     <!-- Footer -->
     <footer class="footer mt-auto py-3 bg-success">
         <p class="m-0 text-center text-white">Produced by - Web Devs</p>
@@ -103,10 +95,7 @@
             <a href="http://youtube.com" target="_blank" rel="noopener" aria-label="Visit Us On Youtube (Opens in new browser)"><i class="fab fa-youtube-square ms-3 text-dark"></i></a>
         </p>
     </footer>
-    
-    <script src="{% static 'js/base.js' %}"></script>
-    
-    
+    <script src="{% static 'js/base.js' %}"></script>  
 </body>
 
 </html>

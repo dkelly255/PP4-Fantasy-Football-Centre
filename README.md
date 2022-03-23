@@ -481,6 +481,28 @@ However, the favicon bugs still existed when I tried to view the site in the pro
 
 ![Bug11](readme/bug11-favicon3.png)
 
+### 12. Comment duplication on page refresh
+
+When viewing the `article_detail.html` template on both the development and production servers, I encountered a bug whereby in the (admittedly unlikely, but possible) scenario where a user submits a comment for approval, and then attempts to refresh the page they are viewing before an administrator has approved the comment, and approves the popup `Confirm Form Resubmission` warning notification (highlighted below) the comment will resubmit for approval in the administration area. 
+
+This unfortunately would create multiple versions of the same comment pending approval in the back-end in a situation where a user either intentionally or unintentionally refreshes the page multiple times while their submitted comment is in unapproved status. 
+
+The screenshot below illustrate the nature of this issue in the front end and backend views:
+
+![Bug12](readme/bug12-comment-resubmission.png)
+
+Through researching errors of this nature on both Stack Overflow and the Django documentation, and through working with Tutor Support, I was able to locate a good resource which helped resolve the problem at [WebTricksHome.com](https://www.webtrickshome.com/forum/how-to-stop-form-resubmission-on-page-refresh) determine that this was being caused by the form's resubmission on refresh, and that a possible solution was to use Javascript to block the popup asking for the resubmission - by adding the following Javascript to my `article_detail.html` template:
+
+```
+<script>
+    if ( window.history.replaceState ) {
+      window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+```
+
+Implementing the Javascript approach has resolved the issue with duplicate comments and the bug has now been closed on the Bugs Kanban.
+
 ## Unresolved Bugs
 
 ### 9. Missing Alt Texts on Cloudinary images
