@@ -1,3 +1,7 @@
+/* Credits: Note this code has been adapted from the original CI Blog LMS lesson but has been 
+heavily customised with additions, deletions, changes and modifications applied to 
+best suit the Django blog application user needs and User Experience develop a unique feel */
+
 html, body {
     height:100%;
 }
@@ -141,14 +145,14 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: #198754d8;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #198754d8;
     background: transparent;
     border: none;
 }
