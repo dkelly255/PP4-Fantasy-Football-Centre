@@ -5,12 +5,13 @@ from .models import Article
 from .forms import CommentForm
 
 
+# Create your views here.
 # Function based view for landing page:
 def landing_page(request):
     return render(request, 'landing_page.html')
 
 
-# Create your views here.
+# Credits: Website Views adapted from Code Insitute Django Blog lesson
 class ArticleList(generic.ListView):
     model = Article
     queryset = Article.objects.filter(status=1).order_by('-created_on')
