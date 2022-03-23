@@ -13,8 +13,7 @@ body > footer {
 
 html {    
     background: url(https://res.cloudinary.com/dkelly25/image/upload/v1645985430/static/images/background2.c1fb751e6a5d.jpg) no-repeat center center fixed;
-    background-size: cover;
-    
+    background-size: cover;    
 }
 
 body {
@@ -202,18 +201,22 @@ article {
 
 .home-page-container {
     min-height: 80vh; 
-    /* align-items: center; */
 }
 
+/* Media query to fine-tune responsiveness of icon sizing on smaller screens */
 @media screen and (max-width:700px) {
     .rocket {
         font-size: 2em;
     }
 }
-
+/* Media query to remove icons on small screens for UX optimisation */
 @media screen and (max-width:450px) {
     .rocket {
         font-size: 0em;
     }
 }
 
+/* Add green theme color to comment line demarcations */
+hr {
+    background-color:#146b43d8;
+}
