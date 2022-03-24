@@ -12,25 +12,32 @@
                 <div class="col-sm-12 col-md-6 col-lg-4 card mb-4 ">
                     
                     <div class="card-body card-body-background border border-success border-4">
-                        <div class="image-container">
-                            {% if "placeholder" in article.featured_image.url %}
-                            <!-- Different default image placeholder used here to differentiate & individualise the site/code -->
-                            <img alt="default" class="card-img-top"
-                                src="https://res.cloudinary.com/dkelly25/image/upload/v1647618821/static/images/default-article.9bdfa9b6f255.jpg">
-                            {% else %}
-                            <img alt="Django Image" class="card-img-top" src=" {{ article.featured_image.url }}">
-                            {% endif %}
-                            <div class="image-flash">
-                                <p class="author">Author: {{ article.author }}</p>
-                            </div>
-                        </div>
-                        <a href="{% url 'article_detail' article.slug  %}" class="post-link">
-                            <h2 class="card-title text-black">{{ article.title }}</h2>
-                            <p class="card-text text-black">{{ article.excerpt }}</p>
-                        </a>
                         <hr>
-                        <p class="card-text text-muted h6">{{ article.created_on}} <i class="far fa-heart"></i>
-                            {{ article.number_of_likes }}</p>
+                        <a href="{% url 'article_detail' article.slug  %}" class="post-link">
+                            <!-- Responsive text alignment - centering titles on smaller screens vs. left aligned on large screens for UX optimisation -->                            
+                            <h2 class="card-title text-black "><i class="fas fa-book pe-3"></i>{{ article.title }}</h2>                            
+                            <hr>    
+                        
+                            <div class="image-container">
+                                {% if "placeholder" in article.featured_image.url %}
+                                <!-- Different default image placeholder used here to differentiate & individualise the site/code -->
+                                <img alt="default" class="card-img-top"
+                                    src="https://res.cloudinary.com/dkelly25/image/upload/v1647618821/static/images/default-article.9bdfa9b6f255.jpg">
+                                {% else %}
+                                <!-- Pull in featured image from Article model to display -->
+                                <img alt="Django Image" class="card-img-top" src=" {{ article.featured_image.url }}">
+                                {% endif %}
+                                <div class="image-flash">
+                                    <p class="author">Columnist: {{ article.author }}</p>
+                                </div>
+                            </div>
+                            <hr>
+                            
+                            <p class="card-text text-black">{{ article.excerpt }}</p>
+                            <p class="card-text h9">{{ article.created_on}} <i class="far fa-heart"></i>
+                                    {{ article.number_of_likes }}</p>
+                            <hr>
+                        </a>
                     </div>
                     
                 </div>  
