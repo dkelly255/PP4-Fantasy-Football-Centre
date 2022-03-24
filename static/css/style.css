@@ -101,7 +101,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #198754fb;
+    background: #198754f6;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -122,8 +122,9 @@ body {
     margin-top: 20%;
     margin-left: 5%;
 }
-
+/* Add uppercase text transform to emphasise author on article detail page */
 .post-subtitle {
+    text-transform: uppercase;
     margin-left: 5%;
     color: lightgray;
 }
