@@ -659,3 +659,11 @@ https://www.pexels.com/photo/man-in-white-t-shirt-sitting-in-front-of-black-flat
 https://www.pexels.com/photo/grayscale-photo-of-computer-laptop-near-white-notebook-and-ceramic-mug-on-table-169573/ Photo by Negative Space from Pexels
 https://www.pexels.com/photo/silhouette-of-four-people-against-sun-background-862848/ Photo by Dennis Magati from Pexels
 https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/ Photo by Tim Gouw from Pexels
+Photo by Startup Stock Photos from Pexels: https://www.pexels.com/photo/person-s-hands-on-macbook-pro-7114/
+Photo by ThisIsEngineering: https://www.pexels.com/photo/woman-sitting-in-front-of-computer-in-office-3861967/
+Photo by Markus Spiske: https://www.pexels.com/photo/black-laptop-computer-turned-on-showing-computer-codes-177598/
+Photo by Christina Morillo: https://www.pexels.com/photo/closeup-photo-of-silver-macbook-pro-on-table-1181269/
+Photo by hitesh choudhary: https://www.pexels.com/photo/selective-focus-photography-of-man-facing-computer-340152/
+Photo by hitesh choudhary: https://www.pexels.com/photo/turned-on-macbook-pro-693859/
+Photo by RODNAE Productions: https://www.pexels.com/photo/person-holding-the-conference-program-7648031/
+Photo by Tima Miroshnichenko: https://www.pexels.com/photo/close-up-view-of-system-hacking-5380792/
