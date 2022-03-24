@@ -449,6 +449,29 @@ Updating the code to reflect the Jinja templating syntax per the code block belo
 ```
 <script src="<script src="{% static 'js/base.js' %}"></script>"></script>
 ```
+### 9. Missing Alt Texts on Cloudinary images
+
+During my [accessibility testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#6-accessibility-testing) activities, the `post_detail.html` page would continually receive below 90% accessibility scores from Lighthouse audits due to missing `alt text` tags on image elements.
+
+In my first attempts at improving initial accessiblilty, I had performed a thorough scrub of all `.html` templates and `img` elements, ensuring that the `alt` attributes were all present, however I would still receive the `images missing alt text` warnings below:
+
+![Bug9](readme/bug9-accessibility.png)
+
+The images driving the missing `alt` attributes warnings were actually the images uploaded to Cloudinary as part of creating the articles, and therefore were not reachable by templating or injection via jinja tags. 
+
+Through researching how to resolve this I eventually discovered that the solution was to add the `alt` tags indirectly through the `Cloudinary` interface, shown in the screenshot below:
+
+![Bug9](readme/bug9-cloudinary.png)
+
+However, this still would not allow the alt text to dial through into the Django html - further research on this issue led me to believe that an API will be required (Cloudinary's [Get Single Resource](https://cloudinary.com/documentation/admin_api#get_the_details_of_a_single_resource) API) as per this [section](https://cloudinary.com/blog/m16y_make_your_cloudinary_images_more_accessible#setup_and_retrieval_of_alt_text_with_api) of Cloudinary's documentation.
+
+This bug remained opened for quite some time, and in keeping with an Agile software development methodology, and considering that the accessibility deficiency was understood and acknowledged, and would not invalidate the majority of the site content, I decided to de-prioiritise this task in favour of other more project-critical activities which still require completion prior to deadline, with the intention of revisiting in future when time is less of a constraint.
+
+Subsequently however, as part of a discussion in the [Accessibility Ally](https://code-institute-room.slack.com/archives/C037VP5A3FZ/p1648049020400839) channel on slack, we were able to determine that in fact the way to add the alt text was through the `wsiwyg` (What You See Is What You Get) editor's "Code" function - which allowed directly adding alt attributes into images uplaoded via the Summernote text editor per the screenshot below:
+
+![Bug9](readme/bug9-resolution.png)
+
+This allowed the accessibility scores to hit close to 100% on all pages again and successfully resolved the bug, which has now been closed on the kanban tracker. 
 
 ### 10. Poll App Test failures
 
@@ -481,7 +504,7 @@ However, the favicon bugs still existed when I tried to view the site in the pro
 
 ![Bug11](readme/bug11-favicon3.png)
 
-### 12. Comment duplication on page refresh
+### 12. Comment submission duplication on page refresh
 
 When viewing the `article_detail.html` template on both the development and production servers, I encountered a bug whereby in the (admittedly unlikely, but possible) scenario where a user submits a comment for approval, and then attempts to refresh the page they are viewing before an administrator has approved the comment, and approves the popup `Confirm Form Resubmission` warning notification (highlighted below) the comment will resubmit for approval in the administration area. 
 
@@ -505,23 +528,7 @@ Implementing the Javascript approach has resolved the issue with duplicate comme
 
 ## Unresolved Bugs
 
-### 9. Missing Alt Texts on Cloudinary images
-
-During my [accessibility testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#6-accessibility-testing) activities, the `post_detail.html` page would continually receive below 90% accessibility scores from Lighthouse audits due to missing `alt text` tags on image elements.
-
-In my first attempts at improving initial accessiblilty, I had performed a thorough scrub of all `.html` templates and `img` elements, ensuring that the `alt` attributes were all present, however I would still receive the `images missing alt text` warnings below:
-
-![Bug9](readme/bug9-accessibility.png)
-
-The images driving the missing `alt` attributes warnings were actually the images uploaded to Cloudinary as part of creating the articles, and therefore were not reachable by templating or injection via jinja tags. 
-
-Through researching how to resolve this I eventually discovered that the solution was to add the `alt` tags indirectly through the `Cloudinary` interface, shown in the screenshot below:
-
-![Bug9](readme/bug9-cloudinary.png)
-
-However, this still would not allow the alt text to dial through into the Django html - further research on this issue led me to believe that an API will be required (Cloudinary's [Get Single Resource](https://cloudinary.com/documentation/admin_api#get_the_details_of_a_single_resource) API) as per this [section](https://cloudinary.com/blog/m16y_make_your_cloudinary_images_more_accessible#setup_and_retrieval_of_alt_text_with_api) of Cloudinary's documentation.
-
-In keeping with an Agile software development methodology,  and considering that the accessibility deficiency is understood and acknowledged, and will not invalidate the majority of the site content, I have decided to de-prioiritise this task in favour of other more project-critical activities which still require completion prior to deadline, and will revisit in future when time is less of a constraint.
+There are no known unresolved bugs in this release of the application
 
 # SECTION 5: DEPLOYMENT
 
