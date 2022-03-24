@@ -668,3 +668,8 @@ Photo by hitesh choudhary: https://www.pexels.com/photo/turned-on-macbook-pro-69
 Photo by RODNAE Productions: https://www.pexels.com/photo/person-holding-the-conference-program-7648031/
 Photo by Tima Miroshnichenko: https://www.pexels.com/photo/close-up-view-of-system-hacking-5380792/
 Photo by Mikhail Nilov: https://www.pexels.com/photo/man-people-night-dark-6963098/
+Photo by Markus Spiske from Pexels: https://www.pexels.com/photo/green-and-white-line-illustration-225769/
+Photo by cottonbro: https://www.pexels.com/photo/boy-in-white-shirt-sitting-in-front-of-computer-4709286/
+Photo by Mikhail Nilov: https://www.pexels.com/photo/man-people-night-dark-6963098/
+Photo by cottonbro: https://www.pexels.com/photo/man-in-black-leather-jacket-using-computer-8720586/
+Photo by Sora Shimazaki: https://www.pexels.com/photo/crop-unrecognizable-developer-using-laptop-and-smartphone-5926389/
