@@ -647,3 +647,8 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
 - The Article [Image](https://www.pexels.com/photo/man-using-3-computers-4974914/) for "How Does Django Work" is a Photo by olia danilevich from Pexels
 - The Article [Image](https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298/) for "Approaches to learning Django" is a Photo by Christina Morillo from Pexels
 - The Article [Image](https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/) for "Useful Django Resources" is a Photo by Designecologist from Pexels
+
+https://www.pexels.com/photo/man-in-white-t-shirt-sitting-in-front-of-black-flat-screen-computer-monitor-6804604/ Photo by cottonbro from Pexels
+https://www.pexels.com/photo/grayscale-photo-of-computer-laptop-near-white-notebook-and-ceramic-mug-on-table-169573/ Photo by Negative Space from Pexels
+https://www.pexels.com/photo/silhouette-of-four-people-against-sun-background-862848/ Photo by Dennis Magati from Pexels
+https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/ Photo by Tim Gouw from Pexels
