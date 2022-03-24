@@ -55,10 +55,16 @@ body {
 
 .image-flash {
     position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
+    top: 0%;
+    min-width: 18%;
     background-color: #198754f6;
+}
+
+.image-flash-bottom {
+    position: absolute;
+    bottom: 0%;
+    min-width: 18%;
+    background-color: #09311ef6;
 }
 
 .author {

@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="container-fluid">
+<div class="row justify-content-center">
+    <div class="col-sm-10 col-md-10 col-xxl-8 green border border-4 d-flex justify-content-center align-items-center my-4 mx-1">
+        <i class="rocket fas fa-book text-dark pe-4"></i> 
+            <h1 class="pb-3 pt-3 pe-2 text-center text-dark">Django Blog </h1><h1 class="pb-3 pt-3 text-light font-weight-bold">|Articles|</h1>
+        <i class="rocket fas fa-book text-dark ps-4"></i> 
+    </div>
+</div>
+</div>
 <!-- Credits: Note this code is adapted & customised from the CI Blog LMS lesson -->
 <div class="container-fluid">
     <div class="row">
@@ -30,12 +39,15 @@
                                 <div class="image-flash">
                                     <p class="author">Columnist: {{ article.author }}</p>
                                 </div>
+                                <div class="image-flash-bottom">
+                                    <p class="author">{{ article.created_on}} <i class="far fa-thumbs-up ps-3"></i>
+                                        {{ article.number_of_likes }}</p>
+                                </div>
                             </div>
                             <hr>
                             
                             <p class="card-text text-black">{{ article.excerpt }}</p>
-                            <p class="card-text h9">{{ article.created_on}} <i class="far fa-heart"></i>
-                                    {{ article.number_of_likes }}</p>
+                            
                             <hr>
                         </a>
                     </div>

@@ -44,13 +44,16 @@
                             <form class="d-inline" action="{% url 'article_like' article.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like" aria-label="like button"><i class="fas fa-heart"></i></button>                                
+                                <!-- Use thumbs-up icon to represent likes for positive UX -->
+                                <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like" aria-label="like button"><i class="fas fa-thumbs-up"></i></button>                                
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like" aria-label="like button"><i class="far fa-heart"></i></button>
+                                <!-- Use thumbs-up icon to represent likes for positive UX -->
+                                <button type="submit" name="blogpost_id" value="{{article.slug}}" class="btn-like" aria-label="like button"><i class="far fa-thumbs-up"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="test-secondary"><i class="far fa-heart"></i></span>
+                            <!-- Use thumbs-up icon to represent likes for positive UX -->
+                            <span class="test-secondary"><i class="far fa-thumbs-up"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ article.number_of_likes }} </span>
                         </strong>                        
