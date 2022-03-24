@@ -224,6 +224,12 @@ article {
 }
 
 /* Add green theme color to comment <hr> element line demarcations - important formatting touch */
-hr {
+.fat {
+    background-color:#146b42;
+    height:3px!important;
+}
+
+.thin {
     background-color:#146b43d8;
+    /* height:3px!important; */
 }

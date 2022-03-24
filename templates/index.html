@@ -21,11 +21,11 @@
                 <div class="col-sm-12 col-md-6 col-lg-4 card mb-4 ">
                     
                     <div class="card-body card-body-background border border-success border-4">
-                        <hr>
+                        <hr class="fat">
                         <a href="{% url 'article_detail' article.slug  %}" class="post-link">
                             <!-- Responsive text alignment - centering titles on smaller screens vs. left aligned on large screens for UX optimisation -->                            
                             <h2 class="card-title text-black "><i class="fas fa-book pe-3"></i>{{ article.title }}</h2>                            
-                            <hr>    
+                            <hr class="fat">    
                         
                             <div class="image-container">
                                 {% if "placeholder" in article.featured_image.url %}
@@ -44,11 +44,11 @@
                                         {{ article.number_of_likes }}</p>
                                 </div>
                             </div>
-                            <hr>
+                            <hr class="thin">
                             
                             <p class="card-text text-black">{{ article.excerpt }}</p>
                             
-                            <hr>
+                            <hr class="thin">
                         </a>
                     </div>
                     

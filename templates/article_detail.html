@@ -76,7 +76,7 @@
             <h3>Comments: <i class="fas fa-comments ps-1 greenicon"></i></h3>
             <div class="card-body">
                 <!-- Use Horizontal Lining for demarcation and readability of comments to differentiate and improve UX -->
-                <hr>
+                <hr class="thin">
                 <!-- Setup a for loop via jinja tags to iterate through each comment in comments -->
                 {% for comment in comments %}                
                 <div class="comments p-2">
@@ -91,7 +91,7 @@
                     <!-- Space to insert the actual body of the comment, with linebreaks filter for formatting | -->
                     {{ comment.body | linebreaks }}
                     <!-- Use Horizontal Lining in each iteration for consistency and improved, differentiated UX -->
-                    <hr>
+                    <hr class="thin">
                 </div>
                 {% endfor %}
                 <!-- End the For-Loop here -->
