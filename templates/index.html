@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<!-- Consistent Site title banner format to aid with UX -->
 <div class="container-fluid">
 <div class="row justify-content-center">
     <div class="col-sm-10 col-md-10 col-xxl-8 green border border-4 d-flex justify-content-center align-items-center my-4 mx-1">
@@ -10,23 +11,22 @@
     </div>
 </div>
 </div>
-<!-- Credits: Note this code is adapted & customised from the CI Blog LMS lesson -->
+<!-- Credits: code adapted & from CI Blog LMS lesson, customised for project specific scope -->
 <div class="container-fluid">
     <div class="row">
-
         <!-- Article Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+                <!-- Iterate over article list -->
                 {% for article in article_list %}
-                <div class="col-sm-12 col-md-6 col-lg-4 card mb-4 ">
-                    
+                <div class="col-sm-12 col-md-6 col-lg-4 card mb-4 ">                    
                     <div class="card-body card-body-background border border-success border-4">
+                        <!-- Thicker HR's to aid user in visually parsing the title & content -->
                         <hr class="fat">
                         <a href="{% url 'article_detail' article.slug  %}" class="post-link">
                             <!-- Responsive text alignment - centering titles on smaller screens vs. left aligned on large screens for UX optimisation -->                            
                             <h2 class="card-title text-black "><i class="fas fa-book pe-3"></i>{{ article.title }}</h2>                            
-                            <hr class="fat">    
-                        
+                            <hr class="fat">  
                             <div class="image-container">
                                 {% if "placeholder" in article.featured_image.url %}
                                 <!-- Different default image placeholder used here to differentiate & individualise the site/code -->
@@ -41,24 +41,23 @@
                                 </div>
                                 <div class="image-flash-bottom">
                                     <p class="author">
-                                        {{ article.created_on}} 
-                                            <i class="far fa-thumbs-up ps-3"></i>
-                                                {{ article.number_of_likes }}
-                                            <i class="far fa-comments pe-1"></i>
-                                                {% with comments.count as total_comments %}
-                                                    {{ total_comments }}
-                                                {% endwith %} 
+                                        <!-- Use Django date filters to aid with UX, particularly on smaller screens -->
+                                        {{ article.created_on | date:"d N, Y" }} 
+                                        <!-- Add like totals to article banners -->
+                                        <i class="far fa-thumbs-up ps-3"></i>
+                                        {{ article.number_of_likes }}
+                                        <!-- Add comment totals to article banners -->
+                                        <i class="far fa-comments ps-1"></i>                                                
+                                        {{ article.comment_count }}                                                 
                                     </p>
                                 </div>
                             </div>
-                            <hr class="thin">
-                            
-                            <p class="card-text text-black">{{ article.excerpt }}</p>
-                            
+                            <!-- Thinner HR's to de-emphasize article excerpts whilst keeping them visible to the user - UX-->
+                            <hr class="thin">                            
+                                <p class="card-text text-black">{{ article.excerpt }}</p>                            
                             <hr class="thin">
                         </a>
-                    </div>
-                    
+                    </div>                    
                 </div>  
                 {% endfor %}              
             </div>
