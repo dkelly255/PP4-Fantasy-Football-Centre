@@ -100,12 +100,12 @@ body {
     text-decoration: none;
     color: #445261;
 }
-
+/* Update color to green in line with website color palette for Surface UX consistency */
 .post-link:hover,
 .page-link {
     color: #198754fb;
 }
-
+/* Pull titles up towards top of container for better responsivity */
 .post-title {
     margin-top: 15%;
     margin-left: 5%;
@@ -116,23 +116,12 @@ body {
     margin-left: 5%;
     color: lightgray;
 }
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
+/* Used on signup & login html tempaltes - white to contrast with green background */
 .link {
     color: #fff;
     text-decoration: underline;
 }
-
+/* Keep white on hover to esnure default blue does not clash w/green background */
 .link:hover,
 .link:active {
     color: #fff;
@@ -156,41 +145,18 @@ body {
     background-color: #f9fafce5;
 }
 
-#landing-page {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-}
-
 article {
     color: white;
-}
-
-#welcome-title {
-    display: flex;
-    justify-content:space-around;
-    color: #ffffff;
 }
 
 .green {
     background-color: #198754d8;
 }
-/* For shading commet icons on article detail page - UX optimisation */
+/* For shading comment icons on article detail page - UX optimisation */
 .greenicon {
     color: #146b43d8;
 }
-/* To aid with centering content on Poll's pages */
-#poll-page {
-    min-width: 80vw;
-}
-
-.site-icon {
-    padding-left:10px;
-    padding-right:10px;
-}
-
+/* For responsivity on rocket icons */
 .rocket {
     font-size: 3em;
 }
