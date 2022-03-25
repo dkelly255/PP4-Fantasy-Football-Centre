@@ -43,6 +43,8 @@ class QuestionModelTests(TestCase):
 
 # Credits: Automated testing sourced from official Django
 # Documentation tutorials - please see readme credits section
+
+
 def create_question(question_text, days):
     """
     Create a question with the given `question_text` and published the
@@ -62,7 +64,7 @@ class QuestionIndexViewTests(TestCase):
         test_user = User.objects.create_user(
             username='testuser', password='testpw'
             )
-        self.client.login(username='testuser', password='testpw')   
+        self.client.login(username='testuser', password='testpw')
         response = self.client.get(reverse('poll:index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "No polls are available.")
@@ -146,7 +148,7 @@ class QuestionDetailViewTests(TestCase):
         test_user = User.objects.create_user(
             username='testuser', password='testpw'
             )
-        self.client.login(username='testuser', password='testpw')   
+        self.client.login(username='testuser', password='testpw')
         response = self.client.get(reverse('poll:index'))
         future_question = create_question(question_text='Future question.',
                                           days=5)
@@ -163,7 +165,7 @@ class QuestionDetailViewTests(TestCase):
         test_user = User.objects.create_user(
             username='testuser', password='testpw'
             )
-        self.client.login(username='testuser', password='testpw')   
+        self.client.login(username='testuser', password='testpw')
         response = self.client.get(reverse('poll:index'))
         past_question = create_question(question_text='Past Question.',
                                         days=-5)

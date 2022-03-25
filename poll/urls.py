@@ -3,7 +3,7 @@ from django.urls import path
 from . import views
 
 
-# Credits - please note this code is sourced from the 
+# Credits - please note this code is sourced from the
 # Official Django documentation on poll tutorials and
 # is fully acknowledged & accredited in readme
 app_name = 'poll'

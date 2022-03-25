@@ -233,9 +233,13 @@ All HTML pages have been passed through the official W3C validator without any i
 
 ![HTML Validation](readme/html-validation-logout-page.png)
 
-### (ii) CSS Validation [(Jigsaw)](https://jigsaw.w3.org/css-validator/validator)
+### (ii) CSS Validation [(Jigsaw)](https://jigsaw.w3.org/css-validator/)
+
+The site's CSS code located in `style.css` has been successfully validated using the Jigsaw CSS validation service, with no errors found, and only two warnings which do not affect the site content and can be safely ignored per the screenshot below:
 
 ![CSS](readme/validation-css.png) 
+
+The site's Javascript code located in `base.js` has been successfully validated using the JSHint validation service, with no errors found, and one warning regarding an undefined variabe which does not affect the site content and is required in order to enable the messaging functionality to operate:
 
 ### (iii) Javascript Validation [(Jshint)](https://jshint.com/)
 
@@ -245,7 +249,7 @@ All HTML pages have been passed through the official W3C validator without any i
 
 This section will summarise the Python validation activities carried out across the various python files consisting the structure of the application, using the [PEP8 Online Check](http://pep8online.com/) utility:
 
-#### **(a) Main Project Directory:** [PP4-DJANGO-BLOG/fantasyfootballcentre](fantasyfootballcentre):
+#### **(a) Main Project Directory:** [PP4-DJANGO-BLOG/p4-django-project](p4-django-project):
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
@@ -277,4 +281,4 @@ No. |Python File | PEP8 Status | Screenshot
 6 | [urls.py](website/urls.py) | No issues | [link](readme/pep8/pep8-website-urls.png)
 7 | [views.py](website/views.py) | No issues | [link](readme/pep8/pep8-website-views.png)
 
-^Note - Lines 167 and 132 in settings.py are generating an `E501 code` for line length (exceeding 79 characters by one character & three characters respectively) - this is known and understood, and per [this](https://peps.python.org/pep-0008/) section of the [PEP8](https://www.python.org/) guidelines I have made a judgement call that applying the guideline in these two specific instance `would potentially make the code less readable, even for someone who is used to reading code that follows this PEP.`
+^Note - Lines 167 and 132 in settings.py are generating an `E501 code` for line length (exceeding 79 characters by one character & three characters respectively) - this is known and understood as Django has developed the code in this fashion, and per [this](https://peps.python.org/pep-0008/) section of the [PEP8](https://www.python.org/) guidelines I have made a judgement call that applying the guideline in these two specific instance `would potentially make the code less readable, even for someone who is used to reading code that follows this PEP.`
