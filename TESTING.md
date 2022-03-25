@@ -169,21 +169,29 @@ The DevTools suite, and Lighthouse were used to audit the site's accessibility a
 
 ![Chrome](readme/lighthouse-articles.png)
 
-- Article Detail Display Page (pre-SEO adjustment):
+- Article Detail Display Page:
 
 ![Chrome](readme/lighthouse_article.png)
 
-- Login Page (pre-SEO adjustment):
+- Login Page:
 
 ![Chrome](readme/lighthouse_login.png)
 
-- Signup Page (pre-SEO adjustment):
+- Signup Page:
 
 ![Chrome](readme/lighthouse_signup.png)
 
-- Polls Page:
+- Polls Index Page:
 
 ![Chrome](readme/lighthouse-polls.png)
+
+- Polls Detail Page:
+
+![Chrome](readme/lighthouse-polls-detail.png)
+
+- Polls Results Page:
+
+![Chrome](readme/lighthouse-polls-results.png)
 
 ## 7. Compliance Testing
 
