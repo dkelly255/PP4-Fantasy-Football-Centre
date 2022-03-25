@@ -114,9 +114,9 @@ coverage html
 python3 -m http.server
 ```
 
-Currently as you can see from the screenshot below, I am at >85% in terms of the automated testing coverage level, which when combined together with the manual testing activities above, I feel is providing a good level of successful testing coverage given the project deadlines & time constraints:
+Currently as you can see from the screenshot below, I am at a level greater than 75% in terms of the automated testing coverage, which when combined together with the comprehensive manual testing activities above, I feel is providing a good level of successful testing coverage given the project deadlines & time constraints:
 
-![Coverage Screenshot](readme/test_coverage.png)
+![Coverage Screenshot](readme/coverage.png)
 
 ## 4. Javascript Testing
 
