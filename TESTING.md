@@ -159,7 +159,7 @@ The site's compatibility with different browsers and device sizes has been exten
 
 ## 6. Accessibility Testing
 
-The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessiblity deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, Accessibility. The pre-SEO adjusted Lighthouse scores (with SEO deficiency) are shown below for reference
+The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessiblity deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, Accessibility. The finalized accessibility scoring for each page in the site are shown below with the results of the focus on meeting accessbility guidelines ensuring all scores green and in the 90%-100% range.
 
 - Homepage Lighthouse Scores:
 
@@ -171,15 +171,19 @@ The DevTools suite, and Lighthouse were used to audit the site's accessibility a
 
 - Article Detail Display Page:
 
-![Chrome](readme/lighthouse_article.png)
+![Chrome](readme/lighthouse-article.png)
+
+- Signup Page:
+
+![Chrome](readme/lighthouse_signup.png)
 
 - Login Page:
 
 ![Chrome](readme/lighthouse_login.png)
 
-- Signup Page:
+- Logout Page:
 
-![Chrome](readme/lighthouse_signup.png)
+![Chrome](readme/lighthouse_logout.png)
 
 - Polls Index Page:
 
