@@ -5,7 +5,7 @@ In terms of having a clear, justified rationale for this real-world application,
 
 Firstly, the process of writing articles on various different aspects and perspectives on Django had the potential to be of huge benefit during my own learning experience & journey through understanding the Django Framework, what it is, how it works, who uses it and so forth.
 
-And secondly, that the site would be of use to other Django-learners who are on a similar path to learning the framework, for example the article "How I am approaching learning Django" will be of benefit to others who are in similar cirucmstances in trying to learn & come up to speed on the Framework.
+And secondly, that the site would be of use to other Django-learners who are on a similar path to learning the framework, for example the article [Approaches To Learning Django](https://p4-django-blog.herokuapp.com/approaches-to-learning-django/) I hope will be of potential benefit to other developers who are in similar cirucmstances in trying to learn & come up to speed on the Framework.
 
 ![Title](readme/amiresponsive.png)
 
