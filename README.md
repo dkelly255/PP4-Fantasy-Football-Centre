@@ -524,7 +524,48 @@ Through researching errors of this nature on both Stack Overflow and the Django 
 </script>
 ```
 
-Implementing the Javascript approach has resolved the issue with duplicate comments and the bug has now been closed on the Bugs Kanban.
+Please note - as my Javascript began to grow in length and scope I subsequently moved this code to the `base.js` file where it noe currently resides. Implementing this Javascript approach has resolved the issue with duplicate comments and the bug has now been closed on the Bugs Kanban.
+
+### 13. Page scroll reset on screen refresh issues
+
+As my articles began to grow in length, I noticied a UX deficiency/bug whereby when a user leaves a comment, the screen would scroll back to the top of the page which can be a large distance depending on the article content. 
+
+This would cause the user to (a) have to scroll a long distance to get back to where they were focused and (b) potentially cause them to miss the "comment pending approval" notification message if the scroll duration took longer than the javascript message display timeout.
+
+Through reseraching this issue I found a solution on [Stack Overflow](https://stackoverflow.com/a/58743412), which led me to understand that I could add the following Javascript to preserve the scroll position:
+
+```
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        var scrollpos = localStorage.getItem('scrollpos');
+        if (scrollpos) window.scrollTo(0, scrollpos);
+    });
+
+    window.onbeforeunload = function(e) {
+        localStorage.setItem('scrollpos', window.scrollY);
+    };
+</script>
+```
+
+This solution worked in terms of preserving the scroll position, however by further researching the issue prior to closing the bug, I noticed that this method had a flaw whereby the `localStorage` used in the code would keep the scroll position even after a user had closed their browser & reloaded the page - noticed by Stack Overflow user [Ben](https://stackoverflow.com/users/947530/ben). 
+
+Luckily [Ben](https://stackoverflow.com/users/947530/ben) had developed another modified version of this solution, to use `sessionStorage` instead of `localStorage`, so that browsers will not store the data after closure of the window. Updating my javascript to the code below has successfully resolved this issue, improved the User Experience, and the bug has been closed on the Agile Software Development Kanban Board - the `base.js` file is now reflective of the code below, with added comments & explanations:
+
+```
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var scrollpos = sessionStorage.getItem('scrollpos');
+        if (scrollpos) {
+            window.scrollTo(0, scrollpos);
+            sessionStorage.removeItem('scrollpos');
+        }
+    });
+
+    window.addEventListener("beforeunload", function (e) {
+        sessionStorage.setItem('scrollpos', window.scrollY);
+    });
+</script>
+```
 
 ## Unresolved Bugs
 
