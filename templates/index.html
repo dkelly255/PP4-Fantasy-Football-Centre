@@ -40,8 +40,15 @@
                                     <p class="author">Columnist: {{ article.author }}</p>
                                 </div>
                                 <div class="image-flash-bottom">
-                                    <p class="author">{{ article.created_on}} <i class="far fa-thumbs-up ps-3"></i>
-                                        {{ article.number_of_likes }}</p>
+                                    <p class="author">
+                                        {{ article.created_on}} 
+                                            <i class="far fa-thumbs-up ps-3"></i>
+                                                {{ article.number_of_likes }}
+                                            <i class="far fa-comments pe-1"></i>
+                                                {% with comments.count as total_comments %}
+                                                    {{ total_comments }}
+                                                {% endwith %} 
+                                    </p>
                                 </div>
                             </div>
                             <hr class="thin">
