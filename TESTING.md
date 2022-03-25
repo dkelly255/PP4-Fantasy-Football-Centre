@@ -203,11 +203,11 @@ All HTML pages have been passed through the official W3C validator without any i
 
 - Article Detail^
 
-^Please note - errors number one and two below are driven by the summernote text interface and are known & understood. The `100%` attribute on the `width` of the `img` element is required to keep the image at 100% of the width of it's parent element for formatting purposes. The `No p element in scope` error number two should not be displaying, as I have taken the full contents of the html invovled & audited them in my text editor and can see that every `<p>` element has a corresponding `</p>` closure:
+^Please note - errors two, three and four below are driven by the summernote `WSIWYG` text interface's approach of coding image figures, captions, and text paragraphs - These will be present on all Article detail pages constructed using the `WSIWYG` editor and are known & understood.
+
+Additionally, the `100%` and `75%` attributes on the `width` of the `img` elements cited in errors one through three are required to keep the image at 100% of the width of it's parent element for formatting purposes. 
 
 ![HTML Validation](readme/html-validation-article-detail.png)
-
-^Also please see [Bug #9](https://github.com/dkelly255/pp4-django-blog/issues/27) for a note on how adding images via the `content` field in the Django admin panel's content field when writing articles may also cause further issues driven by missing `alt text` attributes that cannot be directly injected to the HTML via jinja or templating without the use of a special API which is outside the scope of this project.
 
 - Polls Index
 
@@ -253,10 +253,10 @@ This section will summarise the Python validation activities carried out across 
 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
-1 | [asgi.py](fantasyfootballcentre/asgi.py) | No issues | [link](readme/pep8/pep8-project-asgi.png)
-2 | [settings.py](fantasyfootballcentre/settings.py) | Two Issues - E501 Line Length^ | [link](readme/pep8/pep8-project-settings.png)
-3 | [urls.py](fantasyfootballcentre/urls.py) | No issues | [link](readme/pep8/pep8-project-urls.png)
-4 | [wsgi.py](fantasyfootballcentre/wsgi.py) | No issues | [link](readme/pep8/pep8-project-wsgi.png)
+1 | [asgi.py](p4-django-project/asgi.py) | No issues | [link](readme/pep8/pep8-project-asgi.png)
+2 | [settings.py](p4-django-project/settings.py) | Two Issues - E501 Line Length^ | [link](readme/pep8/pep8-project-settings.png)
+3 | [urls.py](p4-django-project/urls.py) | No issues | [link](readme/pep8/pep8-project-urls.png)
+4 | [wsgi.py](p4-django-project/wsgi.py) | No issues | [link](readme/pep8/pep8-project-wsgi.png)
 
 #### **(b) Poll App Directory:** [PP4-DJANGO-BLOG/poll](poll):
 
