@@ -9,8 +9,6 @@ And secondly, that the site would be of use to other Django-learners who are on 
 
 ![Title](readme/amiresponsive.png)
 
-
-
 # SECTION 1: UX 
 I have designed the site using the five planes of UX approach, each of which is reviewed in detail in the following sections
 ## 1. Strategy
