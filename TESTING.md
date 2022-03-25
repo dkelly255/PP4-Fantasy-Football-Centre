@@ -266,7 +266,7 @@ This section will summarise the Python validation activities carried out across 
 No. |Python File | PEP8 Status | Screenshot 
 ------------- |------------- | ------------- | ------------ 
 1 | [asgi.py](p4-django-project/asgi.py) | No issues | [link](readme/pep8/pep8-project-asgi.png)
-2 | [settings.py](p4-django-project/settings.py) | Two Issues - E501 Line Length^ | [link](readme/pep8/pep8-project-settings.png)
+2 | [settings.py](p4-django-project/settings.py) | Two Issues - E501 Line Length see Note^ below tables | [link](readme/pep8/pep8-project-settings.png)
 3 | [urls.py](p4-django-project/urls.py) | No issues | [link](readme/pep8/pep8-project-urls.png)
 4 | [wsgi.py](p4-django-project/wsgi.py) | No issues | [link](readme/pep8/pep8-project-wsgi.png)
 
