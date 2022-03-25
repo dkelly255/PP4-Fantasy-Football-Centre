@@ -28,20 +28,8 @@ body {
     color: #fff;
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
 }
 
 .card {
@@ -52,14 +40,14 @@ body {
 .image-container {
     position: relative;
 }
-
-.image-flash {
+/* Modifying style for top of article titles */
+.image-flash-top {
     position: absolute;
     top: 0%;
     min-width: 18%;
     background-color: #198754f6;
 }
-
+/* Modifying style for bottom of article titles */
 .image-flash-bottom {
     position: absolute;
     bottom: 0%;
