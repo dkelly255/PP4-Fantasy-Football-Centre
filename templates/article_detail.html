@@ -14,6 +14,15 @@
                 <h1 class="post-title">{{ article.title }}</h1>
                 <!-- The Article author goes before the | the article's creation date goes after -->
                 <p class="post-subtitle">Written By: {{ article.author }} | {{ article.created_on }}</p>
+                <!-- Further customization to improve UX - pull in likes & comments as part of masthead -->
+                <p class="post-subtitle">
+                 <i class="fas fa-thumbs-up pe-1"></i>
+                         {{ article.number_of_likes }} | 
+                    <i class="far fa-comments pe-1"></i>
+                        {% with comments.count as total_comments %}
+                            {{ total_comments }}
+                        {% endwith %} 
+                </p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- An updated & appropriate default image placeholder used here to differentiate & individualise the site/code -->
