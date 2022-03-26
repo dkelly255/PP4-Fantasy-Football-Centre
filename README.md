@@ -145,6 +145,10 @@ A view of the Kanban board with the user stories having been brought through "To
 
 ![Kanban board](readme/kanban.png)
 
+Additionally, each individual User Story on the board can be drilled into for a detailed description of both the User Story and the clearly defined acceptance criteria associated with the atomic scope being implemented via that User Story - an example is shown below:
+
+![Individual US](readme/acceptance-criteria.png)
+
 With the equivalent Kanban board for the debugging exercises having been brought through similar phases of completion including - "Not Assigned", "In Progress", and "Closed" columns as follows:
 
 ### (ii) Kanban Board 2 - Bugs & Debugging [Link](https://github.com/dkelly255/pp4-django-blog/projects/2)
