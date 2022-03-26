@@ -126,7 +126,7 @@ A user can vote in any of the available polls by navigating through the poll fea
 #### (ii) Edit an article
 Additionally, the "Change Article" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
 
-![Edit Article](readme/features-editarticle.png)
+![Edit Article](readme/testing/test11-vote.png)
 
 #### (iii) Approve a comment
 The application also contains features which help with the management of the comments posted on articles in the site. Before any comment can be publicly displayed, it must be edited (specifically - its status must be changed to "approved" by an administrator), to minimize the risk of offensive or illegal comments being posted. When an administrator or superuser wants to approve a comment, he or she can simply select the comment from the menu, check the appropriate selection box, and then select "approve comments" from the dropdown menu:
@@ -219,7 +219,7 @@ To aid with creating a positive UX - I have also ensured adequate pagination fun
 
 ### - Login Notification Message
 
-To help with contrbuting to as positive a User Experience as possible, several Javascript-driven notification messages are also designed into the application. The first of these is triggered when a User Logs into the site, and is displayed in the screenshot below. The message will appear on the screen upon login, and will disappear automatically via Javascript programming after a pre-set time interval:
+To help with contributing to as positive a User Experience as possible, several Javascript-driven notification messages are also designed into the application. The first of these is triggered when a User Logs into the site, and is displayed in the screenshot below. The message will appear on the screen upon login, and will disappear automatically via Javascript programming after a pre-set time interval:
 
 ![Messages](readme/message-login.png)
 
