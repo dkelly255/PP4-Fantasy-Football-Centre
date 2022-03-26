@@ -67,7 +67,8 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    /* Update height to max-height to avoid dead space on larger screens */
+    max-height: 30vh;
     width: 100%;
 }
 
