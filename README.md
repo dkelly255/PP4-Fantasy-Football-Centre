@@ -60,8 +60,22 @@ With these two broad epics as the overall strategic goal of the project, we are 
 
 ### *As a site administrator I can:*
 - Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the blog website app
+    - Acceptance Criteria:
+        - An administrator can Create users, comments, and likes from the administration area
+        - An administrator can Read users, comments, and likes from the administration area
+        - An administrator can Update users, comments, and likes from the administration area
+        - An administrator can Delete users, comments, and likes from the administration area
 - Create draft articles so that I can complete the articles at a later time
+    - Acceptance Criteria:
+        - An administrator can save an article in draft format if the article is partially complete
+        - The administrator should have the ability to toggle the published status of the article to reflect it's completion
+        - The administrator should have access to an easily viewed dashboard showing the articles by status, including those in draft
 - Approve or reject comments so that I can ensure no unacceptable comments are posted on the site
+    - Acceptance Criteria:
+        - Any comments posted on the site should automatically go into pending approval status before publication
+        - The administrator should have the ability to toggle the published status of a comment between approved & unapproved to reflect the acceptibility of the comment
+        - The administrator should have access to an easily viewed dashboard showing the comments by status, including those not yet approved, and their contents to aid the approval process
+
 
 ### *As both a site user and administrator I can:*
 
