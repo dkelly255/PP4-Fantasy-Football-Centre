@@ -64,7 +64,7 @@ This additional functionality allows a user to add comments to the site articles
 
 #### (iii) Add a Like to an article:
 
-This feature allows a user who is signed in to add a like an article by clicking on the like/heart icon under each article. When a user clicks the button it will increment the like count by one. When the article has been liked, the heart icon will turn solid red:
+This feature allows a user who is signed in to add a like an article by clicking on the like/thumbs-up icon under each article. When a user clicks the button it will increment the like count by one. When the article has been liked, the thumbs-up icon will turn solid green:
 
 ![Like](readme/features-likeunlike.png)
 
@@ -124,26 +124,26 @@ A user can vote in any of the available polls by navigating through the poll fea
 ![Vote in poll](readme/vote.png)
 
 #### (ii) Edit an article
-Additionally, the "Change Post" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
+Additionally, the "Change Article" option will allow a Superuser or Administrator to edit the content of a pre-existing article. This is a useful feature for when Articles either contain erroneous information, or need to be augmented with additional late-breaking news relative to the Article's content. This feature can also be used to correct any typographical or grammatical errors that may have accidentally made their way into previously published articles.
 
 ![Edit Article](readme/features-editarticle.png)
 
 #### (iii) Approve a comment
 The application also contains features which help with the management of the comments posted on articles in the site. Before any comment can be publicly displayed, it must be edited (specifically - its status must be changed to "approved" by an administrator), to minimize the risk of offensive or illegal comments being posted. When an administrator or superuser wants to approve a comment, he or she can simply select the comment from the menu, check the appropriate selection box, and then select "approve comments" from the dropdown menu:
 
-![Approve Comment](readme/features-approvecomment.png)
+![Approve Comment](readme/testing/test3-comment-approve.png)
 
 #### (iv) Edit a Poll Question 
 
 This aspect of the "Edit" section of the applications CRUD featureset allows an administrator to edit the contents of a pre-existing poll question record. In order to complete this, navigate to the administration area location shown in the screenshot below (`Home/Poll/Questions/Question`), which will then allow the edit functionality to be applied to the question text and/or publication dates & times:
 
-![Edit Question](readme/edit-question.png)
+![Edit Question](readme/testing/test12-poll-edit.png)
 
 #### (v) Edit a Poll Answer Choice
 
 Similarly, this aspect of the "Edit" section of the applications CRUD featureset allows an administrator to edit the contents of a pre-existing poll question answer choice. In order to complete this, navigate to the administration area location shown in the screenshot below (`Home/Poll/Choices/Choice`), which will then allow the edit functionality to be applied to the Answer text and/or the question it is linked to:
 
-![Edit Answer](readme/edit-answer.png)
+![Edit Answer](readme/testing/test13-choice-edit.png)
 
 
 ### - Delete Records:
@@ -151,11 +151,11 @@ Similarly, this aspect of the "Edit" section of the applications CRUD featureset
 #### (i) Delete an article
 The "Delete an article feature" grants a user with the correct permissions the ability to remove previously published articles from the site's content. This feature ensures that the site content can be maintained & kept current, and would allow reacting to any unexpected or accidental misinformation or errors that may require an article to be deleted from the site. The superuser/admin must check the box to the left of the article they wish to delete, and then select the delete option from the drop-down menu & confirm.
 
-![Delete Article](readme/features-deletearticle.png)
+![Delete Article](readme/testing/test2-article-delete.png)
 
 #### (ii) Delete a Like from an article:
 
-This feature allows a user who is signed in to delete a like they may have previously added to an article in error by re-clicking on the like/heart icon under each article. When a user clicks the button to unlike the article, it will decrement the like count by one and delete the previously added like from the article. When the article has been unliked, the heart icon will revert back to hollow/red outline:
+This feature allows a user who is signed in to delete a like they may have previously added to an article in error by re-clicking on the like/thumbs-up icon under each article. When a user clicks the button to unlike the article, it will decrement the like count by one and delete the previously added like from the article. When the article has been unliked, the thumbs-up icon will revert back to hollow/green outline:
 
 ![Like](readme/features-likeunlike.png)
 
@@ -192,7 +192,7 @@ The Nav bar contains links to the main functionality sections of the site, and c
 ![Nav](readme/features-nav.png)
 
 ### - Footer
-The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully resposive using media queries from large screens down to small mobile devices. It contains a combination of green backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme.
+The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully resposive using media queries from large screens down to small mobile devices. It contains a combination of green backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme. All links will open in a new browser window to ensure the best possible User Experience
 
 ![Footer](readme/features-footer.png)
 
@@ -210,7 +210,12 @@ This feature considers aspects of defensive design principles to ensure that in 
 
 The default image is sourced from pexels, and is fully acknowledged in the credits section, whilst the code was originally adapted from the Code Institute blog walkthrough lesson, the image below shows how the article would look in the blog index page with the deafult/placeholder picture instead of an administrator-specified image accompanying the article:
 
-![Default article picture](readme/features-deafult-image.png)
+![Default article picture](readme/features-default-image.png)
+
+### - Pagination 
+To aid with creating a positive UX - I have also ensured adequate pagination functionality is present for organising the content on the articles page - currently the content is paginated by a factor of `6`, and as you can see from the screenshot below, when a `7th` article is added, the oldest article will be shifted to another page, with a pagination button appearing for the user to navigate the pages should they wish to do so. 
+
+![Default article picture](readme/features-pagination.png)
 
 ### - Login Notification Message
 
