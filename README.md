@@ -149,7 +149,7 @@ Please note - I originally started this project as a Fantasy Football Content we
 
 Whilst it was not critical to the application's functionality, from a completeness perspective, and from a learning-experience perspective, I wanted to understand how the process of renaming a Django project would work if it were to be undertaken, and what the potential pitfalls would be. 
 
-Through consultation with our fortnightly Group Stand-Up facilitator, and from watching the linked [How To Change The Name Of A Django Project](https://www.youtube.com/watch?v=ko83PEvotNI&t=1s) instructional video from [Master Code Online](https://www.youtube.com/channel/UCbhm6TbMBTWn_GxrIbPFapA), I was able to successfullyrename the project, across all elements of the directory structure, and the Heroku deployment. A snapshot of some of the key aspects of mapping exercise I undertook to successfullyrename the project directory structure is illustrated below:
+Through consultation with our fortnightly Group Stand-Up facilitator, and from watching the linked [How To Change The Name Of A Django Project](https://www.youtube.com/watch?v=ko83PEvotNI&t=1s) instructional video from [Master Code Online](https://www.youtube.com/channel/UCbhm6TbMBTWn_GxrIbPFapA), I was able to successfully rename the project, across all elements of the directory structure, and the Heroku deployment. A snapshot of some of the key aspects of mapping exercise I undertook to successfullyrename the project directory structure is illustrated below:
 
 ![renaming](readme/renaming.png)
 
@@ -237,7 +237,9 @@ A deeper dive on the Green color scheme allows many different shades, hues, and 
 
 I have utilised the functionality available through the [Fontawesome](https://fontawesome.com/) suite to embed the site's icons, this helps emphasise important elements of the site, and to help with generating a positive emotional response with the site users. 
 
-Additionally I have added a favicon, which displays at the top of all the site's pages via the head element of the HTML to help with the User Experience & create a professional feel when browsing:
+![alt text](readme/iconography.png)
+
+Additionally I have added a favicon, which displays at the top of all the site's pages in the browser tabs via the head element of the HTML to help with the User Experience & create a professional feel when browsing:
     
 ![alt text](static/images/favicon.png)
 
