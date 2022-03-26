@@ -6,6 +6,11 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Article(models.Model):
+    """
+    Article Model with attributes for content, dates, images
+    and methods to display the Article text and count of likes
+    Article display sequenced in reverse creation date order
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -31,6 +36,11 @@ class Article(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Comment Model with attributes for content, dates, FK to Article
+    and methods to display the comment text
+    Comment display sequenced in creation date order
+    """
     article = models.ForeignKey(Article, on_delete=models.CASCADE,
                                 related_name="comments")
     name = models.CharField(max_length=80)

@@ -8,6 +8,10 @@ from django.utils import timezone
 # tutorials and is fully accredited in readme credits
 # Create your models here.
 class Question(models.Model):
+    """
+    The Question Model with attributes for content and dates
+    and methods to display the question text and pulication date
+    """
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
@@ -20,6 +24,10 @@ class Question(models.Model):
 
 
 class Choice(models.Model):
+    """
+    The Choice Model with attributes for text and votes, a foreign key
+    to the question model and methods to display the choice text
+    """
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)

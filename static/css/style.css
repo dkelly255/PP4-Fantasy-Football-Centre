@@ -28,10 +28,6 @@ body {
     color: #fff;
 }
 
-.thin {
-    font-weight: 300;
-}
-
 .card {
     border: none;
     background-color: transparent;
@@ -180,11 +176,13 @@ article {
 }
 
 /* Add green theme color to comment <hr> element line demarcations - important formatting touch */
+/* Fatter Line for titles */
 .fat {
     background-color:#146b42;
     height:3px!important;
 }
-
+/* Thinner Lines for subtext & excerpts */
 .thin {
     background-color:#146b43d8;
+    font-weight: 300;
 }

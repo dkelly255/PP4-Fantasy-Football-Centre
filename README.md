@@ -644,7 +644,7 @@ Also please ensure to have an environment file correctly setup (`env.py`) with t
 # SECTION 6: CREDITS
 
 ## General Credits
-As part of the development process for the site, I required guidance from a number of online Django Resources aimed at walking new users through the process of using the Framework. The three most utilised and useful tutorials which helped me come up to speed with Django were:
+-As part of the development process for the site, I required guidance from a number of online Django Resources aimed at walking new users through the process of using the Framework. The three most utilised and useful tutorials which helped me come up to speed with Django were:
 1. The [Official Django Documentation tutorial](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) - a set of 7 tutorial stages which walk through building a poll app in Django step by step, from initial setup & installation, to completion
 
     Note I have also built this completed & fully functional poll app tutorial, the build can be found in my associated github repository: [Django Tutorial 1](https://github.com/dkelly255/Django-Tutorial-1)
@@ -667,6 +667,12 @@ I also must acknowledge and highly recommend the [Official Django Forum](https:/
     
 4. Support with trying to resolve a [101 - Network Unavailable error](https://forum.djangoproject.com/t/oserror-at-password-reset-errno-101-network-is-unreachable/12348/2)
 
+5. Help with troubleshooting [Django Date Filter rendering problems](https://forum.djangoproject.com/t/html-template-date-renders-not-reflecting-specified-format/12818)
+
+Similarly, I would like to acknowledge the [Django Girls Tutorial Gitter Forum](https://gitter.im/DjangoGirls/tutorial?at=6213bd46c435002500b8ea12) for providing help with issues I was having in following certain sections of the Tutorial as part of the initial research and learning preparation for this project. Specifically user [Raphael Das Gupta](https://github.com/das-g) for helping me understand that GitBook and jango use a similar syntax for templates, which was causing template tags to be displayed erroneously.
+
+Raphael had already proposed a fix for this issue and was able to help resolve a few instances of where it was occuring. You can see the solution [here](https://github.com/DjangoGirls/tutorial-extensions/pull/141) and the problem-solving discussions we were having on this issue [here](https://gitter.im/DjangoGirls/tutorial?at=6213bd46c435002500b8ea12) and [here](https://gitter.im/DjangoGirls/tutorial?at=6213ef76ddcba117a2eaccf2)
+
 As part of the process of learning how to use Bootstrap, I must also highly recommended the linked [BootStrap Tutorial Series](https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR) from the YouTube channel [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg). I found this series of 10+ tutorial videos to be hugely helpful in learning how to use Bootstrap to construct responsive, mobile-first designs and was able to utilise several ideas and techniques from the series in constructing my home page specifically, and the site generically.
 
 ## Content
@@ -678,37 +684,55 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
     
 
 ## Code
-- The blog app (website folder in project directory) and project structure is based on the Code Institute [Blog lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) project and has been adapted for my project needs
-- The poll app (poll folder in project directory) is based on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) introduction to Django tutorial and has been adapted for my project needs
-- The Automated testing of the poll app is based heavily on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) automated testing tutorials
+- The blog application (`website` folder in project directory) is based on the Code Institute [Blog lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) project and has been adapted, customized and expanded for my project needs
+- The poll app (poll folder in project directory) is based on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) introduction to Django tutorial and has been adapted, expanded, and customized for my project needs
+- The Automated testing of the poll app is based heavily on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) automated testing tutorials and is fully acknowledged in the code commentary to be found in the `website/tests.py` file
 
 ## Media
 - The site `background image` was sourced from [Pexels](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/) and is free to use with no attribution required
 - The `Default Article` image was also sourced from [Pexels](https://www.pexels.com/photo/person-holding-smartphone-while-using-laptop-1181244/) and is free to use with no attribution required
 - The site fonts were taken from [Google Fonts](https://fonts.google.com/)
 - All `Icons`, including the `Favicon` used throughout the site were sourced from [FontAwesome](https://fontawesome.com/)
-- The Article [Image](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380642/) for "What is Django" was taken from Pexels and is free to use with no attribution required
-- The Article [Image](https://www.pexels.com/photo/gray-laptop-computer-109371/) for "Why Use Django" is a Photo by Monoar Rahman from Pexels
-- The Article [Image](https://www.pexels.com/photo/two-men-looking-at-a-laptop-4974920/) for "Who Uses Django" was taken from Pexels and is free to use with no attribution required
-- The Article [Image](https://www.pexels.com/photo/man-using-3-computers-4974914/) for "How Does Django Work" is a Photo by olia danilevich from Pexels
-- The Article [Image](https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298/) for "Approaches to learning Django" is a Photo by Christina Morillo from Pexels
-- The Article [Image](https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/) for "Useful Django Resources" is a Photo by Designecologist from Pexels
+- The Following images were used for the `featured image` on each of the Django Blog Articles:
+    - The Article [Image](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380642/) for "What is Django" was taken from Pexels and is free to use with no attribution required
+    - The Article [Image](https://www.pexels.com/photo/gray-laptop-computer-109371/) for "Why Use Django" is a Photo by Monoar Rahman from Pexels
+    - The Article [Image](https://www.pexels.com/photo/two-men-looking-at-a-laptop-4974920/) for "Who Uses Django" was taken from Pexels and is free to use with no attribution required
+    - The Article [Image](https://www.pexels.com/photo/man-using-3-computers-4974914/) for "How Does Django Work" is a Photo by olia danilevich from Pexels
+    - The Article [Image](https://www.pexels.com/photo/person-using-macbook-pro-on-person-s-lap-1181298/) for "Approaches to learning Django" is a Photo by Christina Morillo from Pexels
+    - The Article [Image](https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/) for "Useful Django Resources" is a Photo by Designecologist from Pexels
+- The following Images were used for the body of the Articles, each of which is fully attributed & accredited below, as well as being free to use from Pexels:
+    - Photo by [cottonbro](https://www.pexels.com/photoman-in-white-t-shirt-sitting-in-front-of-black-flat-screen-computer-monitor-6804604/) from Pexels
 
-https://www.pexels.com/photo/man-in-white-t-shirt-sitting-in-front-of-black-flat-screen-computer-monitor-6804604/ Photo by cottonbro from Pexels
-https://www.pexels.com/photo/grayscale-photo-of-computer-laptop-near-white-notebook-and-ceramic-mug-on-table-169573/ Photo by Negative Space from Pexels
-https://www.pexels.com/photo/silhouette-of-four-people-against-sun-background-862848/ Photo by Dennis Magati from Pexels
-https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/ Photo by Tim Gouw from Pexels
-Photo by Startup Stock Photos from Pexels: https://www.pexels.com/photo/person-s-hands-on-macbook-pro-7114/
-Photo by ThisIsEngineering: https://www.pexels.com/photo/woman-sitting-in-front-of-computer-in-office-3861967/
-Photo by Markus Spiske: https://www.pexels.com/photo/black-laptop-computer-turned-on-showing-computer-codes-177598/
-Photo by Christina Morillo: https://www.pexels.com/photo/closeup-photo-of-silver-macbook-pro-on-table-1181269/
-Photo by hitesh choudhary: https://www.pexels.com/photo/selective-focus-photography-of-man-facing-computer-340152/
-Photo by hitesh choudhary: https://www.pexels.com/photo/turned-on-macbook-pro-693859/
-Photo by RODNAE Productions: https://www.pexels.com/photo/person-holding-the-conference-program-7648031/
-Photo by Tima Miroshnichenko: https://www.pexels.com/photo/close-up-view-of-system-hacking-5380792/
-Photo by Mikhail Nilov: https://www.pexels.com/photo/man-people-night-dark-6963098/
-Photo by Markus Spiske from Pexels: https://www.pexels.com/photo/green-and-white-line-illustration-225769/
-Photo by cottonbro: https://www.pexels.com/photo/boy-in-white-shirt-sitting-in-front-of-computer-4709286/
-Photo by Mikhail Nilov: https://www.pexels.com/photo/man-people-night-dark-6963098/
-Photo by cottonbro: https://www.pexels.com/photo/man-in-black-leather-jacket-using-computer-8720586/
-Photo by Sora Shimazaki: https://www.pexels.com/photo/crop-unrecognizable-developer-using-laptop-and-smartphone-5926389/
+    - Photo by [Negative Space](https://www.pexels.com/photo/grayscale-photo-of-computer-laptop-near-white-notebook-and-ceramic-mug-on-table-169573/) from Pexels
+
+    - Photo by [Dennis Magati](https://www.pexels.com/photo/silhouette-of-four-people-against-sun-background-862848/) from Pexels
+
+    - Photo by [Tim Gouw](https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/) from Pexels
+
+    - Photo by [Startup Stock Photos](https://www.pexels.com/photo/person-s-hands-on-macbook-pro-7114/) from Pexels
+
+    - Photo by [ThisIsEngineering](https://www.pexels.com/photo/woman-sitting-in-front-of-computer-in-office-3861967/) from Pexels
+
+    - Photo by [Markus Spiske](https://www.pexels.com/photo/black-laptop-computer-turned-on-showing-computer-codes-177598/) from Pexels
+
+    - Photo by [Christina Morillo](https://www.pexels.com/photo/closeup-photo-of-silver-macbook-pro-on-table-1181269/) from Pexels
+
+    - Photo by [Hitesh Choudhary](https://www.pexels.com/photo/selective-focus-photography-of-man-facing-computer-340152/) from Pexels
+
+    - Photo by [Hitesh Choudhary](https://www.pexels.com/photo/turned-on-macbook-pro-693859/) from Pexels
+
+    - Photo by [RODNAE Productions](https://www.pexels.com/photo/person-holding-the-conference-program-7648031/) from Pexels
+
+    - Photo by [Tima Miroshnichenko](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380792/) from Pexels
+
+    - Photo by [Mikhail Nilov](https://www.pexels.com/photo/man-people-night-dark-6963098/) from Pexels
+
+    - Photo by [Markus Spiske from Pexels](https://www.pexels.com/photo/green-and-white-line-illustration-225769/) from Pexels
+
+    - Photo by [Cottonbro](https://www.pexels.com/photo/boy-in-white-shirt-sitting-in-front-of-computer-4709286/) from Pexels
+
+    - Photo by [Mikhail Nilov](https://www.pexels.com/photo/man-people-night-dark-6963098/) from Pexels
+
+    - Photo by [Cottonbro](https://www.pexels.com/photo/man-in-black-leather-jacket-using-computer-8720586/) from Pexels
+
+    - Photo by [Sora Shimazaki](https://www.pexels.com/photo/crop-unrecognizable-developer-using-laptop-and-smartphone-5926389/) from Pexels

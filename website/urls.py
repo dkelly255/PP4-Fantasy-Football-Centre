@@ -1,6 +1,10 @@
 from . import views
 from django.urls import path
 
+# Credits: Code adapted from CI LMS Blog lessons and adapted
+# ,expanded, and customized for my specific project needs
+
+
 urlpatterns = [
     path("", views.landing_page, name="home"),
     path("article-list/", views.ArticleList.as_view(), name="article_list"),
