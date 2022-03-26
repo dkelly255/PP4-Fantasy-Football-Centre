@@ -229,12 +229,6 @@ The equivalent message displayed to a user when logging out is shown below:
 
 ![Messages](readme/message-logout.png)
 
-### - Account Creation Notification Message
-
-The equivalent messages displayed to a user when creating a new account are also shown below:
-
-![Messages](readme/message-signup.png)
-
 ### - Comment submission Notification Message
 
 The equivalent messages displayed to a user upon submission of a comment for approval is also shown below:
@@ -242,7 +236,9 @@ The equivalent messages displayed to a user upon submission of a comment for app
 ![Messages](readme/message-comment.png)
 
 ## 4. Future Features 
-In addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented:
+In keeping with the principles of Agile Software Development, I wanted to ensure that the available time was focused on the most critical functionality & feature-set to ensure a working MVP would be ready for the project deadlines.
+
+As a result, in addition to the existing features there are several additional features which can be added to augment the application in future and are yet to be implemented. I would hope to be able to further develop my Django capability by pursuing the implementation of these features at a future point in time:
 
 ### - Notifications
 
