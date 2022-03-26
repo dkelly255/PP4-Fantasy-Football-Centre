@@ -1,18 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<!-- Setup bootstrap responsive grid -->
 <div class="container-fluid text-light text-center">    
     <div class="row align-items-center home-page-container">
         <div class="col">
-
             <div class="row justify-content-center">
+                <!-- Site banner header in consistent reuseable format & using bootstrap responsivity features -->
                 <div class="col-sm-10 col-md-10 col-xxl-8 green border d-flex justify-content-center align-items-center my-4 mx-1">
                     <i class="rocket fas fa-rocket text-dark pe-4"></i> 
                         <h1 class="pb-3 pt-3 pe-2 text-center text-dark">Django Blog </h1><h1 class="pb-3 pt-3 text-light font-weight-bold">|Welcome|</h1>
                     <i class="rocket fas fa-rocket text-dark ps-4"></i> 
                 </div>
             </div>
-            
+            <!-- Summary field for Website introduction - using bootstrap responsivity features-->
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-md-10 col-xxl-8 green border mb-2 mx-1">
                     <h2 class="pt-3 pb-2">Site Overview<i class="fas fa-street-view text-dark ps-3"></i></h2>
@@ -20,20 +21,23 @@
                     <p>The site is currently split into two main sections, each of which can be browsed in more detail below: </p>
                 </div>
             </div>
-            
             <div class="row justify-content-center">
+                <!-- Link to Articles section of site - using bootstrap responsivity features-->
                 <div class="col-sm-5 col-md-5 col-xxl-4 green border mb-2 mx-1">
                     <h3 class="pt-3 pb-2">Django Articles<i class="fas fa-book text-dark ps-3"></i></h3> 
                         <p>Our Articles section has perspectives on several aspects of the Django Framework, with topics including: </p>
                         <p>(1) What Django is, and who uses it </p>
                         <p>(2) The key features of the framework </p>
                         <p>(3) Other perspectives & views on Django </p>
+                    <!-- Button to proceed to articles - use site color palette -->
                     <a class = "btn btn-dark mb-2" href="{% url 'article_list' %}" role="button">Browse Articles</a>
                 </div>
+                <!-- Link to Polls section of site - using bootstrap responsivity features-->
                 <div class="col-sm-5 col-md-5 col-xxl-4 green border mb-2 mx-1">
                     <h3 class="pt-3 pb-2">Opinion Polls<i class="fas fa-clipboard text-dark ps-3"></i></h3>
                         <p>If you are a registered member, you can also participate in our site opinion polls, found at the link below:</p>
                         <p>Please note you must be logged into the site to access the polls content, but if you're not a member yet don't worry, signing up is a very quick and easy process!</p>
+                    <!-- Button to proceed to polls - use site color palette -->
                     <a class = "btn btn-dark mb-2 mt-2" href="{% url 'poll:index' %}" role="button">Vote in Polls</a>
                 </div>
             </div>        

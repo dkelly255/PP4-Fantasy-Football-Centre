@@ -731,7 +731,7 @@ Also please ensure to have an environment file correctly setup (`env.py`) with t
 # SECTION 6: CREDITS
 
 ## General Credits
--As part of the development process for the site, I required guidance from a number of online Django Resources aimed at walking new users through the process of using the Framework. The three most utilised and useful tutorials which helped me come up to speed with Django were:
+As part of the development process for the site, I required guidance from a number of online Django Resources aimed at walking new users through the process of using the Framework. The three most utilised and useful tutorials which helped me come up to speed with Django were:
 1. The [Official Django Documentation tutorial](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) - a set of 7 tutorial stages which walk through building a poll app in Django step by step, from initial setup & installation, to completion
 
     Note I have also built this completed & fully functional poll app tutorial, the build can be found in my associated github repository: [Django Tutorial 1](https://github.com/dkelly255/Django-Tutorial-1)
@@ -789,37 +789,20 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
     - The Article [Image](https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/) for "Useful Django Resources" is a Photo by Designecologist from Pexels
 - The following Images were used for the body of the Articles, each of which is fully attributed & accredited below, as well as being free to use from Pexels:
     - Photo by [cottonbro](https://www.pexels.com/photoman-in-white-t-shirt-sitting-in-front-of-black-flat-screen-computer-monitor-6804604/) from Pexels
-
     - Photo by [Negative Space](https://www.pexels.com/photo/grayscale-photo-of-computer-laptop-near-white-notebook-and-ceramic-mug-on-table-169573/) from Pexels
-
     - Photo by [Dennis Magati](https://www.pexels.com/photo/silhouette-of-four-people-against-sun-background-862848/) from Pexels
-
     - Photo by [Tim Gouw](https://www.pexels.com/photo/man-in-white-shirt-using-macbook-pro-52608/) from Pexels
-
     - Photo by [Startup Stock Photos](https://www.pexels.com/photo/person-s-hands-on-macbook-pro-7114/) from Pexels
-
     - Photo by [ThisIsEngineering](https://www.pexels.com/photo/woman-sitting-in-front-of-computer-in-office-3861967/) from Pexels
-
     - Photo by [Markus Spiske](https://www.pexels.com/photo/black-laptop-computer-turned-on-showing-computer-codes-177598/) from Pexels
-
     - Photo by [Christina Morillo](https://www.pexels.com/photo/closeup-photo-of-silver-macbook-pro-on-table-1181269/) from Pexels
-
     - Photo by [Hitesh Choudhary](https://www.pexels.com/photo/selective-focus-photography-of-man-facing-computer-340152/) from Pexels
-
     - Photo by [Hitesh Choudhary](https://www.pexels.com/photo/turned-on-macbook-pro-693859/) from Pexels
-
     - Photo by [RODNAE Productions](https://www.pexels.com/photo/person-holding-the-conference-program-7648031/) from Pexels
-
     - Photo by [Tima Miroshnichenko](https://www.pexels.com/photo/close-up-view-of-system-hacking-5380792/) from Pexels
-
     - Photo by [Mikhail Nilov](https://www.pexels.com/photo/man-people-night-dark-6963098/) from Pexels
-
     - Photo by [Markus Spiske from Pexels](https://www.pexels.com/photo/green-and-white-line-illustration-225769/) from Pexels
-
     - Photo by [Cottonbro](https://www.pexels.com/photo/boy-in-white-shirt-sitting-in-front-of-computer-4709286/) from Pexels
-
     - Photo by [Mikhail Nilov](https://www.pexels.com/photo/man-people-night-dark-6963098/) from Pexels
-
     - Photo by [Cottonbro](https://www.pexels.com/photo/man-in-black-leather-jacket-using-computer-8720586/) from Pexels
-
     - Photo by [Sora Shimazaki](https://www.pexels.com/photo/crop-unrecognizable-developer-using-laptop-and-smartphone-5926389/) from Pexels

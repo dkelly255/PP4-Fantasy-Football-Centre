@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<!-- Setup bootstrap responsive grid -->
 <div class="container-fluid text-light text-center">    
     <div class="row align-items-center home-page-container">
         <div class="col">
-
+            <!-- Summary field for question title - using bootstrap responsivity features-->
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-md-10 col-xxl-8 green border d-flex justify-content-center align-items-center my-4 mx-1">
                     <i class="rocket fas fa-clipboard text-dark pe-3"></i> 
@@ -13,10 +13,9 @@
                     <i class="rocket fas fa-clipboard text-dark ps-3"></i> 
                 </div>
             </div>
-            
+            <!-- Detail section for answer choices using bootstrap responsivity features -->
             <div class="row justify-content-center">
-                <div class="col-sm-10 col-md-10 col-xxl-3 green border mb-4 mx-1">
-                    
+                <div class="col-sm-10 col-md-10 col-xxl-3 green border mb-4 mx-1">                    
                     <form action="{% url 'poll:vote' question.id %}" method="post">
                         {% csrf_token %}
                         <fieldset>                            
@@ -26,7 +25,7 @@
                                 <label class="text-light" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
                             {% endfor %}
                         </fieldset>                        
-                        
+                        <!-- Button for user to register their vote - use site color palette & theme -->
                         <input class ="btn-dark" type="submit" value="Vote">
                     </form>
                 </div>

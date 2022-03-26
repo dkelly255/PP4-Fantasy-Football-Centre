@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<!-- Setup bootstrap responsive grid -->
 <div class="container-fluid text-light text-center">    
     <div class="row align-items-center home-page-container">
         <div class="col">
-
+            <!-- Summary field for Polls Summary page - using bootstrap responsivity features-->
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-md-10 col-xxl-8 green border d-flex justify-content-center align-items-center my-4 mx-1">
                     <i class="rocket fas fa-rocket text-dark pe-4"></i> 
@@ -13,7 +13,7 @@
                     <i class="rocket fas fa-rocket text-dark ps-4"></i> 
                 </div>
             </div>
-            
+            <!-- Detail section for introductory context using bootstrap responsivity features -->
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-md-10 col-xxl-8 green border mb-4 mx-1">
                     <h2 class="pt-3 pb-2">Polls Overview<i class="fas fa-clipboard text-dark ps-3"></i></h2>
@@ -22,13 +22,14 @@
                     <a class = "btn btn-dark my-2" href="{% url 'home' %}" role="button">Return Home</a> 
                 </div>
             </div>
-            
+            <!-- Detail section for question text using bootstrap responsivity features -->
             <div class="row justify-content-center">
                 {% if latest_question_list %}                                    
                     {% for question in latest_question_list %}
                         <div class="col-sm-5 col-md-5 col-xxl-4 green border mb-2 mx-1">
                             <h3 class="pt-3 pb-2">Polls: Question {{ question.id }}<i class="fas fa-book text-dark ps-3"></i></h3> 
-                                <p>{{ question.question_text }}</p>                                
+                                <p>{{ question.question_text }}</p>        
+                            <!-- Button for user to go to desired poll - use site color palette & theme -->                        
                             <a class = "btn btn-dark mb-2" href="{% url 'poll:detail' question.id %}" role="button">Go To Poll {{ question.id }}</a>
                         </div>                        
                     {% endfor %}                                    
