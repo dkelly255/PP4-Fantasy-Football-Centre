@@ -19,18 +19,44 @@ The strategic aim of the site is to deliver the following **Epics**:
 1. Epic 1 - Create a Blog Website App to allow users to locate, display, like and comment on articles about Django
 2. Epic 2 - Create a Poll App to allow users to express their preference and opinions on topics relevant to the Website App content
 
-With these two broad epics as the overall strategic goal of the project, we are then able to refine the epics into the following **User Stories**:
+With these two broad epics as the overall strategic goal of the project, we are then able to refine the epics into the following **User Stories**, each of which must have a clearly defined set of **Acceptance Criteria**:
 
 ### **Epic 1 - Blog Website App - User Story Mapping:**
 
 ### *As a site user I can:*
 - Create and register for an account so that I can add my own comments and likes to the articles and content
+    - Acceptance Criteria:
+        - The signup process should operate via a form
+        - The user should be logged in upon provision of the requisite details
+        - The user should then be able to add likes and comments to articles
 - View a list of the site's articles so that I can select one to read
-- View an organised list of articles so that I can select which article I wish to view
+    - Acceptance Criteria:
+        - The Site's articles should be paginated by a factor of 6 
+        - The articles should be readily accessible and not require authorisation or authentication to view
+        - Each article summary card should have a clear excerpt detailing an outline of the content
+        - Each article summary card should show the author, publication date, and a count of the likes and comments to date
 - Open an article so that I can read the full content
+    - Acceptance Criteria:
+        - Each individual article summary card should be fully clickable by the user anywhere on the card including the title and image for ease of access and intuitive UX
+        - The article should open and allow the user to view the featured image, title, and immediately begin digesting the article content
+        - The article summary should be fully responsive on different device sizes without any negative UX impacts 
 - Add my own comments to articles so that I can join in the discussion on current Django hot topics and issues
+    - Acceptance Criteria:
+        - A user should only be able to add comments if properly authenticated and authorised 
+        - A "comment pending approval" notification should display to the user after leaving a comment
+        - The notification should disappear again after a short pre-set Javascript time interval 
 - Add a like to an article so that I can provide my opinion on the content
+    - Acceptance Criteria:
+        - A user should only be able to add likes to an article if they are properly authenticated and authorised 
+        - A user should only ever be able to increment or decrement the like count once - they should not be permitted to leave multiple likes
+        - The like icon should change from hollow to solid when a user likes the article
+       - The like count on the article should at all times correctly update to reflect the user's most recent like/unlike action
 - Remove a like from an article so that I can correct the record if I have mistakenly added a like
+    - Acceptance Criteria:
+        - A user should only be able to remove a like from an article if they are properly authenticated and authorised, and if they have already left a like 
+        - The like icon should change from solid to hollow if a user un-likes the article
+        - The like count on the article should at all times correctly update to reflect the user's most recent like/unlike action
+
 
 ### *As a site administrator I can:*
 - Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the blog website app
