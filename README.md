@@ -5,7 +5,7 @@ In terms of having a clear, justified rationale for this real-world application,
 
 Firstly, the process of writing articles on various different aspects and perspectives on Django had the potential to be of huge benefit during my own learning experience & journey through understanding the Django Framework, what it is, how it works, who uses it and so forth.
 
-And secondly, that the site would be of use to other Django-learners who are on a similar path to learning the framework, for example the article [Approaches To Learning Django](https://p4-django-blog.herokuapp.com/approaches-to-learning-django/) I hope will be of potential benefit to other developers who are in similar cirucmstances in trying to learn & come up to speed on the Framework.
+And secondly, that the site would be of use to other Django-learners who are on a similar path to learning the framework, for example the article [Approaches To Learning Django](https://p4-django-blog.herokuapp.com/approaches-to-learning-django/) I hope will be of potential benefit to other developers who are in similar circumstances in trying to learn & come up to speed on the Framework.
 
 ![Title](readme/amiresponsive.png)
 
@@ -39,7 +39,7 @@ With these two broad epics as the overall strategic goal of the project, we are 
 
 ### *As both a site user and administrator I can:*
 
-- View a count of likes on each article so that I can guage general user sentiment on the site content
+- View a count of likes on each article so that I can gauge general user sentiment on the site content
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
 
 ### **Epic 2 - Poll App - User Story Mapping:**
@@ -80,7 +80,7 @@ If you wish to review the boards in more detail, please navigate to the [Project
 
 ## 3. Structure
 
-The website is structured using the Django Framework functionality, with a home page, an articles page, a login option, and a signup page. The home page greets the visitor with a welcome message and links to the the main content of the site, the articles page houses the Django Articles, together with the comments that have been posted by other users/viewers.
+The website is structured using the Django Framework functionality, with a home page, an articles page, a login option, and a signup page. The home page greets the visitor with a welcome message and links to the main content of the site, the articles page houses the Django Articles, together with the comments that have been posted by other users/viewers.
 
 The core website data  will be stored in Heroku's PostgreSQL add-on, and website static files and media/images will be stored on the Cloudinary Platform. I have made the decision to store website images on Cloudinary rather than Heroku due to the fact that Heroku is an ephemeral file system, and the Dyno system it utilizes can cause problems in situations where the project has been idle or if it has not been accessed for a certain length of time. Cloudinary is a persistent file store, and will therefore minimise the likelihood of such issues occurring and interrupting or deteriorating the User Experience, ensuring site visitors have less chance of seeing broken image links when browsing the site. In terms of the Cloudinary design choice, it is also less complicated to setup than other persistent file stores (such as Amazon S3 or Microsoft Azure) so will fit well for the scope of this project.
 
@@ -91,7 +91,7 @@ The core website data  will be stored in Heroku's PostgreSQL add-on, and website
 Generically the project is structured using the "Model, View, Template" software design pattern. 
 
 - The Model supports with database management, being a data access layer which primarily handles data. 
-- The Views are used toe xecute the business logic and interact with the model to carry data and render a template
+- The Views are used to execute the business logic and interact with the model to carry data and render a template
 - The Templates are the presentation layers, which handle the User Interface aspects of the application.
 
 The diagram below (sourced from [javatpoint.com](https://www.javatpoint.com/django-mvt)) illustrates the MVT structure & control flow used for this project:
@@ -100,7 +100,7 @@ The diagram below (sourced from [javatpoint.com](https://www.javatpoint.com/djan
 
 ### - *Requirements.txt* 
 
-The project structure includes a requirements.txt in keeping with Python Standards & best practices - as per this overview from [idkrtm.com](https://www.idkrtm.com/what-is-the-python-requirements-txt/), the requirements.txt file is used for specifiying which Python packages are required to run the overall project.
+The project structure includes a requirements.txt in keeping with Python Standards & best practices - as per this overview from [idkrtm.com](https://www.idkrtm.com/what-is-the-python-requirements-txt/), the requirements.txt file is used for specifying which Python packages are required to run the overall project.
 
 The current packages and dependencies list for the project are shown below:
 
@@ -149,7 +149,7 @@ Please note - I originally started this project as a Fantasy Football Content we
 
 Whilst it was not critical to the application's functionality, from a completeness perspective, and from a learning-experience perspective, I wanted to understand how the process of renaming a Django project would work if it were to be undertaken, and what the potential pitfalls would be. 
 
-Through consultation with our fortnightly Group Stand-Up facilitator, and from watching the linked [How To Change The Name Of A Django Project](https://www.youtube.com/watch?v=ko83PEvotNI&t=1s) instructional video from [Master Code Online](https://www.youtube.com/channel/UCbhm6TbMBTWn_GxrIbPFapA), I was able to succesfully rename the project, across all elements of the directory structure, and the Heroku deployment. A snapshot of some of the key aspects of mapping exercise I undertook to succesfully rename the project directory structure is illustrated below:
+Through consultation with our fortnightly Group Stand-Up facilitator, and from watching the linked [How To Change The Name Of A Django Project](https://www.youtube.com/watch?v=ko83PEvotNI&t=1s) instructional video from [Master Code Online](https://www.youtube.com/channel/UCbhm6TbMBTWn_GxrIbPFapA), I was able to successfullyrename the project, across all elements of the directory structure, and the Heroku deployment. A snapshot of some of the key aspects of mapping exercise I undertook to successfullyrename the project directory structure is illustrated below:
 
 ![renaming](readme/renaming.png)
 
@@ -166,7 +166,7 @@ The database system used for the models in testing and development is an applica
 
 As illustrated in this overview at [Python.org](https://docs.python.org/3/library/sqlite3.html) - SQLite3 a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language, and is typically used in Django Applications for testing & development.
 
-Note - for more information, please see the `Testing` and `Bugs` readme sections for more detail on the two databases - SQLite3 and PostgrSQL and changing between the two.
+Note - for more information, please see the `Testing` and `Bugs` readme sections for more detail on the two databases - SQLite3 and PostgreSQL and changing between the two.
 
 ### - Crispy Forms
 
@@ -176,7 +176,7 @@ As per this overview article at [merixstudio.com](https://www.merixstudio.com/bl
 
 ### - Summernote
 
-Summernote is used as an editor for the article functionality within the site. The Summernote [website](https://summernote.org/) contains comprehensive & useful documentatino on the editor - for the purposes of this project's structure - it is used as a "WYSIWYG" (What You See Is What You Get) editor, due to it's simple & easy-to-use nature.
+Summernote is used as an editor for the article functionality within the site. The Summernote [website](https://summernote.org/) contains comprehensive & useful documentation on the editor - for the purposes of this project's structure - it is used as a "WYSIWYG" (What You See Is What You Get) editor, due to it's simple & easy-to-use nature.
 
 ## 4. Skeleton
 
@@ -209,7 +209,7 @@ I have used the Bootstrap framework to build the Surface of the website, with th
 
 - Typography
 
-For the Fonts on the site I am primarily using [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) for site content - As per the overview on Google Fonts [linked](https://fonts.google.com/specimen/Roboto?query=roboto), Roboto has a dual nature, with a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+For the Fonts on the site I am primarily using [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) for site content - As per the overview on Google Fonts [linked](https://fonts.google.com/specimen/Roboto?query=roboto), Roboto has a dual nature, with a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesques distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
 
 ![Roboto](readme/roboto.png)
 
@@ -229,7 +229,7 @@ As part of the surface layer of the website's user experience, I wanted to use a
 
 ![Imagery](readme/bootstrap_color.png)
 
-A deeper dive on the Green color scheme allows many different shades, hues, and opacities depending on the user's needs, for themajority of the site's surface I am using the default shade of green (code #198754 & its' derivations) - shown below:
+A deeper dive on the Green color scheme allows many different shades, hues, and opacities depending on the user's needs, for the majority of the site's surface I am using the default shade of green (code #198754 & its' derivations) - shown below:
 
 ![Imagery](readme/bootstrap_color_green.png)
 
@@ -335,7 +335,7 @@ DATABASES = {
 }
 ```
 
-This succesfully resolved the bug and enabled proceeding with the development of the automated testing activties detailed in the "Testing" section of the readme.
+This successfullyresolved the bug and enabled proceeding with the development of the automated testing activities detailed in the "Testing" section of the readme.
 
 ### 4. Poll app questions displaying in reverse order
 
@@ -345,7 +345,7 @@ Upon first building the poll app, I noticed that the questions were appearing in
 
  Whilst this was technically not impacting the operation of the site, I found that it was not the optimal User Experience, and wanted to have the questions displaying in numbered sequence. As per the credits section, I had originally used the [official Django Documentation](https://www.google.com/search?q=django+tutorial&oq=django+tutorial&aqs=chrome.0.69i59j0i512l2j69i60l3j69i65l2.1632j0j7&sourceid=chrome&ie=UTF-8) tutorial to develop the poll application, and after researching and troubleshooting I found that this was due to the reverse operator included in the `get_queryset()` method of the `IndexView()` class-based view in `poll/views.py`
 
-By removing the reverse operator from the code, I was able to succesfully resolve the bug, and have the question list display in sequential order, improving the user experience in the process:
+By removing the reverse operator from the code, I was able to successfullyresolve the bug, and have the question list display in sequential order, improving the user experience in the process:
 
 ![Bug4](readme/indexview.png)
 
@@ -353,7 +353,7 @@ By removing the reverse operator from the code, I was able to succesfully resolv
 
 Note this bug subsequently also caused a knock-on impact which I did not catch until re-running my automated tests later in the development process - and required an update to my `Automated Testing` for this view, specifically the [`test_two_past_questions(self):`](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#ii-testing-the-polls-view-indexview) test. 
 
-Originally i had setup the test as follows:
+Originally I had setup the test as follows:
 
 ```
 def test_two_past_questions(self):
@@ -385,7 +385,7 @@ First differing element 0:
 ?                           ^                             ^
 ```
 
-Through troubleshooting and using the `Rubber Duck` method, I was able to retrace my steps through all elements of my code & determine that in order to get the automated test apssing again I simply required an update to the question sequence in the test to the below:
+Through troubleshooting and using the `Rubber Duck` method, I was able to retrace my steps through all elements of my code & determine that in order to get the automated test passing again I simply required an update to the question sequence in the test to the below:
 
 ```
 question1 = create_question(question_text="Past question 1.", days=-5)
@@ -404,13 +404,13 @@ This bug may also have been caused by a combination of the debug flag and other 
 
 ### 6. Unauthorised users permitted to access Polls App
 
-The initial build of my poll application included a bug which enabled a user who was not logged in (and therefore unauthorised and unathenticated) to be able to access the polls application via manually adding `/poll` to the end of the homepage URL:
+The initial build of my poll application included a bug which enabled a user who was not logged in (and therefore unauthorised and unauthenticated) to be able to access the polls application via manually adding `/poll` to the end of the homepage URL:
 
 ![Bug6](readme/bug6-unauthorised-poll.png)
 
 As part of completing the [Django Tutorial](https://www.youtube.com/watch?v=3aVqWaLjqS4&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=7) series from [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g) I was able to understand that we can add authorisation & authentication controls to a class-based view by importing a `LoginRequiredMixin` from `django.contrib.auth.mixins`, and including it in the view for the relevant class. 
 
-Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `django.contrib.auth.mixins` to the `IndexView` class in `poll/views.py`, the bug was succesfully resolved, and a non-logged-in user is now re-routed to the `signin` page if trying to circumvent access controls via manual manipulation of the address bar & URL:
+Upon taking these actions, and importing/adding the `LoginRequiredMixin` from `django.contrib.auth.mixins` to the `IndexView` class in `poll/views.py`, the bug was successfullyresolved, and a non-logged-in user is now re-routed to the `signin` page if trying to circumvent access controls via manual manipulation of the address bar & URL:
 
 ![Bug6](readme/bug6-closed.png)
 
@@ -434,7 +434,7 @@ However, this code does not work, and instead the code `<i class="fas fa-rocket"
 
 ### 8. Heroku Javascript/Static File bug - messaging
 
-When breaking out my javascript code into a separate file `base.js` to keep separate from my `base.html` template, I encountered a bug where the mesage functionality would continue to behave as expected in the development server/githubport-8000 browser, but would behave differently in the Heroku deployment. Specifically, the notification messages would appear as expected in Heroku, but would not disappear again despite being specified to do so by the javascript code in `base.js` via the code below:
+When breaking out my javascript code into a separate file `base.js` to keep separate from my `base.html` template, I encountered a bug where the message functionality would continue to behave as expected in the development server/githubport-8000 browser, but would behave differently in the Heroku deployment. Specifically, the notification messages would appear as expected in Heroku, but would not disappear again despite being specified to do so by the javascript code in `base.js` via the code below:
 
 ```
 <script src="../static/js/base.js"></script>
@@ -451,7 +451,7 @@ Updating the code to reflect the Jinja templating syntax per the code block belo
 
 During my [accessibility testing](https://github.com/dkelly255/pp4-django-blog/blob/main/TESTING.md#6-accessibility-testing) activities, the `post_detail.html` page would continually receive below 90% accessibility scores from Lighthouse audits due to missing `alt text` tags on image elements.
 
-In my first attempts at improving initial accessiblilty, I had performed a thorough scrub of all `.html` templates and `img` elements, ensuring that the `alt` attributes were all present, however I would still receive the `images missing alt text` warnings below:
+In my first attempts at improving initial accessibility, I had performed a thorough scrub of all `.html` templates and `img` elements, ensuring that the `alt` attributes were all present, however I would still receive the `images missing alt text` warnings below:
 
 ![Bug9](readme/bug9-accessibility.png)
 
@@ -463,9 +463,9 @@ Through researching how to resolve this I eventually discovered that the solutio
 
 However, this still would not allow the alt text to dial through into the Django html - further research on this issue led me to believe that an API will be required (Cloudinary's [Get Single Resource](https://cloudinary.com/documentation/admin_api#get_the_details_of_a_single_resource) API) as per this [section](https://cloudinary.com/blog/m16y_make_your_cloudinary_images_more_accessible#setup_and_retrieval_of_alt_text_with_api) of Cloudinary's documentation.
 
-This bug remained opened for quite some time, and in keeping with an Agile software development methodology, and considering that the accessibility deficiency was understood and acknowledged, and would not invalidate the majority of the site content, I decided to de-prioiritise this task in favour of other more project-critical activities which still require completion prior to deadline, with the intention of revisiting in future when time is less of a constraint.
+This bug remained opened for quite some time, and in keeping with an Agile software development methodology, and considering that the accessibility deficiency was understood and acknowledged, and would not invalidate the majority of the site content, I decided to de-prioritise this task in favour of other more project-critical activities which still require completion prior to deadline, with the intention of revisiting in future when time is less of a constraint.
 
-Subsequently however, as part of a discussion in the [Accessibility Ally](https://code-institute-room.slack.com/archives/C037VP5A3FZ/p1648049020400839) channel on slack, we were able to determine that in fact the way to add the alt text was through the `wsiwyg` (What You See Is What You Get) editor's "Code" function - which allowed directly adding alt attributes into images uplaoded via the Summernote text editor per the screenshot below:
+Subsequently however, as part of a discussion in the [Accessibility Ally](https://code-institute-room.slack.com/archives/C037VP5A3FZ/p1648049020400839) channel on slack, we were able to determine that in fact the way to add the alt text was through the `wsiwyg` (What You See Is What You Get) editor's "Code" function - which allowed directly adding alt attributes into images uploaded via the Summernote text editor per the screenshot below:
 
 ![Bug9](readme/bug9-resolution.png)
 
@@ -477,7 +477,7 @@ After introducing valuable authentication & authorisation features to my Polls a
 
 ![Bug10](readme/bug10-poll-tests-fail.png)
 
-Through spending time researching & debugging this issue across Stack Overflow and the Code Institute Slack Channels, I was able to determine that my tests required login credentials in order to succesfully pass the newly introduced Authentication. By adding the code in the block below to my tests, together with the required import statements from the correct libraries, I was able to update my tests to succesfully pass again:
+Through spending time researching & debugging this issue across Stack Overflow and the Code Institute Slack Channels, I was able to determine that my tests required login credentials in order to successfullypass the newly introduced Authentication. By adding the code in the block below to my tests, together with the required import statements from the correct libraries, I was able to update my tests to successfullypass again:
 
 ```
 test_user = User.objects.create_user(
@@ -498,7 +498,7 @@ When updating my file path from the above to the below, this resolved the initia
 
 ![Bug11](readme/bug11-favicon2.png)
 
-However, the favicon bugs still existed when I tried to view the site in the production environment/Heroku, and the favicon would not display on *any* pages. Through further research, debugging, and trial and error, I discovered that this was due to the way I had approached the favicon addition - where I had stored the favicon in my static images folder, I actually needed to use the Cloudinary link, as this was where my images were being served to Heroku. Upon updating my favicon location link to the below, this succesfully resolved the issue and closed the bug:
+However, the favicon bugs still existed when I tried to view the site in the production environment/Heroku, and the favicon would not display on *any* pages. Through further research, debugging, and trial and error, I discovered that this was due to the way I had approached the favicon addition - where I had stored the favicon in my static images folder, I actually needed to use the Cloudinary link, as this was where my images were being served to Heroku. Upon updating my favicon location link to the below, this successfullyresolved the issue and closed the bug:
 
 ![Bug11](readme/bug11-favicon3.png)
 
@@ -522,11 +522,11 @@ Through researching errors of this nature on both Stack Overflow and the Django 
 </script>
 ```
 
-Please note - as my Javascript began to grow in length and scope I subsequently moved this code to the `base.js` file where it noe currently resides. Implementing this Javascript approach has resolved the issue with duplicate comments and the bug has now been closed on the Bugs Kanban.
+Please note - as my Javascript began to grow in length and scope I subsequently moved this code to the `base.js` file where it now currently resides. Implementing this Javascript approach has resolved the issue with duplicate comments and the bug has now been closed on the Bugs Kanban.
 
 ### 13. Page scroll reset on screen refresh issues
 
-As my articles began to grow in length, I noticied a UX deficiency/bug whereby when a user leaves a comment, the screen would scroll back to the top of the page which can be a large distance depending on the article content. 
+As my articles began to grow in length, I noticed a UX deficiency/bug whereby when a user leaves a comment, the screen would scroll back to the top of the page which can be a large distance depending on the article content. 
 
 This would cause the user to (a) have to scroll a long distance to get back to where they were focused and (b) potentially cause them to miss the "comment pending approval" notification message if the scroll duration took longer than the javascript message display timeout.
 
@@ -665,7 +665,7 @@ I also must acknowledge and highly recommend the [Official Django Forum](https:/
 
 3. How to locate files in [Django's source code & directories](https://forum.djangoproject.com/t/tutorial-7-base-site-html-location/12187/3)
     
-4. Support with trying to resolve a [101 - Network Unavilable error](https://forum.djangoproject.com/t/oserror-at-password-reset-errno-101-network-is-unreachable/12348/2)
+4. Support with trying to resolve a [101 - Network Unavailable error](https://forum.djangoproject.com/t/oserror-at-password-reset-errno-101-network-is-unreachable/12348/2)
 
 As part of the process of learning how to use Bootstrap, I must also highly recommended the linked [BootStrap Tutorial Series](https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR) from the YouTube channel [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg). I found this series of 10+ tutorial videos to be hugely helpful in learning how to use Bootstrap to construct responsive, mobile-first designs and was able to utilise several ideas and techniques from the series in constructing my home page specifically, and the site generically.
 
