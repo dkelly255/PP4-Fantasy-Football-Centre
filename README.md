@@ -671,7 +671,7 @@ I also must acknowledge and highly recommend the [Official Django Forum](https:/
 
 5. Help with troubleshooting [Django Date Filter rendering problems](https://forum.djangoproject.com/t/html-template-date-renders-not-reflecting-specified-format/12818)
 
-Similarly, I would like to acknowledge the [Django Girls Tutorial Gitter Forum](https://gitter.im/DjangoGirls/tutorial?at=6213bd46c435002500b8ea12) for providing help with issues I was having in following certain sections of the Tutorial as part of the initial research and learning preparation for this project. Specifically user [Raphael Das Gupta](https://github.com/das-g) for helping me understand that GitBook and jango use a similar syntax for templates, which was causing template tags to be displayed erroneously.
+Similarly, I would like to acknowledge the [Django Girls Tutorial Gitter Forum](https://gitter.im/DjangoGirls/tutorial?at=6213bd46c435002500b8ea12) for providing help with issues I was having in following certain sections of the Tutorial as part of the initial research and learning preparation for this project. Specifically user [Raphael Das Gupta](https://github.com/das-g) for helping me understand that GitBook and Django use a similar syntax for templates, which was causing template tags to be displayed erroneously.
 
 Raphael had already proposed a fix for this issue and was able to help resolve a few instances of where it was occuring. You can see the solution [here](https://github.com/DjangoGirls/tutorial-extensions/pull/141) and the problem-solving discussions we were having on this issue [here](https://gitter.im/DjangoGirls/tutorial?at=6213bd46c435002500b8ea12) and [here](https://gitter.im/DjangoGirls/tutorial?at=6213ef76ddcba117a2eaccf2)
 
@@ -687,7 +687,7 @@ As part of the process of learning how to use Bootstrap, I must also highly reco
 
 ## Code
 - The blog application (`website` folder in project directory) is based on the Code Institute [Blog lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) project and has been adapted, customized and expanded for my project needs
-- The poll app (poll folder in project directory) is based on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) introduction to Django tutorial and has been adapted, expanded, and customized for my project needs
+- The `poll` app (`poll` folder in project directory) is based on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) introduction to Django tutorial and has been adapted, expanded, and customized for my project needs
 - The Automated testing of the poll app is based heavily on the [Official Django Documentation's](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) automated testing tutorials and is fully acknowledged in the code commentary to be found in the `website/tests.py` file
 
 ## Media
