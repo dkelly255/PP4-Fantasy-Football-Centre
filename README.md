@@ -65,6 +65,7 @@ With these two broad epics as the overall strategic goal of the project, we are 
         - An administrator can Read users, comments, and likes from the administration area
         - An administrator can Update users, comments, and likes from the administration area
         - An administrator can Delete users, comments, and likes from the administration area
+        - Deletion of an Article should also delete the comments and likes associated with the Article
 - Create draft articles so that I can complete the articles at a later time
     - Acceptance Criteria:
         - An administrator can save an article in draft format if the article is partially complete
@@ -80,23 +81,57 @@ With these two broad epics as the overall strategic goal of the project, we are 
 ### *As both a site user and administrator I can:*
 
 - View a count of likes on each article so that I can gauge general user sentiment on the site content
+    - Acceptance Criteria:
+        - The article display summary card should contain a count of the likes at the bottom of the featured image so that the total likes can be easily visually parsed by both site users and administrators
+        - All likes an unlikes should be properly aggregated and counted in the article summary
+        - The count should properly update when users add or remove likes with time
 - View other user's comments on articles so that I can understand other site user's perspective's an opinions on the content
+    - Acceptance Criteria:
+        - The article display summary card should contain a count of the comments at the bottom of the featured image so that the total number of comments can be easily visually parsed by both site users and administrators
+        - All approved comments should be gathered in the discussion section at the bottom of the article detail page
+        - Each comment should show the commentor's name and the date the comment was posted
 
 ### **Epic 2 - Poll App - User Story Mapping:**
 
 ### *As a site user I can:*
 
 - View a list of the site's opinion poll questions so that I can view the issues being polled
+    - Acceptance Criteria:
+        - The Polls should require authorisation or authentication to view - if an unauthenticated user attempts to log in they should be redirected to the log in screen
+        - Each poll summary card should clearly show the poll question number and list the poll question 
+        - Each poll summary card should have a `Go To Poll` button to allow authenticated user's to vote
 - View a list of the opinion poll question answer choices so that I can assess which answer best fits my perspective
+    - Acceptance Criteria:
+        - The Opinion Poll Answer summary screen should load upon clicking the `Go To Poll` button from the poll summary card
+        - All available answer choices for the poll should display under the question with a radio button for each choice
+        - Only once choice should be allowed for selection - multiple choices should not be permitted
 - Vote my own preference to an opinion poll question so that I can have my opinion counted in the poll
+    - Acceptance Criteria:
+        - A `vote` button should be displayed under the poll questions to allow the user to vote their preference
+        - Trying to use the `vote` button without selecting a choice shoudl present the user with an error prompt
+        - Upon logging their vote, the user should be presented with the poll results screen, showing a count of the votes for each choice to date
 
 ### *As a site administrator I can:*
 - Have full CRUD (Create, Read, Update, Delete) abilities so that I can manage the content of the poll app
+    - Acceptance Criteria:
+        - An administrator can Create Poll Questions and Choices from the administration area
+        - An administrator can Read Poll Questions and Choices from the administration area
+        - An administrator can Poll Questions and Choices from the administration area
+        - An administrator can Poll Questions and Choices from the administration area.
+        - Deletion of a question should also delete the choices associated with the question
 - Create draft polls so that I can complete the poll at a later time
+    - Acceptance Criteria:
+        - An administrator can save a Poll Question in draft format if the article is partially complete
+        - The administrator should have the ability to toggle the published status of the Poll Question to reflect it's completion
+        - The administrator should have access to an easily viewed dashboard showing the Questions and choices by status, including those in draft
 
 ### *As both a site user and administrator I can:*
 
 - View the current voting results status of an opinion poll question so that I can assess user sentiment on polled issues
+    - Acceptance Criteria:
+        - The votes should be anonymous to ensure that user's can feel comfortable voting honestly on the poll questions
+        - The Poll Question Results summary card should contain a count of the votes for each answer choice so that the total number of votes can be easily visually parsed by both site users and administrators.
+        
 
 ## 2. Scope
 
