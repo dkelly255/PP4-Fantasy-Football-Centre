@@ -196,6 +196,11 @@ The site footer contains "Constructed By" label crediting the site to (fictional
 
 ![Footer](readme/features-footer.png)
 
+### - Article Summary Display
+Another key aspect of the site functionality which will differentiate it and helps it stand out amongst other similar blog applications is the article summary display feature illustrated below. Here a User can see at a glance the article's important details such as title and excerpt, but also see a neat summary at both the top and bottom of the main image, showing the article's author at the top, and the date published plus a count of the cumulative likes and comments to date on the article:
+
+![Article](readme/features-article-summary.png)
+
 ### - Comment Counter
 
 The comment counter is present under all articles created on the site, and performs the role of allowing site visitors to see at a glance how many comments have been lodged under each article, giving a sense of how much discussion and debate an article may have generated. Each time a comment has been approved by the administrator/superuser, the comments counter will increment by one:
