@@ -78,9 +78,11 @@ With the equivalent Kanban board for the debugging exercises having been brought
 
 If you wish to review the boards in more detail, please navigate to the [Projects](https://github.com/dkelly255/pp4-django-blog/projects) section of the Github repository, where you will find direct links allowing a deeper dive into the detail of [Kanban Board #1 (User Stories)](https://github.com/dkelly255/pp4-django-blog/projects/1) and [Kanban Board #2 (Bugs & Debugging)](https://github.com/dkelly255/pp4-django-blog/projects/2)
 
-An important exercise as part of Agile Software Development practices is to ensure there is a clear mapping between Epics, to User Stories to Tasks - as an example of where I have been using this principle to deliver the scope of this project you can see a sample of 100 tasks below - this is not an exhaustive list of the entire project scope, but gives a feel for the process used to guide the project delivery.
+An important exercise as part of Agile Software Development practices is to ensure there is a clear mapping between Epics, to User Stories to Tasks - as an example of where I have been using this principle to deliver the scope of this project you can see a sample of 100 tasks below - this is not an exhaustive list of the entire project scope, but gives a feel for the process used to guide the project delivery - please note if you wish to browse this task mapping exercise in more detail it has also been uploaded to the repository at this [link](readme/documents/epic-userstory-task-mapping.xlsx).
 
 ![Scope Task Mapping](readme/epic-userstory-task-mapping.png)
+
+
 
 ## 3. Structure
 
