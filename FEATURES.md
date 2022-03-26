@@ -26,7 +26,7 @@ The Logout form screenshot is shown below, illustrating the simple & intuitive n
 
 ### - Administration Area
 
-In addition to the the User-Level access permissions, the site also includes an administrator-level permissions tier - implemented via Django's `superuser` functionality. In order to create a superuser, please follow the steps below in your Command Line Interface or Terminal display:
+In addition to the User-Level access permissions, the site also includes an administrator-level permissions tier - implemented via Django's `superuser` functionality. In order to create a superuser, please follow the steps below in your Command Line Interface or Terminal display:
 
 ```
 > create superuser
@@ -38,7 +38,7 @@ In addition to the the User-Level access permissions, the site also includes an 
 
 Upon correctly following these steps, this should permit the superuser to login to the site with an extended set of `administrator-level` permissions allowing access to the administration area functionality. The administration area itself is a key feature of the Django Blog web application, and allows the site administrator/super-user to control many key site activities to keep the application in working order. 
 
-The administration area has been craeted using Django's administration functionality, and contains many key functions, including Create, Read, Update and Delete privileges for both the Site Articles and Polls applications, as well as User and comment/like features, illustrated in the snapshot below, and reviewed in detail in the next section:
+The administration area has been created using Django's administration functionality, and contains many key functions, including Create, Read, Update and Delete privileges for both the Site Articles and Polls applications, as well as User and comment/like features, illustrated in the snapshot below, and reviewed in detail in the next section:
 
 ![Admin](readme/features-admin.png)
 
@@ -46,7 +46,7 @@ The administration area has been craeted using Django's administration functiona
 
 As described in detail in this helpful [article](https://www.sumologic.com/glossary/crud/#:~:text=CRUD%20Meaning%3A%20CRUD%20is%20an,%2C%20read%2C%20update%20and%20delete.) from [Sumologic.com](https://www.sumologic.com/), CRUD is an acronym that refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update, and delete. 
 
-Below you can see details on the CRUD features and funcitonality of the Django Blog application, with examples and illustrations of each key operation:
+Below you can see details on the CRUD features and functionality of the Django Blog application, with examples and illustrations of each key operation:
 
 ### - Create Records:
 
@@ -192,7 +192,7 @@ The Nav bar contains links to the main functionality sections of the site, and c
 ![Nav](readme/features-nav.png)
 
 ### - Footer
-The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully resposive using media queries from large screens down to small mobile devices. It contains a combination of green backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme. All links will open in a new browser window to ensure the best possible User Experience
+The site footer contains "Constructed By" label crediting the site to (fictional) FFC Devs, as well as clickable links to various external Social Media sites where users can connect. The links will always open in a new tab, and the footer is fully responsive using media queries from large screens down to small mobile devices. It contains a combination of green backgrounds, with white text and borders to ensure high contrast ratios and for consistency with the site's design & color scheme. All links will open in a new browser window to ensure the best possible User Experience
 
 ![Footer](readme/features-footer.png)
 
@@ -208,7 +208,7 @@ This feature considers aspects of defensive design principles to ensure that in 
 
 ![Default article picture](readme/features-default-article-create.png)
 
-The default image is sourced from pexels, and is fully acknowledged in the credits section, whilst the code was originally adapted from the Code Institute blog walkthrough lesson, the image below shows how the article would look in the blog index page with the deafult/placeholder picture instead of an administrator-specified image accompanying the article:
+The default image is sourced from pexels, and is fully acknowledged in the credits section, whilst the code was originally adapted from the Code Institute blog walkthrough lesson, the image below shows how the article would look in the blog index page with the default/placeholder picture instead of an administrator-specified image accompanying the article:
 
 ![Default article picture](readme/features-default-image.png)
 
@@ -242,7 +242,7 @@ As a result, in addition to the existing features there are several additional f
 
 ### - Notifications
 
-A future feature for site implementation would be the addition of a notifications choice for users. This would allow users who wish to avail of the option to receice notifications when a new article is posted to the site, and/or when their comments have had replies in the discussion areas. This feature is currently out of scope due to project deadlines, but will hopefully be added at a future time to improve the User Experience and broaden the suite of features offered by the site.
+A future feature for site implementation would be the addition of a notifications choice for users. This would allow users who wish to avail of the option to receive notifications when a new article is posted to the site, and/or when their comments have had replies in the discussion areas. This feature is currently out of scope due to project deadlines, but will hopefully be added at a future time to improve the User Experience and broaden the suite of features offered by the site.
 
 ### -  Membership Tiers Addition
 
@@ -250,7 +250,7 @@ This would involve adding functionality to the site whereby existing users have 
 
 ### - Premium articles & Analysis
 
-Following on from the Member's area would be additional members-only articles, and access to player data & analysis to help premium members gain even more insight into Django and it's hisotry, purpose, and usage. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
+Following on from the Member's area would be additional members-only articles, and access to player data & analysis to help premium members gain even more insight into Django and it's history, purpose, and usage. This would require changes to existing models, and the addition of new models and in the interest of project deadlines is currently out of scope for the current release.
 
 ### - Forgotten Password Functionality
 

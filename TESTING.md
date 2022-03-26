@@ -40,12 +40,12 @@ No. |Test Case | Expected Result | Actual Result | Pass/Fail | Link
   13 |Edit a Poll Answer Choice  | Upon clicking on the `Choice` link, and subsequently clicking into the Choice required for editing, an administrator should be able to populate the following form with any of the details required to edit an existing Poll Question Answer Choice | The Answer Choice edit feature works as expected | Pass | [Screenshot](readme/testing/test13-choice-edit.png)
   14 |Delete a Poll Question | When an administrator selects a Question, and clicks on the dropdown menu to choose the `Delete selected Questions` option, a warning screen should present to the user highlighting that the Question will be deleted. If the administrator proceeds to click on the `Yes I'm sure` button, the Question and it's associated answer choices should be removed from the site | Delete Question functionality operates as expected | Pass | [Screenshot](readme/testing/test14-poll-delete.png)
   15 |Delete a Poll Answer Choice | When an administrator selects a Choice, and clicks on the dropdown menu to choose the `Delete selected Choices` option, a warning screen should present to the user highlighting that the Answer Choice will be deleted. If the administrator proceeds to click on the `Yes I'm sure` button, the Answer Choice should be removed from the site | Delete Answer functionality operates as expected | Pass | [Screenshot](readme/testing/test15-answer-delete.png)
-  16 | Default Article Picture Functions | When an article is created, without specifying an image (i.e. leaving the `image` field blank) the default article picture should be used as the image for the article in both the article index view, and the article detail view | Deafult article picture functionality operates as per expectations | Pass | [Screenshot](readme/testing/test16-default-pic.png)
+  16 | Default Article Picture Functions | When an article is created, without specifying an image (i.e. leaving the `image` field blank) the default article picture should be used as the image for the article in both the article index view, and the article detail view | Default article picture functionality operates as per expectations | Pass | [Screenshot](readme/testing/test16-default-pic.png)
 
 ## 3. Automated Testing:
 
 ### (i) Testing The Question Model's "was_published_recently" method 
-The tests below are part of the Automated testing procedures I have used to prove out the functionality of some of the core aspects within the poll application. Please note - as called out in the readme credits section, and as noted in the poll/tests.py module code comments, I have heavily utilised the testing section of the [official Django Documentation](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) in arriving at and building these tests, as they are effective at testing my poll app funcitonality for the purposes of the Blog Project:
+The tests below are part of the Automated testing procedures I have used to prove out the functionality of some of the core aspects within the poll application. Please note - as called out in the readme credits section, and as noted in the poll/tests.py module code comments, I have heavily utilised the testing section of the [official Django Documentation](https://docs.djangoproject.com/en/4.0/intro/tutorial05/) in arriving at and building these tests, as they are effective at testing my poll app functionality for the purposes of the Blog Project:
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
@@ -83,17 +83,17 @@ Automated Test | Expected Result | Actual Result | Pass/Fail
   test_future_question(self):| A 404 error should be returned for the DetailView of a question with a publication date in the future | Functions as expected | Pass 
   test_past_question(self):| The question's text should be displayed for the detail view of a question with a published date in the past | Operates correctly | Pass
 
-### (iv) Testing The Webite App's "landing_page" (Function-based) View:
+### (iv) Testing The Website App's "landing_page" (Function-based) View:
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-test_view_landing_page(self):| A Response Code Status 200 should be recieved together with the `landing_page.html` template when sending a get request to the `/` path | The View functions as expected | Pass
+test_view_landing_page(self):| A Response Code Status 200 should be received together with the `landing_page.html` template when sending a get request to the `/` path | The View functions as expected | Pass
 
-### (v) Testing The Webite App's "PostList" (Class-based) View:
+### (v) Testing The Website App's "PostList" (Class-based) View:
 
 Automated Test | Expected Result | Actual Result | Pass/Fail
  ------------- | ------------- | ------------ | ------------- 
-test_view_post_list(self):| A Response Code Status 200 should be recieved together with the `index.html` template when sending a get request to the `/post-list/` path | The View functions as expected | Pass
+test_view_post_list(self):| A Response Code Status 200 should be received together with the `index.html` template when sending a get request to the `/post-list/` path | The View functions as expected | Pass
 
 ###  Testing Coverage
 
@@ -107,7 +107,7 @@ coverage run --source= manage.py test
 coverage report
 ```
 
-Additionally, if you wish to view the report in a more user-friendly, separate & interactive HTML file, then you can run the additional two commands below, open the broswer on port 8000 and click into the `htmlcov` folder:
+Additionally, if you wish to view the report in a more user-friendly, separate & interactive HTML file, then you can run the additional two commands below, open the browser on port 8000 and click into the `htmlcov` folder:
 
 ```
 coverage html
@@ -120,13 +120,13 @@ Currently as you can see from the screenshot below, I am at a level greater than
 
 ## 4. Javascript Testing
 
-As part of my testing activities I have also designed and implemented the Javascript test procedures below. The Javascript content of the site is primarly related to the notification messaging features, and I felt that manual test procedures would best fit the functionality involved:
+As part of my testing activities I have also designed and implemented the Javascript test procedures below. The Javascript content of the site is primarily related to the notification messaging features, and I felt that manual test procedures would best fit the functionality involved:
 
 No. |Test Case | Expected Result | Actual Result | Pass/Fail
  ------------- |------------- | ------------- | ------------ | ------------- 
-  1 | User Login Message Notification | A user should be greeted with a `login success` notification message when they succesfully log in, the message should disappear again after the pre-set timeinterval in the Javascript function | The notification message appears and disappears as expected | Pass
-  2 | User Logout Message Notification | A user should be greeted with a `logout` notification message when they succesfully log out, the message should disappear again after the pre-set timeinterval in the Javascript function | The notification message appears and disappears as expected | Pass
-  3 | Account Creation Notification | A user should be greeted with a notification message when they succesfully create an account, the message should disappear again after the pre-set timeinterval in the Javascript function | Initially the notification message appears but would not disappear again as expected - See [Bug #8](https://github.com/dkelly255/pp4-django-blog#8-heroku-javascriptstatic-file-bug---messaging)| Fail
+  1 | User Login Message Notification | A user should be greeted with a `login success` notification message when they successfully log in, the message should disappear again after the pre-set time interval in the Javascript function | The notification message appears and disappears as expected | Pass
+  2 | User Logout Message Notification | A user should be greeted with a `logout` notification message when they successfully log out, the message should disappear again after the pre-set time interval in the Javascript function | The notification message appears and disappears as expected | Pass
+  3 | Account Creation Notification | A user should be greeted with a notification message when they successfully create an account, the message should disappear again after the pre-set time interval in the Javascript function | Initially the notification message appears but would not disappear again as expected - See [Bug #8](https://github.com/dkelly255/pp4-django-blog#8-heroku-javascriptstatic-file-bug---messaging)| Fail
   4 | Account Creation Notification (re-test) | The notification message should disappear again after the Javascript -specified time interval - See [Bug #8 resolution](https://github.com/dkelly255/pp4-django-blog#8-heroku-javascriptstatic-file-bug---messaging) | Bug resolved and functionality now operates as expected | Pass
   5 | Comment Submission Notification Message | When a user submits a comment under an article, they should receive a notification message that their comments has been submitted and is pending approval, the message should disappear again after the specified time interval | Messaging functionality operates as expected | Pass
   6 | Page resubmission popup blocking | As per the situation and subsequent Javascript solution documented in [Bug #12 - Comment Duplication on Page Refresh](https://github.com/dkelly255/pp4-django-blog#12-comment-submission-duplication-on-page-refresh) When a user submits a comment under an article, and then refreshes the same page whilst the comment is in "pending approval" status - the page should refresh without resubmitting the comment | Comment pending approval page-refresh functionality now operates as expected | Pass
@@ -135,7 +135,7 @@ No. |Test Case | Expected Result | Actual Result | Pass/Fail
 
 ## 5. Browser Compatibility Testing
 
-The site's compatibility with different browsers and device sizes has been extensively tested to help ensure the best positive experience for site users & visitors, with some of the primary browser & device-size compatability screenshots being displayed below:
+The site's compatibility with different browsers and device sizes has been extensively tested to help ensure the best positive experience for site users & visitors, with some of the primary browser & device-size compatibility screenshots being displayed below:
 
 - Google Chrome:
 
@@ -159,7 +159,7 @@ The site's compatibility with different browsers and device sizes has been exten
 
 ## 6. Accessibility Testing
 
-The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessiblity deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, Accessibility. The finalized accessibility scoring for each page in the site are shown below with the results of the focus on meeting accessbility guidelines ensuring all scores green and in the 90%-100% range.
+The DevTools suite, and Lighthouse were used to audit the site's accessibility and found the only initial accessibility deficiencies in the site were generally driven by Search Engine Optimisation and in some cases, accessibility. The finalized accessibility scoring for each page in the site are shown below with the results of the focus on meeting accessbility guidelines ensuring all scores green and in the 90%-100% range.
 
 - Homepage Lighthouse Scores:
 
@@ -251,7 +251,7 @@ The site's CSS code located in `style.css` has been successfully validated using
 
 ![CSS](readme/validation-css.png) 
 
-The site's Javascript code located in `base.js` has been successfully validated using the JSHint validation service, with no errors found, and one warning regarding an undefined variabe which does not affect the site content and is required in order to enable the messaging functionality to operate:
+The site's Javascript code located in `base.js` has been successfully validated using the JSHint validation service, with no errors found, and one warning regarding an undefined variable which does not affect the site content and is required in order to enable the messaging functionality to operate:
 
 ### (iii) Javascript Validation [(Jshint)](https://jshint.com/)
 
